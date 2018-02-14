@@ -1,0 +1,299 @@
+body {
+    background-color: black;
+}
+
+html body.rightStory {
+    font-family: base-900-sans, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.row {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.headline>h1 {
+    color: #CBCD27;
+    margin-top: 0.5em;
+    height: 3vh;
+}
+
+.headline {}
+
+.headImg {
+    position: relative;
+    overflow: hidden;
+    height: 97vh;
+}
+
+.youtube {
+    width: 100%;
+    /* height: 520px; */
+    /* max-height: 50%; */
+    position: absolute;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div {
+    color: #CBCD27;
+}
+
+.RightImage {
+    position: absolute;
+    top: 0;
+    opacity: .4;
+    width: 100%;
+    height: 100%;
+    /* pointer-events: none; */
+}
+
+.RightImage>div:nth-child(1) {
+    width: auto;
+    height: 100%;
+    background-image: url("../asset/imgForSticker/RightStoryB.png");
+    background-repeat: repeat;
+    background-size: 10% auto;
+}
+
+.RightImage>img:nth-child(2) {
+    /* top: 17%; */
+    width: 31%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.RightImage>p {
+    position: absolute;
+    color: yellow;
+    bottom: 2vh;
+}
+
+.introduce {
+    margin-top: 247px;
+    margin-bottom: 247px;
+}
+
+.introduce>p {
+    width: 500px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.introduce>p:last-child {
+    margin-top: 35px;
+}
+
+
+.headt > p{
+    font-size: 60px;
+    text-align: center;
+    margin: 1.5rem 2%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* containt */
+
+.linkEbay>div:nth-child(1) {
+
+    float: left;
+}
+
+.linkEbay>div:nth-child(2) {
+
+    float: right;
+    width: 105px;
+    background-color: #CBCD27;
+    border-radius: 3px;
+}
+
+.linkEbay>div:nth-child(2)>a {
+    padding-left: 10px;
+}
+
+.arraw {
+    width: 87%;
+}
+
+
+.package {
+    font-size: 30px;
+    letter-spacing: 1.1px;
+    line-height: 130%;
+}
+
+.introMap {
+    font-size: 30px;
+    letter-spacing: 1.1px;
+    line-height: 130%;
+}
+
+.putOn {
+    height: 90px;
+    overflow-y: hidden;
+}
+
+.putOn>div {
+    top: -72px;
+    position: inherit;
+}
+
+.setting>div:nth-child(1)>img:nth-child(1) {
+    position: absolute;
+    width: 97px;
+    z-index: -1;
+    top: -52px;
+    left: 560px;
+}
+
+.setting .webAddressTab {
+    top: 24px;
+    left: 38px;
+    font-size: 0.7em;
+}
+
+.iframe2 {
+    width: 595px;
+    height: 284px;
+    /* background-color: red; */
+    position: absolute;
+    bottom: 21px;
+    /* opacity: .3; */
+    overflow: hidden;
+}
+
+.settingWebEx {
+    font-size: 30px;
+    letter-spacing: 1.1px;
+    line-height: 130%;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+/* wholeScreen */
+
+.wholeScreenWrap {
+    width: 100%;
+    height: 592px;
+    position: relative;
+}
+
+.wholeScreen {
+    position: absolute;
+    width: 99vw;
+    height: 592px;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+}
+
+.wholeScreenwid {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.wholeScreenwid>img {
+    width: 33%;
+}
+
+
+
+
+/* buttom */
+
+.buttomEnjoy {
+    width: 100%;
+    position: relative;
+}
+
+.enjoyText {
+    position: absolute;
+    background-color: black;
+    text-align: center;
+    height: 60px;
+    width: 370px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.enjoyText>p {
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+.footer {
+    margin-top: 20px;
+        height: 100px;
+}
+
+.icons {
+    margin-left: 4vw;
+    float: left;
+}
+
+.icons>img {
+    width: auto;
+    height: 50px;
+    padding: 0 10px 0 10px;
+}
+
+.copyRight {
+    float: right;
+    height: 100%;
+    margin-right: 8%;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+/* deng dai xiu gai  */
+
+.iframeImg {
+    bottom: 58px;
+}
