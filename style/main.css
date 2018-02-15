@@ -12,7 +12,17 @@ body {
 }
 
 
+p::-moz-selection {
+  background-color: #0008f2; /* WebKit/Blink Browsers */
+}
 
+
+p::selection {
+  background-color: #0008f2; /* WebKit/Blink Browsers */
+}
+p::-moz-selection {
+  background-color: #0008f2; /* Gecko Browsers */
+}
 
 
 
