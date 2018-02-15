@@ -12,16 +12,35 @@ body {
 }
 
 
+a::-moz-selection {
+  background-color: #00adef; /* WebKit/Blink Browsers */
+}
+a::selection {
+  background-color: #00adef; /* WebKit/Blink Browsers */
+}
+a:visited{
+    color: black;
+}
+p a:hover{
+    -webkit-text-decoration-color: #00adef;
+            text-decoration-color: #00adef;
+    -webkit-transition: -webkit-text-decoration-color .3s;
+    transition: -webkit-text-decoration-color .3s;
+    transition: text-decoration-color .3s;
+    transition: text-decoration-color .3s, -webkit-text-decoration-color .3s;
+}
+
+
 p::-moz-selection {
-  background-color: #0008f2; /* WebKit/Blink Browsers */
+  background-color: #00adef; /* WebKit/Blink Browsers */
 }
 
 
 p::selection {
-  background-color: #0008f2; /* WebKit/Blink Browsers */
+  background-color: #00adef; /* WebKit/Blink Browsers */
 }
 p::-moz-selection {
-  background-color: #0008f2; /* Gecko Browsers */
+  background-color: #00adef; /* Gecko Browsers */
 }
 
 
