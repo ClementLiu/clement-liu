@@ -38,6 +38,10 @@
     }
     /*.img-text div h2 {*/
 
+    .img-text {
+        position: relative;
+    }
+
     h2 {
         font-family: 'Levibrush Bold', Arial, sans-serif;
         font-size: 31px;
@@ -60,6 +64,14 @@
         left: 0;
         right: 0;
         margin: auto;
+    }
+
+    div.left-text {
+        text-align: left;
+    }
+
+    div.right-text {
+        text-align: left;
     }
 
     div.double-text {
@@ -90,17 +102,42 @@
         width: 379px;
     }
 
-    img[alt=Spark5]+div div:nth-child(1) p  {
+    img[alt=Spark5]+div div:nth-child(1) p {
         width: 427px;
     }
-    img[alt=Spark5]+div div:nth-child(2) p  {
+
+    img[alt=Spark5]+div div:nth-child(2) p {
         width: 379px;
+    }
+    img[alt=Spark6]+div  p {
+        width: 427px;
     }
 
     img[alt=Spark8]+div p {
         width: 245px;
     }
 
+    img[alt=Spark9]+div p {
+        width: 343px;
+    }
+
+    img[alt=Spark10]+div p {
+        width: 386px;
+    }
+    .text-on-img{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: 10px;
+    }
+    .text-on-img h2, .text-on-img p{
+        color: white;
+    }
+
+    .slider-text {
+        width: 569px;
+    }
     </style>
 </head>
 
@@ -190,7 +227,7 @@
     </div>
     <div class="img-text">
         <img alt="Smiley face" src="https://farm5.staticflickr.com/4748/39629818185_b1cb1344f7_k.jpg">
-        <div class="center-text">
+        <div class="center-text slider-text">
             <h2>OUTSIDE RESEARCH</h2>
             <p>To get random form, I went out to the field. Tried raw material, like rock and dead wood to manufacture my project as inspiration.</p>
         </div>
