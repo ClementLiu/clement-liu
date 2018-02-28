@@ -27,7 +27,6 @@ a:visited{
 p a:hover{
     -webkit-text-decoration-color: #00adef;
             text-decoration-color: #00adef;
-    -webkit-transition: -webkit-text-decoration-color .3s;
     transition: -webkit-text-decoration-color .3s;
     transition: text-decoration-color .3s;
     transition: text-decoration-color .3s, -webkit-text-decoration-color .3s;
@@ -171,8 +170,6 @@ p::-moz-selection {
 /* 338 550 */
 
 .firstBlock {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     height: 81vh;
 }
@@ -309,8 +306,6 @@ p::-moz-selection {
 }
 
 .textBlock {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 27%;
     flex: 0 0 27%;
     max-width: 27%;
     margin-left: 150px;
@@ -445,6 +440,5 @@ p::-moz-selection {
 /* shadows */
 
 body>div.mainBody.container>div.projects>div.Form>div.block>div>div>img {
-    -webkit-box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.50);
-            box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.50);
+    box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.50);
 }

@@ -257,7 +257,6 @@ p {
 #Pre,
 #Nex,
 .preNexSliders>div {
-    -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 
@@ -332,7 +331,6 @@ p {
 .navButton>.navTitle>div>p {
     color: white;
     opacity: 1;
-    -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
 
@@ -346,8 +344,6 @@ p {
     width: 100%;
     height: 100%;
     float: left;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex
 }
 
@@ -373,7 +369,6 @@ p {
     width: 100%;
     top: 0;
     z-index: -1;
-    -webkit-transition: height 0.3s ease 0s;
     transition: height 0.3s ease 0s;
 }
 #navAni0{
@@ -771,8 +766,7 @@ p {
     width: 185px;
     background: #FFFFFF;
     border: 25px solid #000000;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     padding: 10px;
     font-size: 18px;
     font-weight: 200;
@@ -783,7 +777,6 @@ p {
 }
 
 .whiteCard>div:nth-child(1) {
-    -webkit-transition: left 0.3s ease 0s;
     transition: left 0.3s ease 0s;
     left: 1px;
     top: 1px;
@@ -791,8 +784,6 @@ p {
 }
 
 .whiteCard>div:nth-child(2) {
-
-    -webkit-transition: left 0.3s ease 0s;
 
     transition: left 0.3s ease 0s;
     left: 47px;
@@ -814,8 +805,6 @@ p {
 
 .gridImg>img {
     width: 25%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     float: left;
 }
@@ -823,8 +812,6 @@ p {
 .gridImg>div {
     width: 25%;
     height: 352px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     float: right;
 }
@@ -906,16 +893,13 @@ p {
     margin-top: -22px;
     border: 3px solid #fff;
     border-radius: 0px;
-    -webkit-box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.2);
-            box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.2);
+    box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.2);
     z-index: 40;
     cursor: pointer;
-    -webkit-box-sizing: content-box;
-            box-sizing: content-box;
+    box-sizing: content-box;
     pointer-events: initial;
     opacity: 0.3;
-    -webkit-transition-duration: 0.8s;
-            transition-duration: 0.8s;
+    transition-duration: 0.8s;
 }
 
 .arrawLeftBox:hover {
@@ -935,8 +919,7 @@ p {
     border-right: 6px solid #fff;
     left: 50%;
     margin-left: -10px;
-    -webkit-box-sizing: content-box;
-            box-sizing: content-box;
+    box-sizing: content-box;
 }
 
 .arrawRightBox {
@@ -949,16 +932,13 @@ p {
     margin-top: -22px;
     border: 3px solid #fff;
     border-radius: 0px;
-    -webkit-box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.2);
-            box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.2);
+    box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.2);
     z-index: 40;
     cursor: pointer;
-    -webkit-box-sizing: content-box;
-            box-sizing: content-box;
+    box-sizing: content-box;
     pointer-events: initial;
     opacity: 0.3;
-    -webkit-transition-duration: 0.8s;
-            transition-duration: 0.8s;
+    transition-duration: 0.8s;
 }
 
 .arrawRightBox:hover {
@@ -976,8 +956,7 @@ p {
     border-left: 6px solid #fff;
     right: 50%;
     margin-right: -10px;
-    -webkit-box-sizing: content-box;
-            box-sizing: content-box;
+    box-sizing: content-box;
 }
 
 
