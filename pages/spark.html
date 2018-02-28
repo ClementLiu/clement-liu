@@ -7,8 +7,10 @@
     <link href="../style/reset.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/llj7xnr.css">
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <!-- slick by Ken Wheeler -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+    <!-- loading -->
     <script src="../js/loading.js"></script>
     <link href="../style/bar.css" rel="stylesheet" />
     <script src="https://player.vimeo.com/api/player.js"></script>
@@ -93,12 +95,20 @@
         text-align: center;
         display: inline-flex;
     }
-img + div{
-    margin-top: 36px;
-}
-.img-text, .iframe-video{
-    margin-bottom: 112px;
-}
+
+    img+div {
+        margin-top: 36px;
+    }
+
+    .sliceImgBlock+div {
+        margin-top: 36px;
+    }
+
+    .img-text,
+    .iframe-video {
+        margin-bottom: 112px;
+    }
+
     img[alt=Spark4]+div.double-text div:nth-child(1) {
         margin-left: 33%;
     }
@@ -219,6 +229,103 @@ img + div{
         width: 469px;
         margin-left: 16%;
     }
+    /*arraw style*/
+
+    .sliceImgBlock {
+        position: relative;
+    }
+
+    .sliceImgBlock:hover .arrawLeftBox {
+        opacity: 1;
+    }
+
+    .sliceImgBlock:hover .arrawRightBox {
+        opacity: 1;
+    }
+
+    .arrawLeftBox {
+        height: 68px;
+        width: 49px;
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        margin-left: -52px;
+        margin-top: -22px;
+        border-right: 0px solid #fff;
+        border-radius: 0px;
+        /*-webkit-box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.2);*/
+        /* box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.2); */
+        z-index: 40;
+        cursor: pointer;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+        pointer-events: initial;
+        opacity: 0.6;
+        -webkit-transition-duration: 0.8s;
+        transition-duration: 0.8s;
+    }
+
+    .arrawLeftBox:hover {
+
+        /* opacity: 1; */
+    }
+
+
+
+    .arrawLeft {
+        width: 0;
+        height: 0;
+        border: 18px inset transparent;
+        position: absolute;
+        top: 50%;
+        margin-top: -17px;
+        border-right: 18px solid #fff;
+        left: 50%;
+        margin-left: -17px;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+    }
+
+    .arrawRightBox {
+        height: 68px;
+        width: 49px;
+        position: absolute;
+        right: 5%;
+        top: 50%;
+        margin-right: -52px;
+        margin-top: -22px;
+        border-left: 0px solid #fff;
+        border-radius: 0px;
+        /*-webkit-box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.2);*/
+        /*box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.2);*/
+        z-index: 40;
+        cursor: pointer;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+        pointer-events: initial;
+        opacity: 0.6;
+        -webkit-transition-duration: 0.8s;
+        transition-duration: 0.8s;
+    }
+
+    .arrawRightBox:hover {
+
+        /* opacity: 1; */
+    }
+
+    .arrawRight {
+        width: 0;
+        height: 0;
+        border: 18px inset transparent;
+        position: absolute;
+        top: 50%;
+        margin-top: -17px;
+        border-left: 18px solid #fff;
+        right: 50%;
+        margin-right: -17px;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+    }
     </style>
 </head>
 
@@ -307,7 +414,14 @@ img + div{
         </div>
     </div>
     <div class="img-text">
-        <img alt="Smiley face" src="https://farm5.staticflickr.com/4748/39629818185_b1cb1344f7_k.jpg">
+        <div class="sliceImgBlock">
+            <img alt="Smiley face" src="https://farm5.staticflickr.com/4748/39629818185_b1cb1344f7_k.jpg">
+            <img alt="Smiley face" src="https://farm5.staticflickr.com/4616/40525030181_28908db2f8_k.jpg">
+            <img alt="Smiley face" src="https://farm5.staticflickr.com/4611/39629817165_6998b8f051_k.jpg">
+            <img alt="Smiley face" src="https://farm5.staticflickr.com/4676/40525028831_f6ea8f3525_k.jpg">
+            <img alt="Smiley face" src="https://farm5.staticflickr.com/4628/25654617687_0021790c0b_k.jpg">
+            <img alt="Smiley face" src="https://farm5.staticflickr.com/4632/39629816295_9de703c5b1_k.jpg">
+        </div>
         <div class="center-text slider-text">
             <h2>OUTSIDE RESEARCH</h2>
             <p>To get random form, I went out to the field. Tried raw material, like rock and dead wood to manufacture my project as inspiration.</p>
@@ -325,16 +439,30 @@ img + div{
     <div class="img-text">
         <img alt="Spark12" src="https://farm5.staticflickr.com/4661/40525021391_41b2ead256_k.jpg">
     </div>
+    <!-- <div class="img-text">
+        <img alt="Smiley face" src="https://farm5.staticflickr.com/4616/40525030181_28908db2f8_k.jpg">
+    </div>
     <div class="img-text">
-        <img alt="Smiley face" src="https://farm5.staticflickr.com/4616/40525030181_28908db2f8_k.jpg"></div>
+        <img alt="Smiley face" src="https://farm5.staticflickr.com/4611/39629817165_6998b8f051_k.jpg">
+    </div>
     <div class="img-text">
-        <img alt="Smiley face" src="https://farm5.staticflickr.com/4611/39629817165_6998b8f051_k.jpg"></div>
+        <img alt="Smiley face" src="https://farm5.staticflickr.com/4676/40525028831_f6ea8f3525_k.jpg">
+    </div>
     <div class="img-text">
-        <img alt="Smiley face" src="https://farm5.staticflickr.com/4676/40525028831_f6ea8f3525_k.jpg"></div>
+        <img alt="Smiley face" src="https://farm5.staticflickr.com/4628/25654617687_0021790c0b_k.jpg">
+    </div>
     <div class="img-text">
-        <img alt="Smiley face" src="https://farm5.staticflickr.com/4628/25654617687_0021790c0b_k.jpg"></div>
-    <div class="img-text">
-        <img alt="Smiley face" src="https://farm5.staticflickr.com/4632/39629816295_9de703c5b1_k.jpg"></div>
+        <img alt="Smiley face" src="https://farm5.staticflickr.com/4632/39629816295_9de703c5b1_k.jpg">
+    </div> -->
+    <script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $(".sliceImgBlock").slick({
+            prevArrow: '<div class="arrawLeftBox"><span class="arrawLeft"></span></div>',
+            // prevArrow: this.,
+            nextArrow: '<div class="arrawRightBox"><span class="arrawRight"></span></div>',
+        });
+    });
+    </script>
 </body>
 
 </html>
