@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://use.typekit.net/llj7xnr.css">
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <!-- slick by Ken Wheeler -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script> -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" /> -->
     <!-- loading -->
     <script src="../js/loading.js"></script>
     <link href="../style/bar.css" rel="stylesheet" />
@@ -94,13 +94,14 @@
     div.double-text {
         text-align: center;
         display: inline-flex;
+        width: 100%;
     }
 
     img+div {
         margin-top: 36px;
     }
 
-    .sliceImgBlock+div {
+    #sliceImgBlock+div {
         margin-top: 36px;
     }
 
@@ -109,20 +110,24 @@
         margin-bottom: 112px;
     }
 
+    div.double-text>div {
+        width: 0;
+    }
+
     img[alt=Spark4]+div.double-text div:nth-child(1) {
-        margin-left: 33%;
+        margin-left: 18%;
     }
 
     img[alt=Spark4]+div.double-text div:nth-child(2) {
-        margin-left: 19%;
+        margin-left: 37%;
     }
 
     img[alt=Spark5]+div.double-text div:nth-child(1) {
-        margin-left: 31%;
+        margin-left: 16%;
     }
 
     img[alt=Spark5]+div.double-text div:nth-child(2) {
-        margin-left: 14%;
+        margin-left: 39%;
     }
 
     img[alt=HeadImg]+div p {
@@ -141,19 +146,19 @@
         width: 787px;
     }
 
-    img[alt=Spark4]+div div:nth-child(1) p {
+    img[alt=Spark4]+div div:nth-child(1) * {
         width: 386px;
     }
 
-    img[alt=Spark4]+div div:nth-child(2) p {
+    img[alt=Spark4]+div div:nth-child(2) * {
         width: 379px;
     }
 
-    img[alt=Spark5]+div div:nth-child(1) p {
+    img[alt=Spark5]+div div:nth-child(1) * {
         width: 427px;
     }
 
-    img[alt=Spark5]+div div:nth-child(2) p {
+    img[alt=Spark5]+div div:nth-child(2) * {
         width: 379px;
     }
 
@@ -229,102 +234,14 @@
         width: 469px;
         margin-left: 16%;
     }
-    /*arraw style*/
+    /*add slidshow*/
 
-    .sliceImgBlock {
-        position: relative;
+    #sliceImgBlock {
+        height: 41vw;
     }
 
-    .sliceImgBlock:hover .arrawLeftBox {
-        opacity: 1;
-    }
-
-    .sliceImgBlock:hover .arrawRightBox {
-        opacity: 1;
-    }
-
-    .arrawLeftBox {
-        height: 68px;
-        width: 49px;
+    #sliceImgBlock>img {
         position: absolute;
-        left: 5%;
-        top: 50%;
-        margin-left: -52px;
-        margin-top: -22px;
-        border-right: 0px solid #fff;
-        border-radius: 0px;
-        /*-webkit-box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.2);*/
-        /* box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.2); */
-        z-index: 40;
-        cursor: pointer;
-        -webkit-box-sizing: content-box;
-        box-sizing: content-box;
-        pointer-events: initial;
-        opacity: 0.6;
-        -webkit-transition-duration: 0.8s;
-        transition-duration: 0.8s;
-    }
-
-    .arrawLeftBox:hover {
-
-        /* opacity: 1; */
-    }
-
-
-
-    .arrawLeft {
-        width: 0;
-        height: 0;
-        border: 18px inset transparent;
-        position: absolute;
-        top: 50%;
-        margin-top: -17px;
-        border-right: 18px solid #fff;
-        left: 50%;
-        margin-left: -17px;
-        -webkit-box-sizing: content-box;
-        box-sizing: content-box;
-    }
-
-    .arrawRightBox {
-        height: 68px;
-        width: 49px;
-        position: absolute;
-        right: 5%;
-        top: 50%;
-        margin-right: -52px;
-        margin-top: -22px;
-        border-left: 0px solid #fff;
-        border-radius: 0px;
-        /*-webkit-box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.2);*/
-        /*box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.2);*/
-        z-index: 40;
-        cursor: pointer;
-        -webkit-box-sizing: content-box;
-        box-sizing: content-box;
-        pointer-events: initial;
-        opacity: 0.6;
-        -webkit-transition-duration: 0.8s;
-        transition-duration: 0.8s;
-    }
-
-    .arrawRightBox:hover {
-
-        /* opacity: 1; */
-    }
-
-    .arrawRight {
-        width: 0;
-        height: 0;
-        border: 18px inset transparent;
-        position: absolute;
-        top: 50%;
-        margin-top: -17px;
-        border-left: 18px solid #fff;
-        right: 50%;
-        margin-right: -17px;
-        -webkit-box-sizing: content-box;
-        box-sizing: content-box;
     }
     </style>
 </head>
@@ -414,7 +331,7 @@
         </div>
     </div>
     <div class="img-text">
-        <div class="sliceImgBlock">
+        <div id="sliceImgBlock">
             <img alt="Smiley face" src="https://farm5.staticflickr.com/4748/39629818185_b1cb1344f7_k.jpg">
             <img alt="Smiley face" src="https://farm5.staticflickr.com/4616/40525030181_28908db2f8_k.jpg">
             <img alt="Smiley face" src="https://farm5.staticflickr.com/4611/39629817165_6998b8f051_k.jpg">
@@ -455,13 +372,15 @@
         <img alt="Smiley face" src="https://farm5.staticflickr.com/4632/39629816295_9de703c5b1_k.jpg">
     </div> -->
     <script type="text/javascript">
-    jQuery(document).ready(function($) {
-        $(".sliceImgBlock").slick({
-            prevArrow: '<div class="arrawLeftBox"><span class="arrawLeft"></span></div>',
-            // prevArrow: this.,
-            nextArrow: '<div class="arrawRightBox"><span class="arrawRight"></span></div>',
-        });
-    });
+    $("#sliceImgBlock > img:gt(0)").hide();
+    setInterval(function() {
+        $('#sliceImgBlock > img:first')
+            .fadeOut(1000)
+            .next()
+            .fadeIn(1000)
+            .end()
+            .appendTo('#sliceImgBlock');
+    }, 1500);
     </script>
 </body>
 
