@@ -58,24 +58,61 @@
 
     div.center-text {
         text-align: center;
+        width: 100%;
     }
 
     .center-text * {
         left: 0;
         right: 0;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     div.left-text {
         text-align: left;
+        /* float: left; */
+        position: absolute;
+        top: -65px;
+        bottom: 0;
+        margin: auto;
+        height: 10px;
+        margin-left: 17%;
     }
 
     div.right-text {
+        position: absolute;
+        top: -65px;
         text-align: left;
+        bottom: 0;
+        margin: auto;
+        margin-left: 60%;
+        height: 10px;
     }
 
     div.double-text {
-        text-align: left;
+        text-align: center;
+        display: inline-flex;
+    }
+img + div{
+    margin-top: 36px;
+}
+.img-text, .iframe-video{
+    margin-bottom: 112px;
+}
+    img[alt=Spark4]+div.double-text div:nth-child(1) {
+        margin-left: 33%;
+    }
+
+    img[alt=Spark4]+div.double-text div:nth-child(2) {
+        margin-left: 19%;
+    }
+
+    img[alt=Spark5]+div.double-text div:nth-child(1) {
+        margin-left: 31%;
+    }
+
+    img[alt=Spark5]+div.double-text div:nth-child(2) {
+        margin-left: 14%;
     }
 
     img[alt=HeadImg]+div p {
@@ -109,7 +146,8 @@
     img[alt=Spark5]+div div:nth-child(2) p {
         width: 379px;
     }
-    img[alt=Spark6]+div  p {
+
+    img[alt=Spark6]+div p {
         width: 427px;
     }
 
@@ -121,22 +159,65 @@
         width: 343px;
     }
 
+    img[alt=Spark9] {
+        width: 450px;
+    }
+
+    img[alt=Spark10] {
+        width: 469px;
+    }
+
     img[alt=Spark10]+div p {
         width: 386px;
     }
-    .text-on-img{
+
+    .text-on-img {
         position: absolute;
         top: 0;
         bottom: 0;
         margin: auto;
         height: 10px;
+        display: flex;
+        width: 100%;
     }
-    .text-on-img h2, .text-on-img p{
+
+    .text-on-img h2,
+    .text-on-img p {
         color: white;
     }
 
-    .slider-text {
+    .text-on-img h2 {
+        margin-left: 29%;
+    }
+
+    .text-on-img p {
+        margin-left: 15%;
+    }
+
+    .slider-text p {
         width: 569px;
+    }
+
+    .iframe-video {
+        position: relative;
+        text-align: center;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    img[alt=Spark9] {
+        position: relative;
+        width: 450px;
+        display: inline-flex;
+        right: 0;
+        margin-left: 58%;
+    }
+
+    img[alt=Spark10] {
+        width: 469px;
+        margin-left: 16%;
     }
     </style>
 </head>
@@ -212,14 +293,14 @@
         </div>
     </div>
     <div class="img-text">
-        <img alt="Spark9" src="https://farm5.staticflickr.com/4700/40525022241_03bed33810_b.jpg">
+        <img alt="Spark9" src="../asset/spark/Spark9.png">
         <div class="left-text">
             <h2>LIGHTER</h2>
             <p>The internal structure is similiar to lighter, which provides instant fire flame.</p>
         </div>
     </div>
     <div class="img-text">
-        <img alt="Spark10" src="https://farm5.staticflickr.com/4753/40482420682_55cdf67104_b.jpg">
+        <img alt="Spark10" src="../asset/spark/Spark10.png">
         <div class="right-text">
             <h2>RANDOM GAPS</h2>
             <p>Raw material are random, like wood’s texture, stones’ bumps as well as the gaps’ scale. In next step, I think about how to get such difference in manufacturing.</p>
@@ -238,7 +319,9 @@
             <h2>CRASHING METHOD</h2>
         </div>
     </div>
-    <iframe src="https://player.vimeo.com/video/251015365?autoplay=1&loop=1&color=ff9933&title=0&byline=0&portrait=0" width="640" height="1138" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <div class="iframe-video">
+        <iframe src="https://player.vimeo.com/video/251015365?autoplay=1&loop=1&color=ff9933&title=0&byline=0&portrait=0" width="640" height="1138" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
     <div class="img-text">
         <img alt="Spark12" src="https://farm5.staticflickr.com/4661/40525021391_41b2ead256_k.jpg">
     </div>
