@@ -24,6 +24,11 @@ a{
 a:visited{
     color: black;
 }
+span.underline{
+    -webkit-text-decoration-color: #00adef;
+            text-decoration-color: #00adef;
+    text-decoration: underline;
+}
 p a:hover{
     -webkit-text-decoration-color: #00adef;
             text-decoration-color: #00adef;
