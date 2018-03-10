@@ -1,0 +1,24 @@
+{
+  "name": "clement-liu",
+  "version": "1.0.0",
+  "description": "Mobile CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClementLiu/clement-liu.git"
+  },
+  "author": "CC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ClementLiu/clement-liu/issues"
+  },
+  "homepage": "https://github.com/ClementLiu/clement-liu#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-sass": "^3.1.0"
+  }
+}
