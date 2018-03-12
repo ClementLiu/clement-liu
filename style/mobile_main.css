@@ -9,21 +9,29 @@
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-  div {
-    width: 60rem;
-    height: 60rem;
-    background-color: red; } }
+  .headIntro {
+    margin: auto;
+    position: absolute;
+    top: 290px;
+    bottom: auto;
+    height: 320px;
+    width: 850px;
+    left: 40px; }
+  .headIntro > p {
+    font-size: 3rem;
+    line-height: 5.4rem; }
+  .headIntro > p:nth-child(1) {
+    font-size: 8rem;
+    margin-bottom: 80px;
+    line-height: 9rem;
+    font-weight: 600; }
+  .headMyWords {
+    height: 80rem; } }
 
 /* Portrait */
 /* Landscape */
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
 /* Portrait and Landscape */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
-  div {
-    width: 60rem;
-    height: 60rem;
-    background-color: yellow; } }
-
 /* Portrait */
 /* Landscape */
 /* ----------- iPhone X ----------- */
