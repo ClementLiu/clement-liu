@@ -55,9 +55,9 @@
 
             .firstBlock {
 
-                img {}
                 .decorBack1 {}
                 .decorBack2 {}
+                img {}
                 .textBlock {
 
                     .head {
@@ -82,9 +82,9 @@
 
             .firstBlock {
 
-                img {}
                 .decorBack1 {}
                 .decorBack2 {}
+                img {}
                 .textBlock {
 
                     .head {
@@ -110,9 +110,9 @@
 
             .firstBlock {
 
-                img {}
                 .decorBack1 {}
                 .decorBack2 {}
+                img {}
                 .textBlock {
 
                     .head {
@@ -138,9 +138,9 @@
 
             .firstBlock {
 
-                img {}
                 .decorBack1 {}
                 .decorBack2 {}
+                img {}
                 .textBlock {
 
                     .head {
@@ -166,9 +166,9 @@
 
             .firstBlock {
 
-                img {}
                 .decorBack1 {}
                 .decorBack2 {}
+                img {}
                 .textBlock {
 
                     .head {
@@ -197,12 +197,68 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ----------- iPhone 4 and 4S ----------- */
 
 
 /* Portrait and Landscape */
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -216,9 +272,65 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Landscape */
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -235,6 +347,34 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Portrait */
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
@@ -243,9 +383,65 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Landscape */
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -262,6 +458,19 @@
     //   height: 60rem;
     //   background-color: red;
     // }
+    $marginLeft: 58px;
+    $box-window-size: 800px; // @TODO: Add docs to imagePosition!
+    //
+    @mixin imagePosition($params) {
+        margin-top: $params;
+    }
+    %textFont {
+        font-size: 2.6rem;
+        line-height: 5.3rem;
+    }
+    .mainBody {
+        margin-left: 4%;
+    }
     .headIntro {
         margin: auto;
         position: absolute;
@@ -269,24 +478,315 @@
         bottom: auto;
         height: 320px;
         width: 850px;
-        left: 40px;
+        left: $marginLeft;
     }
 
     .headIntro>p {
-        font-size: 3rem;
-        line-height: 5.4rem;
+        // font-size: $textFontSize;
+        // line-height: 5.3rem;
+        @extend %textFont;
     }
     .headIntro>p:nth-child(1) {
-        font-size: 8rem;
+        font-size: 7.1rem;
         margin-bottom: 80px;
         line-height: 9rem;
         font-weight: 600;
     }
     .headMyWords {
+        height: 80rem;
+    }
+    .firstBlock>.firstBlockImg {
+        margin-left: $marginLeft;
+        width: $box-window-size;
+        height: $box-window-size;
+        overflow: hidden;
+    }
+    .firstBlock {
+        display: block;
+        height: auto;
+        margin-bottom: 363px;
+    }
+    .projects>div {
+        height: auto;
+    }
+    .decorBack1 {
+        width: 800px;
+        height: 803px;
+        margin-top: 63px;
+        z-index: -2;
+    }
+    .decorBack2 {
+        display: none;
+    }
+    .siderTitles {
+        display: none;
+    } // test block
+    .textBlock {
+        flex: none;
+        -webkit-box-flex: initial;
+        margin-left: $marginLeft;
+        max-width: initial;
+        width: 69em;
+        margin-top: 140px;
+    }
+    .text>p {
+        @extend %textFont;
+    }
+    .head>p {
+        font-weight: 600;
+        font-size: 5rem;
+    }
+    .learnMore {
+        width: 460px;
+        height: 158px;
+        position: relative;
+        margin-left: $marginLeft;
+        margin-top: 102px;
+        border-width: 8px;
+        box-sizing: border-box;
+    }
+    .learnMore>a {
+        display: block;
+        font-size: 3.8rem;
+        text-align: center;
+        top: 50%;
+        height: 30px;
+        position: relative;
+        margin-top: -15px;
+    } // detail image position
+    // 
+    //html body
+    .siderTitles {
 
-    height: 80rem;
+        #sliderTitle0.sideText {}
+        #sliderTitle1.sideText {}
+        #sliderTitle2.sideText {}
+        #sliderTitle3.sideText {}
+        #sliderTitle4.sideText {}
+        #sliderTitle5.sideText {}
+    }
+
+    .mainBody.container {
+
+        .headMyWords {
+
+            .headIntro {
+
+                p {
+
+                    a {}
+                }
+            }
+        }
+        .projects {
+
+            .RightStory {
+
+                .firstBlock {
+
+                    .decorBack1 {}
+                    .decorBack2 {}
+                    img {
+                        @include imagePosition(-180px);
+                    }
+                    .textBlock {
+
+                        .head {
+
+                            p {}
+                        }
+                        .text {
+
+                            p {
+
+                                span.underline {}
+                            }
+                        }
+                    }
+                    .learnMore {
+
+                        a {}
+                    }
+                }
+                .block {}
+            }
+            .Wuhe {
+
+                .firstBlock {
+
+                    .decorBack1 {}
+                    .decorBack2 {}
+                    img {}
+                    .textBlock {
+
+                        .head {
+
+                            p {}
+                        }
+                        .text {
+
+                            p {
+
+                                span.underline {}
+                            }
+                        }
+                    }
+                    .learnMore {
+
+                        a {}
+                    }
+                }
+            }
+            .Avatar {
+
+                .firstBlock {
+
+                    .decorBack1 {}
+                    .decorBack2 {}
+                    img {
+                        @include imagePosition(-130px);
+                    }
+                    .textBlock {
+
+                        .head {
+
+                            p {}
+                        }
+                        .text {
+
+                            p {
+
+                                span.underline {}
+                            }
+                        }
+                    }
+                    .learnMore {
+
+                        a {}
+                    }
+                }
+                .block {}
+            }
+            .Form {
+
+                .firstBlock {
+
+                    .decorBack1 {}
+                    .decorBack2 {}
+                    img {
+                        @include imagePosition(-220px);
+                    }
+                    .textBlock {
+
+                        .head {
+
+                            p {}
+                        }
+                        .text {
+
+                            p {
+
+                                span.underline {}
+                            }
+                        }
+                    }
+                    .learnMore {
+
+                        a {}
+                    }
+                }
+                .block {}
+            }
+            .Spark {
+
+                .firstBlock {
+
+                    .decorBack1 {}
+                    .decorBack2 {}
+                    img {
+                        @include imagePosition(-260px);
+                    }
+                    .textBlock {
+
+                        .head {
+
+                            p {}
+                        }
+                        .text {
+
+                            p {
+
+                                span.underline {}
+                            }
+                        }
+                    }
+                    .learnMore {
+
+                        a {}
+                    }
+                }
+                .block {}
+            }
+            .IndustrialDesign {
+
+                .firstBlock {
+
+                    .decorBack1 {}
+                    .decorBack2 {}
+                    img {}
+                    .textBlock {
+
+                        .head {
+
+                            p {}
+                        }
+                        .text {
+
+                            p {
+
+                                span.underline {}
+                            }
+                        }
+                    }
+                    .learnMore {
+
+                        a {}
+                    }
+                }
+            }
+        }
+    }
 }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -300,9 +800,65 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Landscape */
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -325,6 +881,34 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Portrait */
 
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {}
@@ -333,9 +917,65 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Landscape */
 
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -352,6 +992,34 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Portrait */
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {}
@@ -360,6 +1028,343 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Landscape */
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {}
+
+
+
+// laptop screen
+@media only screen and (max-width: 664px) and (min-device-width: 1080px) {
+    // div{
+    //   width: 60rem;
+    //   height: 60rem;
+    //   background-color: red;
+    // }
+    $marginLeft: 0px;
+    $box-window-size: 90vw; // @TODO: Add docs to imagePosition!
+    //
+    @mixin imagePosition($params) {
+        margin-top: $params;
+    }
+    .mainBody {
+        margin-left: 4%;
+    }
+    .headIntro {
+        margin: auto;
+        position: relative;
+            top: 72px;
+        bottom: auto;
+            height: auto;
+        width: 100%;
+        left: $marginLeft;
+    }
+    %textFontScreen {
+        font-size: 1.6rem;
+        line-height: 3.3rem;
+    }
+    .headIntro>p {
+        // font-size: $textFontScreenSize;
+        // line-height: 5.3rem;
+        @extend %textFontScreen;
+    }
+    .headIntro>p:nth-child(1) {
+        font-size: 3.1rem;
+            margin-bottom: 8px;
+        line-height: 5rem;
+        font-weight: 600;
+    }
+    .headMyWords {
+    margin-bottom: 108px;
+    }
+    .firstBlock>.firstBlockImg {
+        margin-left: $marginLeft;
+        width: $box-window-size;
+        height: $box-window-size;
+        overflow: hidden;
+    }
+    .firstBlock {
+        display: block;
+        height: auto;
+            margin-bottom: 17vw;
+    }
+    .projects>div {
+        height: auto;
+    }
+    .decorBack1 {
+width: 90vw;
+    height: 90vw;
+    margin-top: 13px;
+    z-index: -2;
+    margin-left: -8px;
+    }
+    .decorBack2 {
+        display: none;
+    }
+    .siderTitles {
+        display: none;
+    } // test block
+    .textBlock {
+        flex: none;
+        -webkit-box-flex: initial;
+        margin-left: $marginLeft;
+        max-width: initial;
+        width: 100%;
+           margin-top: 60px;
+    }
+    .text>p {
+        @extend %textFontScreen;
+    }
+    .head>p {
+        font-weight: 600;
+        font-size: 3rem;
+    }
+    .learnMore {
+            width: 50vw;
+    height: 21vw;
+        position: relative;
+        margin-left: $marginLeft;
+        margin-top: 102px;
+        border-width: 8px;
+        box-sizing: border-box;
+    }
+    .learnMore>a {
+        display: block;
+            font-size: 6vw;
+        text-align: center;
+        top: 50%;
+        height: 30px;
+        position: relative;
+        margin-top: -15px;
+    } // detail image position
+    // 
+    //html body
+    .siderTitles {
+
+        #sliderTitle0.sideText {}
+        #sliderTitle1.sideText {}
+        #sliderTitle2.sideText {}
+        #sliderTitle3.sideText {}
+        #sliderTitle4.sideText {}
+        #sliderTitle5.sideText {}
+    }
+
+    .mainBody.container {
+
+        .headMyWords {
+
+            .headIntro {
+
+                p {
+
+                    a {}
+                }
+            }
+        }
+        .projects {
+
+            .RightStory {
+
+                .firstBlock {
+
+                    .decorBack1 {}
+                    .decorBack2 {}
+                    img {
+                        @include imagePosition(-90px);
+                    }
+                    .textBlock {
+
+                        .head {
+
+                            p {}
+                        }
+                        .text {
+
+                            p {
+
+                                span.underline {}
+                            }
+                        }
+                    }
+                    .learnMore {
+
+                        a {}
+                    }
+                }
+                .block {}
+            }
+            .Wuhe {
+
+                .firstBlock {
+
+                    .decorBack1 {}
+                    .decorBack2 {}
+                    img {}
+                    .textBlock {
+
+                        .head {
+
+                            p {}
+                        }
+                        .text {
+
+                            p {
+
+                                span.underline {}
+                            }
+                        }
+                    }
+                    .learnMore {
+
+                        a {}
+                    }
+                }
+            }
+            .Avatar {
+
+                .firstBlock {
+
+                    .decorBack1 {}
+                    .decorBack2 {}
+                    img {
+                        @include imagePosition(-110px);
+                    }
+                    .textBlock {
+
+                        .head {
+
+                            p {}
+                        }
+                        .text {
+
+                            p {
+
+                                span.underline {}
+                            }
+                        }
+                    }
+                    .learnMore {
+
+                        a {}
+                    }
+                }
+                .block {}
+            }
+            .Form {
+
+                .firstBlock {
+
+                    .decorBack1 {}
+                    .decorBack2 {}
+                    img {
+                        @include imagePosition(-130px);
+                    }
+                    .textBlock {
+
+                        .head {
+
+                            p {}
+                        }
+                        .text {
+
+                            p {
+
+                                span.underline {}
+                            }
+                        }
+                    }
+                    .learnMore {
+
+                        a {}
+                    }
+                }
+                .block {}
+            }
+            .Spark {
+
+                .firstBlock {
+
+                    .decorBack1 {}
+                    .decorBack2 {}
+                    img {
+                        @include imagePosition(-133px);
+                    }
+                    .textBlock {
+
+                        .head {
+
+                            p {}
+                        }
+                        .text {
+
+                            p {
+
+                                span.underline {}
+                            }
+                        }
+                    }
+                    .learnMore {
+
+                        a {}
+                    }
+                }
+                .block {}
+            }
+            .IndustrialDesign {
+
+                .firstBlock {
+
+                    .decorBack1 {}
+                    .decorBack2 {}
+                    img {}
+                    .textBlock {
+
+                        .head {
+
+                            p {}
+                        }
+                        .text {
+
+                            p {
+
+                                span.underline {}
+                            }
+                        }
+                    }
+                    .learnMore {
+
+                        a {}
+                    }
+                }
+            }
+        }
+    }
+}
