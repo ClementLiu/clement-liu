@@ -87,7 +87,10 @@ div {
 }
 
 .introduce>p {
-    width: 500px;
+    font-size: 30px;
+    letter-spacing: 1.1px;
+    line-height: 130%;
+    width: 100%;
     text-align: center;
     left: 0;
     right: 0;
@@ -100,11 +103,15 @@ div {
 }
 
 
-.headt > p{
+.headt>p {
     font-size: 60px;
     text-align: center;
     margin: 1.5rem 2%;
 }
+
+
+
+
 
 
 
@@ -172,24 +179,36 @@ div {
     position: absolute;
     width: 97px;
     z-index: -1;
-    top: -52px;
-    left: 560px;
+    /* top: -52px; */
+    /* left: 560px; */
+    top: -20%;
+    left: 50%;
 }
 
 .setting .webAddressTab {
-    top: 24px;
-    left: 38px;
+    /* top: 24px; */
+    /* left: 38px; */
+    position: absolute;
+    top: 3.2%;
+    left: 6%;
     font-size: 0.7em;
 }
 
 .iframe2 {
-    width: 595px;
-    height: 284px;
-    /* background-color: red; */
-    position: absolute;
+    width: 100%;
+    /* height: 284px; */
+    background-color: #CBCD27;
+    position: relative;
     bottom: 21px;
     /* opacity: .3; */
     overflow: hidden;
+    /* border-top: 15px solid transparent; */
+    /* border-left: 15px solid transparent; */
+    /* padding-top: 15px; */
+    /* padding-left: 15px; */
+    border-image: url(../asset/img/WebFrame.png);
+    border-image-slice: 140 81;
+    border-image-repeat: stretch;
 }
 
 .settingWebEx {
@@ -198,6 +217,10 @@ div {
     line-height: 130%;
     padding-top: 10px;
 }
+
+
+
+
 
 
 
@@ -216,7 +239,7 @@ div {
     position: absolute;
     width: 99vw;
     height: 320px;
-        top: 0;
+    top: 0;
     bottom: 0;
     left: -9999px;
     right: -9999px;
@@ -232,6 +255,10 @@ div {
 .wholeScreenwid>img {
     width: 33%;
 }
+
+
+
+
 
 
 
@@ -263,7 +290,7 @@ div {
 
 .footer {
     margin-top: 20px;
-        height: 100px;
+    height: 100px;
 }
 
 .icons {
@@ -292,8 +319,25 @@ div {
 
 
 
+
+
+
+
 /* deng dai xiu gai  */
 
-.iframeImg {
-    bottom: 58px;
+body>div:nth-child(5)>div>div:nth-child(7)>div:nth-child(1) {
+    position: relative;
 }
+
+.iframeImg {
+    top: 11%;
+    bottom: 58px;
+    width: 99%;
+    height: 85%;
+    /* background-color: red; */
+    position: absolute;
+    bottom: 25px;
+    /* opacity: .3; */
+    overflow: hidden;
+}
+
