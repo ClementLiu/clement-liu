@@ -10,7 +10,7 @@ body {
     /* standard */
     font-size: 62.5%;
     /* overflow: hidden; */
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 
@@ -70,6 +70,7 @@ p::-moz-selection {
 
 
 
+
 /* sider title */
 
 .sideText {
@@ -82,11 +83,15 @@ p::-moz-selection {
     -webkit-transform: rotate(-90deg)translate(-200vh, 81vw);
     -ms-transform: rotate(-90deg)translate(-200vh, 81vw);
     transform: rotate(-90deg)translate(-200vh, 81vw);
-    font-family: Base900SansOT-Medium;
+
+    font-family: base-900-sans, sans-serif;
+    font-style: normal;
+    font-weight: 600;
     color: #231F20;
     line-height: 181px;
     width: 920px;
 }
+
 
 
 
@@ -197,6 +202,7 @@ p::-moz-selection {
 
 
 
+
 /* firstBlock begin */
 
 
@@ -230,6 +236,7 @@ p::-moz-selection {
     margin-top: 511px;
     z-index: 0;
 }
+
 
 
 
@@ -404,12 +411,14 @@ p::-moz-selection {
 
 
 
+
 /* firstBlock end */
 
 .block>div {
     margin-top: 10em;
     margin-bottom: 10em;
 }
+
 
 
 
@@ -474,6 +483,7 @@ p::-moz-selection {
 
 
 
+
 /* add iframe */
 
 .iframe,
@@ -486,6 +496,7 @@ p::-moz-selection {
     /* opacity: .3; */
     overflow: hidden;
 }
+
 
 
 
