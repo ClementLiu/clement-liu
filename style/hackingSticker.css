@@ -211,7 +211,9 @@ div {
     /* border-left: 15px solid transparent; */
     /* padding-top: 15px; */
     /* padding-left: 15px; */
-    border-image: url(../asset/img/WebFrame.png);
+    -webkit-border-image: url(../asset/img/WebFrame.png);
+         -o-border-image: url(../asset/img/WebFrame.png);
+            border-image: url(../asset/img/WebFrame.png);
     border-image-slice: 140 81;
     border-image-repeat: stretch;
 }
