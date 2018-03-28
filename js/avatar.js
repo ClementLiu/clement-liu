@@ -19,14 +19,7 @@ jQuery(document).ready(function($) {
 
 
 
-    $(".twentytwenty-container").twentytwenty({
-        default_offset_pct: 0.7,
-        before_label: '', // Set a custom before label
-        after_label: '', // Set a custom after label
-        no_overlay: true,
 
-
-    });
 
     $('.bodySlice').slick({
         dots: true,
@@ -50,16 +43,7 @@ jQuery(document).ready(function($) {
 
     $('#bothSlclassersPre, #bothSlclassersNex').css('cursor', 'pointer');
 
-    $(".sliceImgBlock").slick({
-        prevArrow: '<div class="arrawLeftBox"><span class="arrawLeft"></span></div>',
-        // prevArrow: this.,
-        nextArrow: '<div class="arrawRightBox"><span class="arrawRight"></span></div>',
-    });
-    var autoSlice = $('.sliceImgBlockAuto').slick({
-        // autoplay: true,
-        autoplaySpeed: 1800,
-        arrows: false,
-    });
+
 
 
     // move card
@@ -312,5 +296,27 @@ jQuery(document).ready(function($) {
         // console.log(currentSlideOpc);    
         navTitleArray[currentSlideOpc].style.opacity = '0.7';
     }
+
+
+
+    // move glitch
+    $(".twentytwenty-container").twentytwenty({
+        default_offset_pct: 0.7,
+        before_label: '', // Set a custom before label
+        after_label: '', // Set a custom after label
+        no_overlay: true,
+
+
+    });
+    $(".sliceImgBlock").slick({
+        prevArrow: '<div class="arrawLeftBox"><span class="arrawLeft"></span></div>',
+        // prevArrow: this.,
+        nextArrow: '<div class="arrawRightBox"><span class="arrawRight"></span></div>',
+    });
+    var autoSlice = $('.sliceImgBlockAuto').slick({
+        // autoplay: true,
+        autoplaySpeed: 1800,
+        arrows: false,
+    });
 
 });

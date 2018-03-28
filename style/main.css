@@ -380,7 +380,11 @@ p::-moz-selection {
     margin-bottom: 1em;
 }
 
-.head>p {
+.head>a {
+    text-decoration: none;
+}
+
+.head>a>p {
     font-size: 40px;
     font-weight: 600;
 }
