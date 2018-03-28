@@ -16,10 +16,15 @@ html body.rightStory {
 .headline>h1 {
     color: #CBCD27;
     margin-top: 0.5em;
-    height: 3vh;
+    /* height: 3vh; */
+    text-decoration: line-through;
 }
 
-.headline {}
+.headline {
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+}
 
 .headImg {
     position: relative;
@@ -329,7 +334,7 @@ body>div:nth-child(5)>div>div:nth-child(7)>div:nth-child(1) {
     position: relative;
 }
 
-.iframeImg {
+.iframeImg, .iframe2 {
     top: 11%;
     bottom: 58px;
     width: 99%;
