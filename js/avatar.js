@@ -19,7 +19,7 @@ jQuery(document).ready(function($) {
 
 
 
-    $(".headImg").twentytwenty({
+    $(".twentytwenty-container").twentytwenty({
         default_offset_pct: 0.7,
         before_label: '', // Set a custom before label
         after_label: '', // Set a custom after label
