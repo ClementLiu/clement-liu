@@ -126,7 +126,8 @@ p::-moz-selection {
     font-size: 60px;
     /* margin-top: 3vw; */
     /* margin-bottom: 450px; */
-    height: 100vh;
+    /* height: 100vh; */
+    height: 90vh;
     position: relative;
 }
 
