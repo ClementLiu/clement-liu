@@ -35,7 +35,7 @@ h6 {
 p {
   font-size: 1.125rem;
   font-weight: 200;
-  line-height: 1.8; }
+  line-height: 24px; }
 
 .font-light {
   font-weight: 300; }
@@ -169,7 +169,19 @@ p {
 
 .headSection {
   background-color: #93ADB5;
+  padding-top: 20vh;
+  padding-bottom: 20vh; }
+
+.headSection > div[class^="col"] h1,
+.headSection > div[class^="col"] p {
   color: white; }
+
+.projectsCollection, .toolsBox, .prototype, .development {
+  margin-top: 6rem;
+  margin-bottom: 6rem; }
+
+h1 {
+  line-height: 3rem; }
 
 img {
   width: 100%; }

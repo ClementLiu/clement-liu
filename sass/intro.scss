@@ -1,16 +1,32 @@
 @import "simple-grid";
 // set profile
-
 $grey-blue: #93ADB5;
 
+$sectionHeight: 6rem;
 
 
-
-.headSection{
-  background-color: $grey-blue;
-  color: white;
+.headSection {
+    background-color: $grey-blue;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
 }
 
-img{
-  width: 100%;
+.headSection>div[class^="col"] h1,
+.headSection>div[class^="col"] p {
+    // height: 100%;
+    // margin-top: 20vh;
+    color: white;
+}
+
+.projectsCollection, .toolsBox, .prototype, .development{
+  margin-top: $sectionHeight;
+  margin-bottom: $sectionHeight;
+}
+
+h1{
+	line-height: 3rem;
+}
+
+img {
+    width: 100%;
 }
