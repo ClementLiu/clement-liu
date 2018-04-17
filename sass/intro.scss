@@ -2,7 +2,10 @@
 // set profile
 $grey-blue: #93ADB5;
 
-$sectionHeight: 6rem;
+$sectionMarginHeight: 6rem;
+$textToTitleMargin: 1rem;
+
+
 
 
 .headSection {
@@ -16,17 +19,186 @@ $sectionHeight: 6rem;
     // height: 100%;
     // margin-top: 20vh;
     color: white;
+    padding-left: inherit;
 }
 
-.projectsCollection, .toolsBox, .prototype, .development{
-  margin-top: $sectionHeight;
-  margin-bottom: $sectionHeight;
+.projectsCollection,
+.toolsBox,
+.prototype,
+.development,
+.mockup {
+    margin-top: $sectionMarginHeight;
+    margin-bottom: $sectionMarginHeight;
 }
 
-h1{
-	line-height: 3rem;
+h1 {
+    line-height: 3rem;
 }
 
-img {
+p {
+    color: $grey-blue;
+    padding-left: 3.5em;
+    margin-top: $textToTitleMargin;
+}
+
+img,svg {
     width: 100%;
+}
+
+h2>span {
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 80%;
+        height: .4em;
+        bottom: .1em;
+        left: .1em;
+        background-color: $grey-blue; // visibility: hidden;
+        // transform: scaleX(0);
+        transition: all 0.3s ease-in-out 0s;
+    }
+    &:hover:before {
+        // visibility: visible;
+        // transform: scaleX(1);
+        width: 120%;
+    }
+}
+
+
+
+// HTML Structure 
+.row.headSection {
+
+    .col-1 {}
+    .col-4 {
+
+        h1.font-heavy {
+
+            br {}
+        }
+        p.font-light {}
+    }
+    .col-1 {}
+    .col-4 {
+
+        img {}
+    }
+}
+
+.row.projectsCollection {
+
+    .col-1 {}
+    .col-5 {
+
+        img {}
+    }
+    .col-5.vertical-align {
+        padding-top: 7%;
+
+        h2 {
+
+            span.font-regular {}
+        }
+        p {}
+    }
+}
+
+.row.critique {
+
+    .col-12 {
+
+        img {}
+    }
+}
+
+.row.prototype {
+
+    .col-1 {}
+    .col-4 {
+
+        h2 {
+
+            span.font-regular {}
+        }
+        p {}
+    }
+    .col-1 {}
+    .col-5 {
+
+        img {}
+    }
+    .col-1 {}
+}
+
+.row.critique {
+
+    .col-4 {}
+    .col-4.center {
+
+        img {}
+    }
+    .col-4 {}
+}
+
+.row.element {
+
+    .col-1 {}
+    .col-11.left {
+
+        h2 {
+
+            span.font-regular {}
+        }
+    }
+    .col-2 {}
+    .col-9.center {
+
+        img {}
+    }
+    .col-1 {}
+}
+
+.row.development {
+
+    .col-1 {}
+    .col-11.left {
+
+        h2 {
+
+            span.font-regular {}
+        }
+        p {}
+    }
+}
+
+.row.toolsBox {
+
+    .col-4 {}
+    .col-4.center {
+
+        img {}
+    }
+    .col-4 {}
+}
+
+.row {
+
+    .col-12.center {
+
+        img {}
+    }
+}
+
+.row.mockup {
+
+    .col-5.left {
+
+        img {}
+    }
+    .col-4 {
+
+        p {}
+    }
 }

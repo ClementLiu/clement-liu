@@ -1,0 +1,30 @@
+<svg id="HeadJump" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 553.5 336.12">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #111925;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #d8d8d8;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 4px;
+      }
+    </style>
+  </defs>
+  <title>head</title>
+  <rect id="Rectangle-path" class="cls-1" y="185.12" width="159.5" height="151" rx="20.45" ry="20.45"/>
+  <rect id="rect2" class="cls-2" x="187.5" y="224.12" width="112" height="112" rx="20.22" ry="20.22"/>
+  <rect id="rect3" class="cls-3" x="326.5" y="162.12" width="112" height="174"/>
+  <path id="path" class="cls-4" d="M79.5,154.12c0-142,164-180,164,31,0-245,139-225,139-53,0-117,126-250,126,92" transform="translate(0 0)"/>
+  <circle id="ballJump" class="cls-2" cx="79.5" cy="154.12" r="14"/>
+  <rect id="rect4" class="cls-2" x="463.5" y="246.12" width="90" height="90"/>
+</svg>

@@ -33,7 +33,7 @@ h6 {
   font-size: 0.875rem; }
 
 p {
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 200;
   line-height: 24px; }
 
@@ -174,14 +174,43 @@ p {
 
 .headSection > div[class^="col"] h1,
 .headSection > div[class^="col"] p {
-  color: white; }
+  color: white;
+  padding-left: inherit; }
 
-.projectsCollection, .toolsBox, .prototype, .development {
+.projectsCollection,
+.toolsBox,
+.prototype,
+.development,
+.mockup {
   margin-top: 6rem;
   margin-bottom: 6rem; }
 
 h1 {
   line-height: 3rem; }
 
-img {
+p {
+  color: #93ADB5;
+  padding-left: 3.5em;
+  margin-top: 1rem; }
+
+img, svg {
   width: 100%; }
+
+h2 > span {
+  position: relative; }
+  h2 > span:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 80%;
+    height: .4em;
+    bottom: .1em;
+    left: .1em;
+    background-color: #93ADB5;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s; }
+  h2 > span:hover:before {
+    width: 120%; }
+
+.row.projectsCollection .col-5.vertical-align {
+  padding-top: 7%; }
