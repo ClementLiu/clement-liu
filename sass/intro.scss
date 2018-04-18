@@ -1,4 +1,5 @@
 @import "simple-grid";
+@import "introSVG";
 // set profile
 $grey-blue: #93ADB5;
 
@@ -34,7 +35,9 @@ $textToTitleMargin: 1rem;
 h1 {
     line-height: 3rem;
 }
-
+br{
+    line-height: 0;
+}
 p {
     color: $grey-blue;
     padding-left: 3.5em;

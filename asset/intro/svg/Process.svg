@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="519px" height="227px" viewBox="0 0 519 227" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Process</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Process" transform="translate(-724.000000, -2853.000000)">
+            <g transform="translate(720.000000, 2827.000000)">
+                <g id="Group-10" transform="translate(70.005989, 114.382960) rotate(-57.000000) translate(-70.005989, -114.382960) translate(-18.494011, 88.382960)" line-spacing="24">
+                    <text id="Wireframe" font-family="BasicSans-SemiBold, Basic Sans" font-size="25" font-weight="500" fill="#4A748A">
+                        <tspan x="0" y="25">Wireframe</tspan>
+                    </text>
+                    <text id="Wireframe" font-family="BasicSans-Light, Basic Sans" font-size="18" font-weight="300" fill="#6D99AC">
+                        <tspan x="0" y="46">Wireframe</tspan>
+                    </text>
+                </g>
+                <g id="Group-11" transform="translate(199.447894, 101.382354) rotate(-57.000000) translate(-199.447894, -101.382354) translate(95.447894, 75.382354)" line-spacing="24">
+                    <text id="Responsive" font-family="BasicSans-SemiBold, Basic Sans" font-size="25" font-weight="500" fill="#4A748A">
+                        <tspan x="0" y="25">Responsive</tspan>
+                    </text>
+                    <text id="Responsive-design" font-family="BasicSans-Light, Basic Sans" font-size="18" font-weight="300" fill="#6D99AC">
+                        <tspan x="0" y="46">Responsive design</tspan>
+                    </text>
+                </g>
+                <g id="Group-14" transform="translate(327.447894, 101.382354) rotate(-57.000000) translate(-327.447894, -101.382354) translate(223.447894, 75.382354)" line-spacing="24">
+                    <text id="Set-milestone-for-bu" font-family="BasicSans-Light, Basic Sans" font-size="18" font-weight="300" fill="#6D99AC">
+                        <tspan x="0" y="46">Set milestone for building</tspan>
+                    </text>
+                    <text id="Timeline" font-family="BasicSans-SemiBold, Basic Sans" font-size="25" font-weight="500" fill="#4A748A">
+                        <tspan x="0" y="25">Timeline</tspan>
+                    </text>
+                </g>
+                <g id="Group-15" transform="translate(450.447894, 101.382354) rotate(-57.000000) translate(-450.447894, -101.382354) translate(346.447894, 75.382354)" line-spacing="24">
+                    <text id="Set-milestone-for-bu-Copy" font-family="BasicSans-Light, Basic Sans" font-size="18" font-weight="300" fill="#6D99AC">
+                        <tspan x="0" y="46">Set milestone for building</tspan>
+                    </text>
+                    <text id="Critique" font-family="BasicSans-SemiBold, Basic Sans" font-size="25" font-weight="500" fill="#4A748A">
+                        <tspan x="0" y="25">Critique</tspan>
+                    </text>
+                </g>
+                <g id="Group-16" transform="translate(5.000000, 201.000000)">
+                    <circle id="Oval-2-Copy-11" stroke-opacity="0.5" stroke="#000000" stroke-width="8" cx="149" cy="28" r="20"></circle>
+                    <circle id="Oval-2-Copy-12" stroke-opacity="0.5" stroke="#000000" stroke-width="8" cx="270" cy="28" r="20"></circle>
+                    <circle id="Oval-2-Copy-13" stroke-opacity="0.5" stroke="#000000" stroke-width="8" cx="391" cy="28" r="20"></circle>
+                    <circle id="Oval-2-Copy-6" stroke-opacity="0.5" stroke="#000000" stroke-width="8" cx="28" cy="28" r="20"></circle>
+                    <circle id="Oval-2-Copy-8" stroke="#111925" stroke-width="8" cx="145" cy="24" r="20"></circle>
+                    <circle id="Oval-2-Copy-9" stroke="#111925" stroke-width="8" cx="266" cy="24" r="20"></circle>
+                    <circle id="Oval-2-Copy-10" stroke="#111925" stroke-width="8" cx="387" cy="24" r="20"></circle>
+                    <path d="M470.526768,21 C468.567473,19.5836574 468.072709,16.857326 469.434591,14.8382533 C470.824343,12.7778617 473.621237,12.2342006 475.681628,13.6239523 L487.430887,21.5489274 C488.749298,22.4382072 489.446682,23.9036433 489.413867,25.3835981 C489.749276,27.1037173 489.057049,28.9360052 487.512664,29.9777062 L475.763405,37.9026813 C473.703014,39.292433 470.90612,38.7487719 469.516368,36.6883803 C468.126616,34.6279886 468.670277,31.8310948 470.730669,30.4413431 L471.384987,30 L452.5,30 C450.014719,30 448,27.9852814 448,25.5 C448,23.0147186 450.014719,21 452.5,21 L470.526768,21 Z" id="Combined-Shape" fill="#BB0000"></path>
+                    <circle id="Oval-2-Copy-5" stroke="#111925" stroke-width="8" cx="24" cy="24" r="20"></circle>
+                </g>
+                <path d="M66,224.5 C66,222.014719 68.0147186,220 70.5,220 L109.5,220 C111.985281,220 114,222.014719 114,224.5 C114,226.985281 111.985281,229 109.5,229 L70.5,229 C68.0147186,229 66,226.985281 66,224.5 Z" id="Rectangle-2-Copy-2" fill="#93ADB5"></path>
+                <path d="M187,224.5 C187,222.014719 189.014719,220 191.5,220 L230.5,220 C232.985281,220 235,222.014719 235,224.5 C235,226.985281 232.985281,229 230.5,229 L191.5,229 C189.014719,229 187,226.985281 187,224.5 Z" id="Rectangle-2-Copy-7" fill="#93ADB5"></path>
+                <path d="M308,224.5 C308,222.014719 310.014719,220 312.5,220 L351.5,220 C353.985281,220 356,222.014719 356,224.5 C356,226.985281 353.985281,229 351.5,229 L312.5,229 C310.014719,229 308,226.985281 308,224.5 Z" id="Rectangle-2-Copy-8" fill="#93ADB5"></path>
+                <path d="M90.5,34.5 L92,36" id="Line" stroke="#979797" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>
