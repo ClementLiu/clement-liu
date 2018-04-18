@@ -1,8 +1,9 @@
 html {
-    font-family: base-900-sans, sans-serif;
+    font-family: basic-sans, sans-serif;
     font-style: normal;
     font-weight: 400;
 }
+
 
 body {
     width: 100%;
@@ -12,6 +13,7 @@ body {
     /* overflow: hidden; */
     overflow-x: hidden;
 }
+
 
 
 a::-moz-selection {
@@ -71,6 +73,7 @@ p::-moz-selection {
 
 
 
+
 /* sider title */
 
 .sideText {
@@ -91,6 +94,7 @@ p::-moz-selection {
     line-height: 181px;
     width: 920px;
 }
+
 
 
 
@@ -162,6 +166,7 @@ p::-moz-selection {
 .headIntro>p:nth-child(1) {
     font-size: 60px;
     line-height: 98px;
+    font-weight: 600;
 }
 
 .projects {
@@ -174,6 +179,7 @@ p::-moz-selection {
     padding-bottom: 118px;
     height: 100vh;
 }
+
 
 
 
@@ -237,6 +243,7 @@ p::-moz-selection {
     margin-top: 511px;
     z-index: 0;
 }
+
 
 
 
@@ -417,12 +424,14 @@ p::-moz-selection {
 
 
 
+
 /* firstBlock end */
 
 .block>div {
     margin-top: 10em;
     margin-bottom: 10em;
 }
+
 
 
 
@@ -489,6 +498,7 @@ p::-moz-selection {
 
 
 
+
 /* add iframe */
 
 .iframe,
@@ -501,6 +511,7 @@ p::-moz-selection {
     /* opacity: .3; */
     overflow: hidden;
 }
+
 
 
 

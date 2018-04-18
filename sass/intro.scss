@@ -139,8 +139,11 @@ h2>span {
 
     .col-4 {}
     .col-4.center {
-
-        img {}
+position: relative;
+height: auto;
+        img {
+            position: relative;
+        }
     }
     .col-4 {}
 }

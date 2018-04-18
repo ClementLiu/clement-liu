@@ -779,3 +779,9 @@ h2 > span {
 
 .row.projectsCollection .col-5.vertical-align {
   padding-top: 7%; }
+
+.row.critique .col-4.center {
+  position: relative;
+  height: auto; }
+  .row.critique .col-4.center img {
+    position: relative; }

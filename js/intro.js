@@ -167,22 +167,24 @@ jQuery(document).ready(function($) {
         direction: 'normal'
     });
 
-// Process
-var Process = anime({
+    // Process
+    var Process = anime({
         targets: '#Process .processCirFront',
         // easing: 'easeInOutQuart',
         duration: 1000,
-        delay:1000,
+        // delay: 1000,
         loop: true,
         cx: '+=4',
         cy: '+=4',
+        delay: function(target, index) {
+            return 100+(400 * index);
+        },
         // opacity: {
         //     value: 0.4,
         //     duration: 5000,
         //     delay:5000,
         //     direction: 'alternate'
         // },
-        elasticity: 300,
         direction: 'alternate'
     });
 
