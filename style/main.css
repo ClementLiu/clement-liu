@@ -74,6 +74,8 @@ p::-moz-selection {
 
 
 
+
+
 /* sider title */
 
 .sideText {
@@ -94,6 +96,8 @@ p::-moz-selection {
     line-height: 181px;
     width: 920px;
 }
+
+
 
 
 
@@ -210,6 +214,8 @@ p::-moz-selection {
 
 
 
+
+
 /* firstBlock begin */
 
 
@@ -263,12 +269,19 @@ p::-moz-selection {
 
 
 
+
+
 /* customer color */
 
 .RightStory .decorBack1 {
-    background-image: -webkit-linear-gradient(207deg, #AB8289 0%, #3275AC 100%);
+    /*     background-image: -webkit-linear-gradient(207deg, #AB8289 0%, #3275AC 100%);
     background-image: -o-linear-gradient(207deg, #AB8289 0%, #3275AC 100%);
     background-image: linear-gradient(-117deg, #AB8289 0%, #3275AC 100%);
+ */
+    /* Rectangle: */
+    background-image: -webkit-linear-gradient(135deg, #111925 0%, #93ADB5 79%);
+    background-image: -o-linear-gradient(135deg, #111925 0%, #93ADB5 79%);
+    background-image: linear-gradient(-45deg, #111925 0%, #93ADB5 79%);
 }
 
 .RightStory .decorBack2 {
@@ -277,9 +290,16 @@ p::-moz-selection {
 
 .Avatar .decorBack1 {
     /* Rectangle: */
-    background-image: -webkit-linear-gradient(132deg, #270041 0%, #EB3664 100%);
-    background-image: -o-linear-gradient(132deg, #270041 0%, #EB3664 100%);
-    background-image: linear-gradient(-42deg, #270041 0%, #EB3664 100%);
+    /*     background-image: -webkit-linear-gradient(132deg, #270041 0%, #EB3664 100%);
+ */
+    /*     background-image: -o-linear-gradient(132deg, #270041 0%, #EB3664 100%);
+ */
+    /*     background-image: linear-gradient(-42deg, #270041 0%, #EB3664 100%);
+ */
+    /* Rectangle Copy 2: */
+    background-image: -webkit-linear-gradient(134deg, #550011 0%, #111925 100%);
+    background-image: -o-linear-gradient(134deg, #550011 0%, #111925 100%);
+    background-image: linear-gradient(-44deg, #550011 0%, #111925 100%);
 }
 
 .Avatar .decorBack2 {
@@ -289,9 +309,14 @@ p::-moz-selection {
 
 .Form .decorBack1 {
     /* Rectangle: */
-    background-image: -webkit-linear-gradient(132deg, #000000 0%, #F0F0F0 100%);
+    /*     background-image: -webkit-linear-gradient(132deg, #000000 0%, #F0F0F0 100%);
     background-image: -o-linear-gradient(132deg, #000000 0%, #F0F0F0 100%);
     background-image: linear-gradient(-42deg, #000000 0%, #F0F0F0 100%);
+ */
+    /* Rectangle Copy 3: */
+    background-image: -webkit-linear-gradient(132deg, #DADADA 0%, #111925 100%);
+    background-image: -o-linear-gradient(132deg, #DADADA 0%, #111925 100%);
+    background-image: linear-gradient(-42deg, #DADADA 0%, #111925 100%);
 }
 
 .Form .decorBack2 {
@@ -301,9 +326,14 @@ p::-moz-selection {
 
 .Spark .decorBack1 {
     /* Rectangle: */
-    background-image: -webkit-linear-gradient(132deg, #640202 0%, #222222 100%);
+    /*     background-image: -webkit-linear-gradient(132deg, #640202 0%, #222222 100%);
     background-image: -o-linear-gradient(132deg, #640202 0%, #222222 100%);
     background-image: linear-gradient(-42deg, #640202 0%, #222222 100%);
+ */
+    /* Rectangle Copy 4: */
+    background-image: -webkit-linear-gradient(138deg, #550011 0%, #111925 89%);
+    background-image: -o-linear-gradient(138deg, #550011 0%, #111925 89%);
+    background-image: linear-gradient(-48deg, #550011 0%, #111925 89%);
 }
 
 .Spark .decorBack2 {
@@ -313,9 +343,14 @@ p::-moz-selection {
 
 .Wuhe .decorBack1 {
     /* Rectangle: */
-    background-image: -webkit-linear-gradient(132deg, #4E4E4E 0%, #FFFFFF 100%);
+    /*     background-image: -webkit-linear-gradient(132deg, #4E4E4E 0%, #FFFFFF 100%);
     background-image: -o-linear-gradient(132deg, #4E4E4E 0%, #FFFFFF 100%);
     background-image: linear-gradient(-42deg, #4E4E4E 0%, #FFFFFF 100%);
+ */
+    /* Rectangle Copy: */
+    background-image: -webkit-linear-gradient(134deg, #DADADA 0%, #111925 93%);
+    background-image: -o-linear-gradient(134deg, #DADADA 0%, #111925 93%);
+    background-image: linear-gradient(-44deg, #DADADA 0%, #111925 93%);
 }
 
 .Wuhe .decorBack2 {
@@ -325,10 +360,15 @@ p::-moz-selection {
 
 .IndustrialDesign .decorBack1 {
     /* Rectangle Copy: */
-    background-image: -webkit-linear-gradient(132deg, #4E4E4E 0%, #FFFFFF 100%);
+    /*     background-image: -webkit-linear-gradient(132deg, #4E4E4E 0%, #FFFFFF 100%);
     background-image: -o-linear-gradient(132deg, #4E4E4E 0%, #FFFFFF 100%);
     background-image: linear-gradient(-42deg, #4E4E4E 0%, #FFFFFF 100%);
+ */
     /* background-color: white; */
+    /* Rectangle Copy 5: */
+    background-image: -webkit-linear-gradient(132deg, #111925 0%, #DADADA 100%);
+    background-image: -o-linear-gradient(132deg, #111925 0%, #DADADA 100%);
+    background-image: linear-gradient(-42deg, #111925 0%, #DADADA 100%);
 }
 
 .IndustrialDesign .decorBack2 {
@@ -425,12 +465,16 @@ p::-moz-selection {
 
 
 
+
+
 /* firstBlock end */
 
 .block>div {
     margin-top: 10em;
     margin-bottom: 10em;
 }
+
+
 
 
 
@@ -499,6 +543,8 @@ p::-moz-selection {
 
 
 
+
+
 /* add iframe */
 
 .iframe,
@@ -511,6 +557,8 @@ p::-moz-selection {
     /* opacity: .3; */
     overflow: hidden;
 }
+
+
 
 
 
