@@ -94,7 +94,7 @@ jQuery(document).ready(function($) {
     });
     // connect linke 
     var lineDrawing = anime({
-        targets: '#projectCollectionSVG #connectLine .cls-60',
+        targets: '#projectCollectionSVG #c .cls-60',
         strokeDashoffset: [anime.setDashoffset, 0],
         easing: 'easeInOutSine',
         duration: 1000,
