@@ -286,6 +286,7 @@ p::-moz-selection {
 
 .RightStory .decorBack2 {
     background-color: #EBBA36;
+    background-color: #93ADB5;
 }
 
 .Avatar .decorBack1 {
@@ -304,7 +305,8 @@ p::-moz-selection {
 
 .Avatar .decorBack2 {
     /* Rectangle 2: */
-    background: #2C8171;
+    /* background: #2C8171; */
+    background: #BB0000;
 }
 
 .Form .decorBack1 {
@@ -321,7 +323,8 @@ p::-moz-selection {
 
 .Form .decorBack2 {
     /* Rectangle 2: */
-    background: #D8D8D8;
+    /* background: #D8D8D8; */
+    background: #DADADA;
 }
 
 .Spark .decorBack1 {
@@ -338,7 +341,8 @@ p::-moz-selection {
 
 .Spark .decorBack2 {
     /* Rectangle 2: */
-    background: #8D99A3;
+    /* background: #8D99A3; */
+    background: #93ADB5;
 }
 
 .Wuhe .decorBack1 {
@@ -355,7 +359,8 @@ p::-moz-selection {
 
 .Wuhe .decorBack2 {
     /* Rectangle 2: */
-    background: #A29797;
+    /* background: #A29797; */
+    background: #111925;
 }
 
 .IndustrialDesign .decorBack1 {
@@ -374,7 +379,8 @@ p::-moz-selection {
 .IndustrialDesign .decorBack2 {
     /* Rectangle 2 Copy: */
     /* border: 5px solid #000000; */
-    background-color: black;
+    /* background-color: black; */
+    background-color: #111925;
 }
 
 .firstBlock>.firstBlockImg {
