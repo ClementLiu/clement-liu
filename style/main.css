@@ -618,6 +618,9 @@ p::-moz-selection {
     padding-top: 42px;
     height: auto;
     width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -626,7 +629,10 @@ p::-moz-selection {
     margin-left: 10%;
     padding: 12px 25px 17px 26px;
     height: 188px;
-    flex-grow: 0;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
 }
 
 .footer .hey {
@@ -639,6 +645,9 @@ p::-moz-selection {
 
 .footer {
     /* Rectangle 4: */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #93ADB5), to(#8B9BA1));
+    background-image: -webkit-linear-gradient(top, #93ADB5 1%, #8B9BA1 100%);
+    background-image: -o-linear-gradient(top, #93ADB5 1%, #8B9BA1 100%);
     background-image: linear-gradient(-180deg, #93ADB5 1%, #8B9BA1 100%);
     text-align: center;
 }
@@ -648,9 +657,13 @@ p::-moz-selection {
     /* margin-bottom: 52px; */
     text-align: left;
     color: white;
-    box-shadow: -27px 33px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: -27px 33px rgba(0, 0, 0, .5);
+            box-shadow: -27px 33px rgba(0, 0, 0, .5);
     outline: 1px solid rgba(0, 0, 0, .5);
-    flex: ;
+    -webkit-box-flex: undefined;
+    -webkit-flex: ;
+        -ms-flex: ;
+            flex: ;
 }
 
 .footer .hey {
