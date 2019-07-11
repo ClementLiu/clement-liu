@@ -172,8 +172,8 @@ p::-moz-selection {
 }
 
 .headIntro>p {
-    font-size: 43px;
-    line-height: 56px;
+    font-size: 32px;
+    line-height: 40px;
 }
 
 .headIntro>p:nth-child(1) {
