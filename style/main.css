@@ -289,6 +289,22 @@ p::-moz-selection {
 
 
 /* customer color */
+.Prediabetes .decorBack1 {
+    /*     background-image: -webkit-linear-gradient(207deg, #AB8289 0%, #3275AC 100%);
+    background-image: -o-linear-gradient(207deg, #AB8289 0%, #3275AC 100%);
+    background-image: linear-gradient(-117deg, #AB8289 0%, #3275AC 100%);
+ */
+    /* Rectangle: */
+    background-image: -webkit-linear-gradient(134deg, #550011 0%, #111925 100%);
+    background-image: -o-linear-gradient(134deg, #550011 0%, #111925 100%);
+    background-image: linear-gradient(-44deg, #550011 0%, #111925 100%);
+}
+.Prediabetes .decorBack2 {
+    /* Rectangle 2: */
+    /* background: #2C8171; */
+    background: #BB0000;
+}
+
 
 .RightStory .decorBack1 {
     /*     background-image: -webkit-linear-gradient(207deg, #AB8289 0%, #3275AC 100%);
