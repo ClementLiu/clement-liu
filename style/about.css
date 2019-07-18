@@ -1,0 +1,804 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%; }
+
+*, body {
+  font-family: "basic-sans", sans-serif;
+  font-style: normal;
+  color: #333447;
+  line-height: 1.5; }
+
+h1 {
+  font-size: 2.5rem; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 1.375rem; }
+
+h4 {
+  font-size: 1.125rem; }
+
+h5 {
+  font-size: 1rem; }
+
+h6 {
+  font-size: 0.875rem; }
+
+p {
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 24px; }
+
+.font-light {
+  font-weight: 300; }
+
+.font-regular {
+  font-weight: 600; }
+
+.font-heavy {
+  font-weight: 700; }
+
+.left {
+  text-align: left; }
+
+.right {
+  text-align: right; }
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+
+.justify {
+  text-align: justify; }
+
+.hidden-sm {
+  display: none; }
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+  @media only screen and (min-width: 33.75em) {
+    .container {
+      width: 80%; } }
+  @media only screen and (min-width: 60em) {
+    .container {
+      width: 75%;
+      max-width: 60rem; } }
+
+.row {
+  position: relative;
+  width: 100%; }
+
+.row [class^="col"] {
+  float: left;
+  margin: 0.5rem 2%;
+  min-height: 0.125rem; }
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  width: 96%; }
+
+.col-1-sm {
+  width: 4.33333%; }
+
+.col-2-sm {
+  width: 12.66667%; }
+
+.col-3-sm {
+  width: 21%; }
+
+.col-4-sm {
+  width: 29.33333%; }
+
+.col-5-sm {
+  width: 37.66667%; }
+
+.col-6-sm {
+  width: 46%; }
+
+.col-7-sm {
+  width: 54.33333%; }
+
+.col-8-sm {
+  width: 62.66667%; }
+
+.col-9-sm {
+  width: 71%; }
+
+.col-10-sm {
+  width: 79.33333%; }
+
+.col-11-sm {
+  width: 87.66667%; }
+
+.col-12-sm {
+  width: 96%; }
+
+@media only screen and (min-width: 45em) {
+  .col-1 {
+    width: 4.33333%; }
+  .col-2 {
+    width: 12.66667%; }
+  .col-3 {
+    width: 21%; }
+  .col-4 {
+    width: 29.33333%; }
+  .col-5 {
+    width: 37.66667%; }
+  .col-6 {
+    width: 46%; }
+  .col-7 {
+    width: 54.33333%; }
+  .col-8 {
+    width: 62.66667%; }
+  .col-9 {
+    width: 71%; }
+  .col-10 {
+    width: 79.33333%; }
+  .col-11 {
+    width: 87.66667%; }
+  .col-12 {
+    width: 96%; }
+  .hidden-sm {
+    display: block; } }
+
+#container .row.headSection .col-4 svg#HeadJump .cls-1 {
+  fill: #fff; }
+
+#container .row.headSection .col-4 svg#HeadJump .cls-2 {
+  fill: #fff; }
+
+#container .row.headSection .col-4 svg#HeadJump .cls-3 {
+  fill: #fff; }
+
+#container .row.headSection .col-4 svg#HeadJump .cls-4 {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 4px; }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-1,
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-6,
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-60 {
+  fill: none; }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-2 {
+  fill: #000;
+  opacity: 0.25; }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-2,
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-6,
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-60 {
+  stroke-miterlimit: 10; }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-3 {
+  -webkit-clip-path: url(#clip-path);
+  clip-path: url(#clip-path); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-4 {
+  -webkit-clip-path: url(#clip-path-2);
+  clip-path: url(#clip-path-2); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-5 {
+  fill: #fff; }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-6 {
+  stroke: #dadada;
+  stroke-width: 16px; }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-7 {
+  font-size: 18px;
+  fill: #6d99ac;
+  font-family: BasicSans-Light, Basic Sans; }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-8 {
+  letter-spacing: -0.02em; }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-9 {
+  letter-spacing: 0em; }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-10 {
+  letter-spacing: -0.01em; }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-11 {
+  letter-spacing: -0.05em; }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-12 {
+  letter-spacing: -0.01em; }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-13 {
+  letter-spacing: 0em; }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-14 {
+  letter-spacing: -0.01em; }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-15 {
+  letter-spacing: -0.01em; }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-16 {
+  -webkit-clip-path: url(#clip-path-5);
+  clip-path: url(#clip-path-5); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-17 {
+  fill: #b00; }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-18 {
+  -webkit-clip-path: url(#clip-path-7);
+  clip-path: url(#clip-path-7); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-19 {
+  -webkit-clip-path: url(#clip-path-9);
+  clip-path: url(#clip-path-9); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-20 {
+  -webkit-clip-path: url(#clip-path-11);
+  clip-path: url(#clip-path-11); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-21 {
+  -webkit-clip-path: url(#clip-path-13);
+  clip-path: url(#clip-path-13); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-22 {
+  -webkit-clip-path: url(#clip-path-15);
+  clip-path: url(#clip-path-15); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-23 {
+  -webkit-clip-path: url(#clip-path-17);
+  clip-path: url(#clip-path-17); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-24 {
+  -webkit-clip-path: url(#clip-path-19);
+  clip-path: url(#clip-path-19); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-25 {
+  -webkit-clip-path: url(#clip-path-21);
+  clip-path: url(#clip-path-21); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-26 {
+  -webkit-clip-path: url(#clip-path-23);
+  clip-path: url(#clip-path-23); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-27 {
+  -webkit-clip-path: url(#clip-path-25);
+  clip-path: url(#clip-path-25); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-28 {
+  -webkit-clip-path: url(#clip-path-27);
+  clip-path: url(#clip-path-27); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-29 {
+  -webkit-clip-path: url(#clip-path-29);
+  clip-path: url(#clip-path-29); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-30 {
+  -webkit-clip-path: url(#clip-path-31);
+  clip-path: url(#clip-path-31); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-31 {
+  -webkit-clip-path: url(#clip-path-33);
+  clip-path: url(#clip-path-33); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-32 {
+  -webkit-clip-path: url(#clip-path-35);
+  clip-path: url(#clip-path-35); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-33 {
+  -webkit-clip-path: url(#clip-path-37);
+  clip-path: url(#clip-path-37); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-34 {
+  -webkit-clip-path: url(#clip-path-39);
+  clip-path: url(#clip-path-39); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-35 {
+  -webkit-clip-path: url(#clip-path-41);
+  clip-path: url(#clip-path-41); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-36 {
+  -webkit-clip-path: url(#clip-path-43);
+  clip-path: url(#clip-path-43); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-37 {
+  -webkit-clip-path: url(#clip-path-45);
+  clip-path: url(#clip-path-45); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-38 {
+  fill: #93adb5; }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-39 {
+  -webkit-clip-path: url(#clip-path-47);
+  clip-path: url(#clip-path-47); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-40 {
+  -webkit-clip-path: url(#clip-path-49);
+  clip-path: url(#clip-path-49); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-41 {
+  -webkit-clip-path: url(#clip-path-51);
+  clip-path: url(#clip-path-51); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-42 {
+  -webkit-clip-path: url(#clip-path-53);
+  clip-path: url(#clip-path-53); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-43 {
+  -webkit-clip-path: url(#clip-path-55);
+  clip-path: url(#clip-path-55); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-44 {
+  -webkit-clip-path: url(#clip-path-57);
+  clip-path: url(#clip-path-57); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-45 {
+  -webkit-clip-path: url(#clip-path-59);
+  clip-path: url(#clip-path-59); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-46 {
+  -webkit-clip-path: url(#clip-path-61);
+  clip-path: url(#clip-path-61); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-47 {
+  -webkit-clip-path: url(#clip-path-63);
+  clip-path: url(#clip-path-63); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-48 {
+  -webkit-clip-path: url(#clip-path-65);
+  clip-path: url(#clip-path-65); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-49 {
+  -webkit-clip-path: url(#clip-path-67);
+  clip-path: url(#clip-path-67); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-50 {
+  -webkit-clip-path: url(#clip-path-69);
+  clip-path: url(#clip-path-69); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-51 {
+  -webkit-clip-path: url(#clip-path-71);
+  clip-path: url(#clip-path-71); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-52 {
+  -webkit-clip-path: url(#clip-path-73);
+  clip-path: url(#clip-path-73); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-53 {
+  -webkit-clip-path: url(#clip-path-75);
+  clip-path: url(#clip-path-75); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-54 {
+  -webkit-clip-path: url(#clip-path-77);
+  clip-path: url(#clip-path-77); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-55 {
+  -webkit-clip-path: url(#clip-path-79);
+  clip-path: url(#clip-path-79); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-56 {
+  -webkit-clip-path: url(#clip-path-81);
+  clip-path: url(#clip-path-81); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-57 {
+  -webkit-clip-path: url(#clip-path-83);
+  clip-path: url(#clip-path-83); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-58 {
+  letter-spacing: -0.02em; }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-59 {
+  letter-spacing: -0.02em; }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-60 {
+  stroke: #b00;
+  stroke-width: 5px; }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-61 {
+  -webkit-clip-path: url(#clip-path-85);
+  clip-path: url(#clip-path-85); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-62 {
+  -webkit-clip-path: url(#clip-path-87);
+  clip-path: url(#clip-path-87); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-63 {
+  -webkit-clip-path: url(#clip-path-89);
+  clip-path: url(#clip-path-89); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-64 {
+  -webkit-clip-path: url(#clip-path-91);
+  clip-path: url(#clip-path-91); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-65 {
+  -webkit-clip-path: url(#clip-path-93);
+  clip-path: url(#clip-path-93); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-66 {
+  -webkit-clip-path: url(#clip-path-95);
+  clip-path: url(#clip-path-95); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-67 {
+  -webkit-clip-path: url(#clip-path-97);
+  clip-path: url(#clip-path-97); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-68 {
+  -webkit-clip-path: url(#clip-path-99);
+  clip-path: url(#clip-path-99); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-69 {
+  -webkit-clip-path: url(#clip-path-101);
+  clip-path: url(#clip-path-101); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-70 {
+  -webkit-clip-path: url(#clip-path-103);
+  clip-path: url(#clip-path-103); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-71 {
+  -webkit-clip-path: url(#clip-path-105);
+  clip-path: url(#clip-path-105); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-72 {
+  -webkit-clip-path: url(#clip-path-107);
+  clip-path: url(#clip-path-107); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-73 {
+  -webkit-clip-path: url(#clip-path-109);
+  clip-path: url(#clip-path-109); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-74 {
+  -webkit-clip-path: url(#clip-path-111);
+  clip-path: url(#clip-path-111); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-75 {
+  -webkit-clip-path: url(#clip-path-113);
+  clip-path: url(#clip-path-113); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-76 {
+  -webkit-clip-path: url(#clip-path-115);
+  clip-path: url(#clip-path-115); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-77 {
+  -webkit-clip-path: url(#clip-path-117);
+  clip-path: url(#clip-path-117); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-78 {
+  -webkit-clip-path: url(#clip-path-119);
+  clip-path: url(#clip-path-119); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-79 {
+  -webkit-clip-path: url(#clip-path-121);
+  clip-path: url(#clip-path-121); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-80 {
+  -webkit-clip-path: url(#clip-path-123);
+  clip-path: url(#clip-path-123); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-81 {
+  letter-spacing: -0.05em; }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-82 {
+  letter-spacing: -0.03em; }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-83 {
+  letter-spacing: -0.03em; }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-84 {
+  letter-spacing: -0.01em; }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-85 {
+  letter-spacing: -0.05em; }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-86 {
+  -webkit-clip-path: url(#clip-path-125);
+  clip-path: url(#clip-path-125); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-87 {
+  -webkit-clip-path: url(#clip-path-127);
+  clip-path: url(#clip-path-127); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-88 {
+  -webkit-clip-path: url(#clip-path-129);
+  clip-path: url(#clip-path-129); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-89 {
+  -webkit-clip-path: url(#clip-path-131);
+  clip-path: url(#clip-path-131); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-90 {
+  -webkit-clip-path: url(#clip-path-133);
+  clip-path: url(#clip-path-133); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-91 {
+  -webkit-clip-path: url(#clip-path-135);
+  clip-path: url(#clip-path-135); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-92 {
+  -webkit-clip-path: url(#clip-path-137);
+  clip-path: url(#clip-path-137); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-93 {
+  -webkit-clip-path: url(#clip-path-139);
+  clip-path: url(#clip-path-139); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-94 {
+  -webkit-clip-path: url(#clip-path-141);
+  clip-path: url(#clip-path-141); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-95 {
+  -webkit-clip-path: url(#clip-path-143);
+  clip-path: url(#clip-path-143); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-96 {
+  -webkit-clip-path: url(#clip-path-145);
+  clip-path: url(#clip-path-145); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-97 {
+  -webkit-clip-path: url(#clip-path-147);
+  clip-path: url(#clip-path-147); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-98 {
+  -webkit-clip-path: url(#clip-path-149);
+  clip-path: url(#clip-path-149); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-99 {
+  -webkit-clip-path: url(#clip-path-151);
+  clip-path: url(#clip-path-151); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-100 {
+  -webkit-clip-path: url(#clip-path-153);
+  clip-path: url(#clip-path-153); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-101 {
+  -webkit-clip-path: url(#clip-path-155);
+  clip-path: url(#clip-path-155); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-102 {
+  -webkit-clip-path: url(#clip-path-157);
+  clip-path: url(#clip-path-157); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-103 {
+  -webkit-clip-path: url(#clip-path-159);
+  clip-path: url(#clip-path-159); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-104 {
+  -webkit-clip-path: url(#clip-path-161);
+  clip-path: url(#clip-path-161); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-105 {
+  -webkit-clip-path: url(#clip-path-163);
+  clip-path: url(#clip-path-163); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-106 {
+  letter-spacing: -0.01em; }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-107 {
+  letter-spacing: -0.01em; }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-108 {
+  letter-spacing: -0.01em; }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-109 {
+  opacity: 1; }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-109,
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-116,
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-123,
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-130 {
+  isolation: isolate; }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-110 {
+  -webkit-clip-path: url(#clip-path-165);
+  clip-path: url(#clip-path-165); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-111 {
+  -webkit-clip-path: url(#clip-path-166);
+  clip-path: url(#clip-path-166); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-112 {
+  -webkit-clip-path: url(#clip-path-167);
+  clip-path: url(#clip-path-167); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-113 {
+  -webkit-clip-path: url(#clip-path-168);
+  clip-path: url(#clip-path-168); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-114 {
+  -webkit-clip-path: url(#clip-path-170);
+  clip-path: url(#clip-path-170); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-115 {
+  -webkit-clip-path: url(#clip-path-172);
+  clip-path: url(#clip-path-172); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-116 {
+  opacity: 1; }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-117 {
+  -webkit-clip-path: url(#clip-path-174);
+  clip-path: url(#clip-path-174); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-118 {
+  -webkit-clip-path: url(#clip-path-175);
+  clip-path: url(#clip-path-175); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-119 {
+  -webkit-clip-path: url(#clip-path-176);
+  clip-path: url(#clip-path-176); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-120 {
+  -webkit-clip-path: url(#clip-path-177);
+  clip-path: url(#clip-path-177); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-121 {
+  -webkit-clip-path: url(#clip-path-179);
+  clip-path: url(#clip-path-179); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-122 {
+  -webkit-clip-path: url(#clip-path-181);
+  clip-path: url(#clip-path-181); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-123 {
+  opacity: 1; }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-124 {
+  -webkit-clip-path: url(#clip-path-183);
+  clip-path: url(#clip-path-183); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-125 {
+  -webkit-clip-path: url(#clip-path-184);
+  clip-path: url(#clip-path-184); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-126 {
+  -webkit-clip-path: url(#clip-path-185);
+  clip-path: url(#clip-path-185); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-127 {
+  -webkit-clip-path: url(#clip-path-186);
+  clip-path: url(#clip-path-186); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-128 {
+  -webkit-clip-path: url(#clip-path-188);
+  clip-path: url(#clip-path-188); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-129 {
+  -webkit-clip-path: url(#clip-path-190);
+  clip-path: url(#clip-path-190); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-130 {
+  opacity: 1; }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-131 {
+  -webkit-clip-path: url(#clip-path-192);
+  clip-path: url(#clip-path-192); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-132 {
+  -webkit-clip-path: url(#clip-path-193);
+  clip-path: url(#clip-path-193); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-133 {
+  -webkit-clip-path: url(#clip-path-194);
+  clip-path: url(#clip-path-194); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-134 {
+  -webkit-clip-path: url(#clip-path-195);
+  clip-path: url(#clip-path-195); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-135 {
+  -webkit-clip-path: url(#clip-path-197);
+  clip-path: url(#clip-path-197); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-136 {
+  -webkit-clip-path: url(#clip-path-199);
+  clip-path: url(#clip-path-199); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-137 {
+  -webkit-clip-path: url(#clip-path-201);
+  clip-path: url(#clip-path-201); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-138 {
+  -webkit-clip-path: url(#clip-path-203);
+  clip-path: url(#clip-path-203); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-139 {
+  -webkit-clip-path: url(#clip-path-205);
+  clip-path: url(#clip-path-205); }
+
+#container .row.projectsCollection .col-5 svg#projectCollectionSVG .cls-140 {
+  -webkit-clip-path: url(#clip-path-207);
+  clip-path: url(#clip-path-207); }
+
+.headSection {
+  /*background-color: white;*/
+  padding-top: 20vh;
+  padding-bottom: 20vh; }
+
+.headSection > div[class^="col"] h1,
+.headSection > div[class^="col"] p {
+  color: black;
+  padding-left: inherit; }
+
+.projectsCollection,
+.toolsBox,
+.prototype,
+.development,
+.mockup {
+  margin-top: 6rem;
+  margin-bottom: 6rem; }
+
+h1 {
+  line-height: 3rem; }
+
+br {
+  line-height: 0; }
+
+p {
+  color: #93ADB5;
+  padding-left: 3.5em;
+  margin-top: 1rem; }
+
+img, svg {
+  width: 100%; }
+
+h2 > span {
+  position: relative; }
+  h2 > span:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 80%;
+    height: .4em;
+    bottom: .1em;
+    left: .1em;
+    background-color: #93ADB5;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s; }
+  h2 > span:hover:before {
+    width: 120%; }
+h1 > span {
+  position: relative; }
+  h1 > span:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 80%;
+    height: .4em;
+    bottom: .1em;
+    left: .1em;
+    background-color: #93ADB5;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s; }
+  h1 > span:hover:before {
+    width: 120%; }
+
+.row.projectsCollection .col-5.vertical-align {
+  padding-top: 7%; }
+
+.row.critique .col-4.center {
+  position: relative;
+  height: auto; }
+  .row.critique .col-4.center img {
+    position: relative; }
