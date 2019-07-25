@@ -4,17 +4,29 @@ body {
 
 h1 {
     font-style: normal;
+    font-family: Basic Sans;
     font-weight: bold;
     font-size: 28px;
     color: rgba(34, 34, 34, 1);
     height: 56px;
 }
 
+h2 {
+    font-family: "Basic Sans";
+    font-weight: normal;
+    font-size: 22px;
+    text-align: left;
+    color: #222;
+    line-height: 46px;
+
+}
+
 h3 {
     font-style: normal;
+    font-family: Basic Sans;
     font-weight: lighter;
     font-size: 20px;
-        line-height: 22px;
+    line-height: 22px;
     color: rgba(112, 112, 112, 1);
 }
 
