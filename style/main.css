@@ -672,7 +672,8 @@ p::-moz-selection {
     /* margin-top: 42px; */
     /* margin-bottom: 52px; */
     text-align: left;
-    color: white;
+    color: #707070;
+    /*color: white;*/
     -webkit-box-shadow: -27px 33px rgba(0, 0, 0, .5);
             box-shadow: -27px 33px rgba(0, 0, 0, .5);
     outline: 1px solid rgba(0, 0, 0, .5);
@@ -685,11 +686,12 @@ p::-moz-selection {
 .footer .hey {
 
     text-align: left;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(112, 112, 112, 1);
+    
 }
 .footer .hey a {
 
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(112, 112, 112, 1);
 }
 
 .footer h1 {

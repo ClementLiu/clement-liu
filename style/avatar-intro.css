@@ -30,6 +30,12 @@ h3 {
     color: rgba(112, 112, 112, 1);
 }
 
+strong {
+    /*font-weight: bolder;*/
+    margin-right: 10px;
+    text-decoration: underline;
+}
+
 .button {
     font-weight: 900;
     font-size: 20px;
@@ -61,6 +67,9 @@ p {
 .row {
     margin-top: 80px;
     margin-bottom: 80px;
+}
+section.content-container{
+    margin-top: 210px;
 }
 
 .browser {
