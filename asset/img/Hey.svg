@@ -9,6 +9,6 @@
     </filter>
   </defs>
   <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Hey_)">
-    <text id="Hey_2" data-name="Hey~" transform="translate(4 102)" fill="#93adb5" stroke="#707070" stroke-width="1" font-size="101" font-family="BasicSans-Black, Basic Sans" font-weight="800"><tspan x="0" y="0">Hey~</tspan></text>
+    <text id="Hey_2" data-name="Hey~" transform="translate(4 102)" fill="#f1f1f1" stroke="#707070" stroke-width="1" font-size="101" font-family="BasicSans-Black, Basic Sans" font-weight="800"><tspan x="0" y="0">Hey~</tspan></text>
   </g>
 </svg>

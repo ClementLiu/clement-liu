@@ -45,8 +45,6 @@ p a:hover {
     -webkit-text-decoration-color: #93ADB5;
     text-decoration-color: #93ADB5;
     transition: -webkit-text-decoration-color .3s;
-    -webkit-transition: -webkit-text-decoration-color .3s;
-    -o-transition: text-decoration-color .3s;
     transition: text-decoration-color .3s;
     transition: text-decoration-color .3s, -webkit-text-decoration-color .3s;
 }
@@ -87,11 +85,9 @@ p::-moz-selection {
     position: absolute;
     font-size: 215px;
     -webkit-transform-origin: top left;
-    -ms-transform-origin: top left;
     transform-origin: top left;
     opacity: 0;
     -webkit-transform: rotate(-90deg)translate(-200vh, 81vw);
-    -ms-transform: rotate(-90deg)translate(-200vh, 81vw);
     transform: rotate(-90deg)translate(-200vh, 81vw);
 
     font-family: base-900-sans, sans-serif;
@@ -235,9 +231,6 @@ p::-moz-selection {
 /* 338 550 */
 
 .firstBlock {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     height: 81vh;
 }
@@ -295,8 +288,6 @@ p::-moz-selection {
     background-image: linear-gradient(-117deg, #AB8289 0%, #3275AC 100%);
  */
     /* Rectangle: */
-    background-image: -webkit-linear-gradient(134deg, #550011 0%, #111925 100%);
-    background-image: -o-linear-gradient(134deg, #550011 0%, #111925 100%);
     background-image: linear-gradient(-44deg, #550011 0%, #111925 100%);
 }
 .Prediabetes .decorBack2 {
@@ -312,8 +303,6 @@ p::-moz-selection {
     background-image: linear-gradient(-117deg, #AB8289 0%, #3275AC 100%);
  */
     /* Rectangle: */
-    background-image: -webkit-linear-gradient(135deg, #111925 0%, #93ADB5 79%);
-    background-image: -o-linear-gradient(135deg, #111925 0%, #93ADB5 79%);
     background-image: linear-gradient(-45deg, #111925 0%, #93ADB5 79%);
 }
 
@@ -331,8 +320,6 @@ p::-moz-selection {
     /*     background-image: linear-gradient(-42deg, #270041 0%, #EB3664 100%);
  */
     /* Rectangle Copy 2: */
-    background-image: -webkit-linear-gradient(134deg, #550011 0%, #111925 100%);
-    background-image: -o-linear-gradient(134deg, #550011 0%, #111925 100%);
     background-image: linear-gradient(-44deg, #550011 0%, #111925 100%);
 }
 
@@ -349,8 +336,6 @@ p::-moz-selection {
     background-image: linear-gradient(-42deg, #000000 0%, #F0F0F0 100%);
  */
     /* Rectangle Copy 3: */
-    background-image: -webkit-linear-gradient(132deg, #DADADA 0%, #111925 100%);
-    background-image: -o-linear-gradient(132deg, #DADADA 0%, #111925 100%);
     background-image: linear-gradient(-42deg, #DADADA 0%, #111925 100%);
 }
 
@@ -367,8 +352,6 @@ p::-moz-selection {
     background-image: linear-gradient(-42deg, #640202 0%, #222222 100%);
  */
     /* Rectangle Copy 4: */
-    background-image: -webkit-linear-gradient(138deg, #550011 0%, #111925 89%);
-    background-image: -o-linear-gradient(138deg, #550011 0%, #111925 89%);
     background-image: linear-gradient(-48deg, #550011 0%, #111925 89%);
 }
 
@@ -385,8 +368,6 @@ p::-moz-selection {
     background-image: linear-gradient(-42deg, #4E4E4E 0%, #FFFFFF 100%);
  */
     /* Rectangle Copy: */
-    background-image: -webkit-linear-gradient(134deg, #DADADA 0%, #111925 93%);
-    background-image: -o-linear-gradient(134deg, #DADADA 0%, #111925 93%);
     background-image: linear-gradient(-44deg, #DADADA 0%, #111925 93%);
 }
 
@@ -404,8 +385,6 @@ p::-moz-selection {
  */
     /* background-color: white; */
     /* Rectangle Copy 5: */
-    background-image: -webkit-linear-gradient(132deg, #111925 0%, #DADADA 100%);
-    background-image: -o-linear-gradient(132deg, #111925 0%, #DADADA 100%);
     background-image: linear-gradient(-42deg, #111925 0%, #DADADA 100%);
 }
 
@@ -454,9 +433,6 @@ p::-moz-selection {
 }
 
 .textBlock {
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 27%;
-    -ms-flex: 0 0 27%;
     flex: 0 0 27%;
     max-width: 27%;
     margin-left: 150px;
@@ -634,9 +610,6 @@ p::-moz-selection {
     padding-top: 42px;
     height: auto;
     width: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
 }
 
@@ -645,10 +618,7 @@ p::-moz-selection {
     margin-left: 10%;
     padding: 12px 25px 17px 26px;
     height: 188px;
-    -webkit-box-flex: 0;
-    -webkit-flex-grow: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
+    flex-grow: 0;
 }
 
 .footer .hey {
@@ -659,13 +629,17 @@ p::-moz-selection {
 
 /* style */
 
-.footer {
-    /* Rectangle 4: */
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #93ADB5), to(#8B9BA1));
-    background-image: -webkit-linear-gradient(top, #93ADB5 1%, #8B9BA1 100%);
-    background-image: -o-linear-gradient(top, #93ADB5 1%, #8B9BA1 100%);
+/*.footer {
     background-image: linear-gradient(-180deg, #93ADB5 1%, #8B9BA1 100%);
     text-align: center;
+}*/
+.footer {
+    /* Rectangle 4: */
+    background-image: linear-gradient(-180deg, #f1f1f1 1%, #ddd 100%);
+    text-align: center;
+
+/*background: linear-gradient(#f1f1f1 0%, #ddd 100%);*/
+
 }
 
 .footer .cardShadow {
@@ -674,13 +648,9 @@ p::-moz-selection {
     text-align: left;
     color: #707070;
     /*color: white;*/
-    -webkit-box-shadow: -27px 33px rgba(0, 0, 0, .5);
-            box-shadow: -27px 33px rgba(0, 0, 0, .5);
+    box-shadow: -27px 33px rgba(0, 0, 0, .5);
     outline: 1px solid rgba(0, 0, 0, .5);
-    -webkit-box-flex: undefined;
-    -webkit-flex: ;
-        -ms-flex: ;
-            flex: ;
+    flex: ;
 }
 
 .footer .hey {
@@ -729,6 +699,5 @@ p::-moz-selection {
 /* shadows */
 
 body>div.mainBody.container>div.projects>div.Form>div.block>div>div>img {
-    -webkit-box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.50);
     box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.50);
 }

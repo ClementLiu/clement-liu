@@ -70,35 +70,137 @@
 /*footer*/
 /*reset*/
 #nav-footer {
-  /* HTML5 display-role reset for older browsers */
+    /* HTML5 display-role reset for older browsers */
 }
-#nav-footer html, #nav-footer body, #nav-footer div, #nav-footer span, #nav-footer applet, #nav-footer object, #nav-footer iframe, #nav-footer h1, #nav-footer h2, #nav-footer h3, #nav-footer h4, #nav-footer h5, #nav-footer h6, #nav-footer p, #nav-footer blockquote, #nav-footer pre, #nav-footer a, #nav-footer abbr, #nav-footer acronym, #nav-footer address, #nav-footer big, #nav-footer cite, #nav-footer code, #nav-footer del, #nav-footer dfn, #nav-footer em, #nav-footer img, #nav-footer ins, #nav-footer kbd, #nav-footer q, #nav-footer s, #nav-footer samp, #nav-footer small, #nav-footer strike, #nav-footer strong, #nav-footer sub, #nav-footer sup, #nav-footer tt, #nav-footer var, #nav-footer b, #nav-footer u, #nav-footer i, #nav-footer center, #nav-footer dl, #nav-footer dt, #nav-footer dd, #nav-footer ol, #nav-footer ul, #nav-footer li, #nav-footer fieldset, #nav-footer form, #nav-footer label, #nav-footer legend, #nav-footer table, #nav-footer caption, #nav-footer tbody, #nav-footer tfoot, #nav-footer thead, #nav-footer tr, #nav-footer th, #nav-footer td, #nav-footer article, #nav-footer aside, #nav-footer canvas, #nav-footer details, #nav-footer embed, #nav-footer figure, #nav-footer figcaption, #nav-footer footer, #nav-footer header, #nav-footer hgroup, #nav-footer menu, #nav-footer nav, #nav-footer output, #nav-footer ruby, #nav-footer section, #nav-footer summary, #nav-footer time, #nav-footer mark, #nav-footer audio, #nav-footer video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+
+#nav-footer html,
+#nav-footer body,
+#nav-footer div,
+#nav-footer span,
+#nav-footer applet,
+#nav-footer object,
+#nav-footer iframe,
+#nav-footer h1,
+#nav-footer h2,
+#nav-footer h3,
+#nav-footer h4,
+#nav-footer h5,
+#nav-footer h6,
+#nav-footer p,
+#nav-footer blockquote,
+#nav-footer pre,
+#nav-footer a,
+#nav-footer abbr,
+#nav-footer acronym,
+#nav-footer address,
+#nav-footer big,
+#nav-footer cite,
+#nav-footer code,
+#nav-footer del,
+#nav-footer dfn,
+#nav-footer em,
+#nav-footer img,
+#nav-footer ins,
+#nav-footer kbd,
+#nav-footer q,
+#nav-footer s,
+#nav-footer samp,
+#nav-footer small,
+#nav-footer strike,
+#nav-footer strong,
+#nav-footer sub,
+#nav-footer sup,
+#nav-footer tt,
+#nav-footer var,
+#nav-footer b,
+#nav-footer u,
+#nav-footer i,
+#nav-footer center,
+#nav-footer dl,
+#nav-footer dt,
+#nav-footer dd,
+#nav-footer ol,
+#nav-footer ul,
+#nav-footer li,
+#nav-footer fieldset,
+#nav-footer form,
+#nav-footer label,
+#nav-footer legend,
+#nav-footer table,
+#nav-footer caption,
+#nav-footer tbody,
+#nav-footer tfoot,
+#nav-footer thead,
+#nav-footer tr,
+#nav-footer th,
+#nav-footer td,
+#nav-footer article,
+#nav-footer aside,
+#nav-footer canvas,
+#nav-footer details,
+#nav-footer embed,
+#nav-footer figure,
+#nav-footer figcaption,
+#nav-footer footer,
+#nav-footer header,
+#nav-footer hgroup,
+#nav-footer menu,
+#nav-footer nav,
+#nav-footer output,
+#nav-footer ruby,
+#nav-footer section,
+#nav-footer summary,
+#nav-footer time,
+#nav-footer mark,
+#nav-footer audio,
+#nav-footer video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
-#nav-footer article, #nav-footer aside, #nav-footer details, #nav-footer figcaption, #nav-footer figure, #nav-footer footer, #nav-footer header, #nav-footer hgroup, #nav-footer menu, #nav-footer nav, #nav-footer section {
-  display: block;
+
+#nav-footer article,
+#nav-footer aside,
+#nav-footer details,
+#nav-footer figcaption,
+#nav-footer figure,
+#nav-footer footer,
+#nav-footer header,
+#nav-footer hgroup,
+#nav-footer menu,
+#nav-footer nav,
+#nav-footer section {
+    display: block;
 }
+
 #nav-footer body {
-  line-height: 1;
+    line-height: 1;
 }
-#nav-footer ol, #nav-footer ul {
-  list-style: none;
+
+#nav-footer ol,
+#nav-footer ul {
+    list-style: none;
 }
-#nav-footer blockquote, #nav-footer q {
-  quotes: none;
+
+#nav-footer blockquote,
+#nav-footer q {
+    quotes: none;
 }
-#nav-footer blockquote:before, #nav-footer blockquote:after, #nav-footer q:before, #nav-footer q:after {
-  content: '';
-  content: none;
+
+#nav-footer blockquote:before,
+#nav-footer blockquote:after,
+#nav-footer q:before,
+#nav-footer q:after {
+    content: '';
+    content: none;
 }
+
 #nav-footer table {
-  border-collapse: collapse;
-  border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 
@@ -320,7 +422,7 @@
 #nav-footer {
     height: auto;
     /*width: 100%;*/
-    padding: 75px 100px 20px 100px;
+    padding: 25px 100px 10px 100px;
     display: block;
 }
 
@@ -328,10 +430,12 @@
     position: relative;
     width: 100%;
     margin-top: 0px;
-    margin-bottom: 80px;
+    /*margin-bottom: 80px;*/
+    margin-bottom: 20px;
 }
+
 #nav-footer .row:nth-last-child(-n+2) {
-    
+
     margin-bottom: 0px;
 }
 
@@ -340,10 +444,12 @@
     font-weight: 300;
     font-size: 20px;
     text-align: left;
-    color: #707070;
+    /*color: #707070;*/
+    color: #f1f1f1;
     width: 418px;
     padding-left: 96px;
-    margin-top: 24px;
+    /*margin-top: 24px;*/
+        margin-top: -20px;
 
 }
 
@@ -360,7 +466,8 @@
 
 #nav-footer {
     /* Rectangle 4: */
-    background-image: linear-gradient(-180deg, #93ADB5 1%, #8B9BA1 100%);
+    /*background-image: linear-gradient(-180deg, #93ADB5 1%, #8B9BA1 100%);*/
+    background-image: linear-gradient(-180deg, #f1f1f1 1%, #f1f1f1 100%);
     text-align: center;
 }
 
@@ -372,7 +479,8 @@
     position: relative;
     margin-left: 10%;
     padding: 12px 25px 17px 26px;
-    height: 188px;
+    /*height: 188px;*/
+    height: 126px;
     flex-grow: 0;
     text-align: left;
     color: rgba(112, 112, 112, 1);
@@ -390,7 +498,7 @@
     right: 0px;
     text-decoration: underline;
     margin-right: 48px;
-        font-family: "Basic Sans";
+    font-family: "Basic Sans";
     font-weight: 300;
     font-size: 18px;
 }
@@ -412,26 +520,32 @@
     font-family: "Basic Sans";
     font-weight: 600;
     font-size: 34px;
+
     text-align: left;
     color: #707070;
+
 }
 
 #nav-footer .cardShadow h3 {
     font-family: "Basic Sans";
-    font-weight: 300;
-    font-size: 21px;
+    /*font-weight: 300;*/
+    /*font-size: 21px;*/
     text-align: left;
     color: #707070;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 21px;
 }
 
 #nav-footer h4 {
     font-family: "Basic Sans";
     font-weight: 300;
-    font-size: 20px;
+    font-size: 16px;
     text-align: left;
     line-height: 24px;
     color: #707070;
 }
+
 #nav-footer p {
     font-family: "Basic Sans";
     font-weight: 300;
@@ -485,7 +599,7 @@
     left: 0;
 
     /*background: linear-gradient(90deg, red, black, transparent 50%, transparent 100%);*/
-background: #7B9198;
+    background: #7B9198;
     background-position: center;
     z-index: 1;
 }
