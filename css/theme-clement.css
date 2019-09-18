@@ -255,6 +255,9 @@ hr.short-thick {
 .text-white {
   color: #fff !important;
 }
+.text-dark {
+  color: #292929 !important;
+}
 @media all and (max-width: 767px) {
   .thin {
     font-weight: 300 !important;
@@ -549,7 +552,7 @@ ul.lead li {
 }
 /*!---------- 4. COLOURS ----------*/
 .bg-primary {
-  background: #666 !important;
+  background: #F4F4EF !important;
 }
 .bg-secondary {
   background: #f8f8f8;
@@ -780,7 +783,7 @@ footer.bg-dark li,
   line-height: 29px;
   font-size: 13px;
   min-width: 0;
-  padding: 0 0 0 1px!important;
+  padding: 0 0 0 1px !important;
 }
 .btn-sm {
   height: 30px;
@@ -1762,7 +1765,7 @@ input.transparent,
 button.transparent {
   background: none;
   border: 1px solid rgba(255, 255, 255, 0.5);
-  color: #fff !important	;
+  color: #fff !important;
 }
 input[type="text"]:focus,
 input[type="password"]:focus {
@@ -2591,7 +2594,7 @@ button[type="submit"] .form-loading {
   .page-title-4 .breadcrumb,
   .page-title-2 .breadcrumb {
     float: left;
-    margin-top: 8	px;
+    margin-top: 8 px;
   }
 }
 /*!---------- 17. PAGINATION ----------*/
@@ -3716,7 +3719,7 @@ img {
 /*!---------- 26. SHOP ----------*/
 .product-single .image-slider .label {
   font-size: 12px;
-  text-transform: uppercase ;
+  text-transform: uppercase;
   position: absolute;
   z-index: 3;
   top: 16px;
@@ -3764,7 +3767,7 @@ td {
   color: #000;
 }
 .star-rating {
-  margin: 0 ;
+  margin: 0;
   display: inline-block;
   margin-right: 24px;
 }

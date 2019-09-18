@@ -116,7 +116,8 @@ $(document).ready(function() {
     mr_nav = $('body .nav-container nav:first');
     mr_navOuterHeight = $('body .nav-container nav:first').outerHeight();
         mr_fixedAt = typeof mr_nav.attr('data-fixed-at') !== typeof undefined ? parseInt(mr_nav.attr('data-fixed-at').replace('px', '')) : parseInt($('section:nth-of-type(1)').outerHeight());
-    window.addEventListener("scroll", updateNav, false);
+    // pause fix nav
+        // window.addEventListener("scroll", updateNav, false);
 
     // Menu dropdown positioning
 
