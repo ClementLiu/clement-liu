@@ -798,8 +798,8 @@ footer.bg-dark li,
 .btn-white,
 .image-bg .btn,
 .image-bg .btn:visited {
-  color: #666;
-  border-color: #666;
+  color: #fff;
+  border-color: #fff;
 }
 .image-bg .btn-dark {
   color: #666;
@@ -865,6 +865,13 @@ body.btn-rounded .btn {
   color: #666;
 }
 /*!---------- 7. NAVIGATION ----------*/
+@media all and (min-width: 991px) {
+  .nav-sticky {
+    position: sticky;
+    top: 28px;
+    z-index: 1000;
+  }
+}
 .nav-container {
   -webkit-backface-visibility: hidden;
   max-width: 100%;
@@ -3131,6 +3138,8 @@ img {
   width: 100%;
   bottom: 24px;
   z-index: 5;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .inner-title .title h1,
 .inner-title .title h2,
@@ -4592,7 +4601,7 @@ video {
   line-height: 27px;
   min-width: 0;
   border-color: rgba(255, 255, 255, 0);
-  opacity: .7;
+  opacity: .4;
   border-radius: 25px;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -4601,6 +4610,10 @@ video {
   -ms-user-select: none;
   user-select: none;
   display: inline-block;
+  background: #F4F4EF !important;
+  transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
 }
 .filters li.active {
   border-color: #666;
@@ -5292,6 +5305,114 @@ footer.bg-dark a {
 }
 .pb240 {
   padding-bottom: 240px;
+}
+.pl0 {
+  padding-left: 0;
+}
+.pl8 {
+  padding-left: 8px;
+}
+.pl16 {
+  padding-left: 16px;
+}
+.pl24 {
+  padding-left: 24px;
+}
+.pl32 {
+  padding-left: 32px;
+}
+.pl40 {
+  padding-left: 40px;
+}
+.pl48 {
+  padding-left: 48px;
+}
+.pl64 {
+  padding-left: 64px;
+}
+.pl72 {
+  padding-left: 72px;
+}
+.pl80 {
+  padding-left: 80px;
+}
+.pl88 {
+  padding-left: 88px;
+}
+.pl96 {
+  padding-left: 96px;
+}
+.pl104 {
+  padding-left: 104px;
+}
+.pl112 {
+  padding-left: 112px;
+}
+.pl120 {
+  padding-left: 120px;
+}
+.pl160 {
+  padding-left: 160px;
+}
+.pl180 {
+  padding-left: 180px;
+}
+.pl240 {
+  padding-left: 240px;
+}
+.pr0 {
+  padding-right: 0;
+}
+.pr8 {
+  padding-right: 8px;
+}
+.pr16 {
+  padding-right: 16px;
+}
+.pr24 {
+  padding-right: 24px;
+}
+.pr32 {
+  padding-right: 32px;
+}
+.pr40 {
+  padding-right: 40px;
+}
+.pr48 {
+  padding-right: 48px;
+}
+.pr64 {
+  padding-right: 64px;
+}
+.pr72 {
+  padding-right: 72px;
+}
+.pr80 {
+  padding-right: 80px;
+}
+.pr88 {
+  padding-right: 88px;
+}
+.pr96 {
+  padding-right: 96px;
+}
+.pr104 {
+  padding-right: 104px;
+}
+.pr112 {
+  padding-right: 112px;
+}
+.pr120 {
+  padding-right: 120px;
+}
+.pr160 {
+  padding-right: 160px;
+}
+.pr180 {
+  padding-right: 180px;
+}
+.pr240 {
+  padding-right: 240px;
 }
 @media all and (max-width: 990px) {
   .mb-s-0 {
