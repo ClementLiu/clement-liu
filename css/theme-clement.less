@@ -46,7 +46,8 @@ body {
     -moz-osx-font-smoothing: grayscale;
     font-size: 13px;
     line-height: 24px;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    // font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: @content-font, "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #666;
     overflow-x: hidden;
 }
@@ -361,7 +362,9 @@ hr.short-thick {
     }
 }
 
-@heading-font: "Raleway";
+// @heading-font: "Raleway";
+@heading-font: "bc-alphapipe";
+@content-font: "Lato";
 
 .bold {
     font-weight: 600 !important;
@@ -451,22 +454,26 @@ h1.large {
     }
 }
 
-h2 {
+h2,
+.h2 {
     font-size: 40px;
     line-height: 48px;
 }
 
-h3 {
+h3,
+.h3 {
     font-size: 32px;
     line-height: 40px;
 }
 
-h4 {
+h4,
+.h4 {
     font-size: 24px;
     line-height: 32px;
 }
 
-h5 {
+h5,
+.h5 {
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -640,7 +647,8 @@ a:hover {
 
 blockquote {
     overflow: hidden;
-    font-family: "Merriweather", "Georgia", Times New Roman, Times, serif;
+    // font-family: "Merriweather", "Georgia", Times New Roman, Times, serif;
+    font-family: @heading-font, "Georgia", Times New Roman, Times, serif;
     font-size: 20px;
     line-height: 40px;
     font-style: italic;
@@ -663,7 +671,7 @@ blockquote .author {
 }
 
 .number {
-    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: @content-font, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .columns-2 {
@@ -889,7 +897,7 @@ footer.bg-dark,
 /*!---------- 6. BUTTONS ----------*/
 
 .btn {
-    font-family: @heading-font, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: @content-font, "Helvetica Neue", Helvetica, Arial, sans-serif;
     border: 2px solid @color-primary;
     padding: 0 26px;
     height: 40px;
@@ -2019,7 +2027,8 @@ input,
 button,
 select,
 textarea {
-    font-family: @heading-font, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    // font-family: @heading-font, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: @content-font, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 input[type="text"],
@@ -5227,6 +5236,7 @@ video {
     // add color
     background: @bg-primary  !important;
     .transition(.6s);
+    font-family: @heading-font, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .filters li.active {
