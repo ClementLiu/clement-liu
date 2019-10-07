@@ -1009,6 +1009,28 @@ $(document).ready(function() {
         } 
     }
 
+    // typo fix
+    $("h2,h3,h4,h5,span").each(function() {
+        var wordArray = $(this).text().split(" ");
+        var finalTitle = "";
+        for (var i=0;i<=wordArray.length-1;i++) {
+           finalTitle += wordArray[i];
+           if (i == (wordArray.length-2)) {
+               finalTitle += "&nbsp;";
+           } else { 
+               finalTitle += " ";
+           }
+         }
+         $(this).html(finalTitle);
+});
+  
+      //- script(src='https://cdn.jsdelivr.net/gh/ekalinin/typogr.js@0.6.7/typogr.min.js')
+      //- script.
+      //-   document.body.innerHTML = typogr.widont(document.body.innerHTML);
+      //-   console.log('done');
+  
+  
+
 }); 
 
 $(window).load(function() { 

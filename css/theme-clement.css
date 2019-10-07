@@ -423,6 +423,10 @@ p,
 span {
   font-weight: 400;
 }
+span {
+  display: inherit;
+  line-height: 20px;
+}
 p.lead {
   font-size: 16px;
   font-weight: 400;
@@ -3142,8 +3146,8 @@ img {
   width: 100%;
   bottom: 24px;
   z-index: 5;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 .inner-title .title h1,
 .inner-title .title h2,
@@ -3166,6 +3170,9 @@ img {
   -moz-transform: translate3d(0, -50%, 0);
 }
 .inner-title .title h5 {
+  font-weight: 600;
+}
+.inner-title .title h4 {
   font-weight: 600;
 }
 .inner-title {
