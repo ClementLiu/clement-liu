@@ -4681,6 +4681,7 @@ video {
 .project.inactive {
   opacity: .1 !important;
   pointer-events: none !important;
+  display: none;
 }
 .project .image-tile {
   margin: 0;

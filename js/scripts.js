@@ -1137,9 +1137,11 @@ function initializeMasonry(){
             if ($('.masonryFlyIn').length) {
                 masonryFlyIn();
             }
+            // console.log("initializeMasonry");
         });
 
         msnry.layout();
+        msnry.destroy();
     });
 }
 
