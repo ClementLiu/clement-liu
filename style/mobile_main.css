@@ -51,8 +51,7 @@
     display: none; }
   .textBlock {
     -ms-flex: none;
-    -webkit-flex: none;
-            flex: none;
+    flex: none;
     -webkit-box-flex: initial;
     margin-left: 58px;
     max-width: initial;
@@ -141,8 +140,7 @@
     display: none; }
   .textBlock {
     -ms-flex: none;
-    -webkit-flex: none;
-            flex: none;
+    flex: none;
     -webkit-box-flex: initial;
     margin-left: 0px;
     max-width: initial;

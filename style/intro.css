@@ -773,7 +773,6 @@ h2 > span {
     left: .1em;
     background-color: #93ADB5;
     -webkit-transition: all 0.3s ease-in-out 0s;
-    -o-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s; }
   h2 > span:hover:before {
     width: 120%; }
