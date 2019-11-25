@@ -1010,7 +1010,7 @@ $(document).ready(function() {
     }
 
     // typo fix
-    $("h2,h3,h4,h5,span").each(function() {
+    $("h2,h3,h4,h5,span").not( ".no-fix-break" ).each(function() {
         var wordArray = $(this).text().split(" ");
         var finalTitle = "";
         for (var i=0;i<=wordArray.length-1;i++) {
