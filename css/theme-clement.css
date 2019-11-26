@@ -43,7 +43,7 @@
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 13px;
+  font-size: 1.2rem;
   line-height: 24px;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #666;
@@ -87,7 +87,7 @@ hr.short-thick {
 }
 .image-bg hr {
   border-color: #fff;
-  opacity: .6;
+  opacity: 0.6;
 }
 .image-bg.bg-light hr {
   border-color: #ccc;
@@ -308,11 +308,11 @@ h6 {
 }
 h1,
 .h1 {
-  font-size: 56px;
+  font-size: 3.5rem;
   line-height: 64px;
 }
 h1.large {
-  font-size: 72px;
+  font-size: 6rem;
   line-height: 80px;
   font-weight: 100;
 }
@@ -324,28 +324,28 @@ h1.large {
 }
 h2,
 .h2 {
-  font-size: 40px;
+  font-size: 3rem;
   line-height: 48px;
 }
 h3,
 .h3 {
-  font-size: 32px;
+  font-size: 2.2rem;
   line-height: 40px;
 }
 h4,
 .h4 {
-  font-size: 24px;
+  font-size: 2rem;
   line-height: 32px;
 }
 h5,
 .h5 {
-  font-size: 16px;
+  font-size: 1.4rem;
   line-height: 24px;
   font-weight: 400;
 }
 h6,
 .h6 {
-  font-size: 12px;
+  font-size: 1rem;
   line-height: 24px;
   font-weight: 700;
 }
@@ -412,7 +412,7 @@ h6.uppercase,
 }
 .bold-h6 {
   font-family: "bc-alphapipe", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 12px;
+  font-size: 1rem;
   line-height: 24px;
   font-weight: 400;
   text-transform: uppercase;
@@ -421,14 +421,18 @@ h6.uppercase,
 }
 p,
 span {
-  font-weight: 400;
+  font-weight: 200;
+}
+p strong {
+  font-weight: 500;
+  font-style: normal;
 }
 span {
   display: inherit;
   line-height: 20px;
 }
 p.lead {
-  font-size: 16px;
+  font-size: 1.4rem;
   font-weight: 400;
   line-height: 28px;
 }
@@ -437,11 +441,11 @@ p.lead {
 }
 @media all and (max-width: 767px) {
   p.lead {
-    font-size: 13px;
+    font-size: 1.2rem;
     line-height: 24px;
   }
   p {
-    font-size: 12px;
+    font-size: 1rem;
   }
 }
 a,
@@ -467,7 +471,7 @@ a {
 .image-bg a:hover,
 .bg-primary a:hover {
   color: #fff;
-  opacity: .9;
+  opacity: 0.9;
 }
 .bg-light a {
   color: #666;
@@ -482,7 +486,7 @@ a:hover {
 }
 .label {
   font-family: "bc-alphapipe", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 12px;
+  font-size: 1rem;
   line-height: 24px;
   font-weight: 400;
   text-transform: uppercase;
@@ -653,7 +657,7 @@ footer.bg-dark li,
   z-index: 2;
 }
 .overlay-heavy:before {
-  opacity: .6;
+  opacity: 0.6;
 }
 .bg-light.overlay:before {
   position: absolute;
@@ -1167,7 +1171,7 @@ nav.nav-centered .module.widget-handle {
   font-size: 11px;
   font-weight: 600;
   display: none;
-  opacity: .5;
+  opacity: 0.5;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -1303,7 +1307,7 @@ nav .cart-overview a {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
-  opacity: .5;
+  opacity: 0.5;
 }
 .offscreen-container .close-nav:hover {
   opacity: 1;
@@ -1606,13 +1610,13 @@ nav.transparent.fixed .module.widget-handle {
 }
 nav.transparent.fixed .menu > li > a,
 nav.transparent.fixed .module.widget-handle i {
-  opacity: .5;
+  opacity: 0.5;
 }
 nav.bg-dark .menu > li > a,
 nav.bg-dark .module.widget-handle i,
 nav.bg-dark .nav-utility {
   color: #fff;
-  opacity: .7;
+  opacity: 0.7;
 }
 nav.bg-dark .module.widget-handle {
   border-left: 1px solid rgba(255, 255, 255, 0.2);
@@ -2091,7 +2095,7 @@ form iframe.mail-list-form {
 @keyframes pulsate {
   0% {
     transform: scale(0.1);
-    opacity: 0.0;
+    opacity: 0;
   }
   50% {
     opacity: 1;
@@ -2104,7 +2108,7 @@ form iframe.mail-list-form {
 @-webkit-keyframes pulsate {
   0% {
     transform: scale(0.1);
-    opacity: 0.0;
+    opacity: 0;
   }
   50% {
     opacity: 1;
@@ -2180,7 +2184,7 @@ button[type="submit"] .form-loading {
 }
 .accordion-1 .title span {
   font-family: "bc-alphapipe", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 12px;
+  font-size: 1rem;
   line-height: 24px;
   font-weight: 400;
   text-transform: uppercase;
@@ -2222,7 +2226,7 @@ button[type="submit"] .form-loading {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
-  opacity: .7;
+  opacity: 0.7;
 }
 .accordion-2 .title:before {
   content: "\e622";
@@ -2295,7 +2299,7 @@ button[type="submit"] .form-loading {
 }
 .button-tabs .tab-title span {
   font-family: "bc-alphapipe", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 12px;
+  font-size: 1rem;
   line-height: 24px;
   font-weight: 400;
   text-transform: uppercase;
@@ -2383,7 +2387,7 @@ button[type="submit"] .form-loading {
 }
 .text-tabs .tab-title span {
   font-family: "bc-alphapipe", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 12px;
+  font-size: 1rem;
   line-height: 24px;
   font-weight: 400;
   text-transform: uppercase;
@@ -2441,7 +2445,7 @@ button[type="submit"] .form-loading {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
-  opacity: .5;
+  opacity: 0.5;
 }
 .icon-tabs .tab-title:hover {
   opacity: 1;
@@ -2462,7 +2466,7 @@ button[type="submit"] .form-loading {
 }
 .icon-tabs .tab-title span {
   font-family: "bc-alphapipe", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 12px;
+  font-size: 1rem;
   line-height: 24px;
   font-weight: 400;
   text-transform: uppercase;
@@ -2511,7 +2515,7 @@ button[type="submit"] .form-loading {
 }
 .progress-1 .progress-bar span {
   font-family: "bc-alphapipe", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 12px;
+  font-size: 1rem;
   line-height: 24px;
   font-weight: 400;
   text-transform: uppercase;
@@ -2527,7 +2531,7 @@ button[type="submit"] .form-loading {
 }
 .progress-2 span {
   font-family: "bc-alphapipe", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 12px;
+  font-size: 1rem;
   line-height: 24px;
   font-weight: 400;
   text-transform: uppercase;
@@ -2569,7 +2573,7 @@ button[type="submit"] .form-loading {
 .breadcrumb-2 li a,
 .breadcrumb-2 li {
   font-family: "bc-alphapipe", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 12px;
+  font-size: 1rem;
   line-height: 24px;
   font-weight: 400;
   text-transform: uppercase;
@@ -2584,7 +2588,7 @@ button[type="submit"] .form-loading {
 }
 .image-bg .breadcrumb li a {
   color: #fff;
-  opacity: .8;
+  opacity: 0.8;
 }
 .image-bg .breadcrumb li a:hover {
   opacity: 1;
@@ -2742,7 +2746,7 @@ button[type="submit"] .form-loading {
 }
 .feature-color i {
   color: #fff;
-  opacity: .7;
+  opacity: 0.7;
 }
 .feature-color:nth-of-type(1) {
   background: #666;
@@ -2948,7 +2952,7 @@ button[type="submit"] .form-loading {
 }
 .widget .title {
   font-family: "bc-alphapipe", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 12px;
+  font-size: 1rem;
   line-height: 24px;
   font-weight: 400;
   text-transform: uppercase;
@@ -2971,7 +2975,7 @@ button[type="submit"] .form-loading {
 .recent-posts .date {
   display: block;
   letter-spacing: 0;
-  opacity: .8;
+  opacity: 0.8;
 }
 .recent-posts li:hover .date {
   opacity: 1;
@@ -3135,7 +3139,7 @@ img {
 }
 .inner-title.title-center:before {
   background: #292929;
-  opacity: .4;
+  opacity: 0.4;
 }
 .inner-title:hover:before {
   transform: scale(1.2);
@@ -3182,7 +3186,7 @@ img {
   opacity: 1;
 }
 .inner-title:hover {
-  opacity: .95;
+  opacity: 0.95;
 }
 .inner-title.hover-reveal:before {
   opacity: 0;
@@ -3220,7 +3224,7 @@ img {
   -moz-transition: all 0.3s ease;
 }
 .hover-tile:hover img {
-  opacity: .5;
+  opacity: 0.5;
 }
 .hover-tile .hover-state {
   position: relative;
@@ -3425,7 +3429,7 @@ img {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
-  opacity: .5;
+  opacity: 0.5;
 }
 .logo-carousel li:hover {
   opacity: 1;
@@ -3446,7 +3450,7 @@ img {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
-  opacity: .5;
+  opacity: 0.5;
 }
 .image-bg .text-slider .flex-direction-nav li a:hover:before {
   opacity: 1;
@@ -3526,7 +3530,7 @@ img {
   opacity: 1;
 }
 .instafeed.grid-gallery li:hover {
-  opacity: .9;
+  opacity: 0.9;
 }
 .instafeed.grid-gallery.gapless li {
   padding: 0;
@@ -3559,7 +3563,7 @@ img {
   opacity: 1;
 }
 .lightbox-grid li:hover {
-  opacity: .9;
+  opacity: 0.9;
 }
 .square-thumbs li {
   height: 285px;
@@ -3699,7 +3703,7 @@ img {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
-  opacity: .9;
+  opacity: 0.9;
 }
 .cover .flex-control-nav:hover {
   opacity: 1;
@@ -3754,7 +3758,7 @@ img {
 }
 .product-single .old-price {
   text-decoration: line-through;
-  opacity: .7;
+  opacity: 0.7;
 }
 .product-single .price:not(.old-price) {
   color: #666;
@@ -3796,7 +3800,7 @@ td {
   margin-right: 8px;
 }
 .ratings .user .date {
-  opacity: .7;
+  opacity: 0.7;
 }
 .ratings .user {
   margin-bottom: 8px;
@@ -3994,7 +3998,7 @@ video {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 10px 0 10px 20.0px;
+    border-width: 10px 0 10px 20px;
     border-color: transparent transparent transparent #fff;
   }
 }
@@ -4011,7 +4015,7 @@ video {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 20px 0 20px 31.0px;
+  border-width: 20px 0 20px 31px;
   border-color: transparent transparent transparent #ffffff;
 }
 .play-button.large.dark:before {
@@ -4039,7 +4043,7 @@ video {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 15px 0 15px 25.0px;
+    border-width: 15px 0 15px 25px;
     border-color: transparent transparent transparent #fff;
   }
 }
@@ -4398,7 +4402,7 @@ video {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
-  opacity: .5;
+  opacity: 0.5;
 }
 .fade-on-hover:hover {
   opacity: 1;
@@ -4612,7 +4616,7 @@ video {
   line-height: 27px;
   min-width: 0;
   border-color: rgba(255, 255, 255, 0);
-  opacity: .4;
+  opacity: 0.4;
   border-radius: 25px;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -4679,7 +4683,7 @@ video {
   padding: 0 15px;
 }
 .project.inactive {
-  opacity: .1 !important;
+  opacity: 0.1 !important;
   pointer-events: none !important;
   display: none;
 }
@@ -4758,7 +4762,7 @@ section + .portfolio-pullup {
   font-size: 80px;
   line-height: 88px;
   font-family: "bc-alphapipe", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 56px;
+  font-size: 3.5rem;
   line-height: 64px;
   font-weight: 100;
   text-transform: uppercase;
@@ -4897,7 +4901,7 @@ section + .portfolio-pullup {
   left: 0;
 }
 .modal-screen.reveal-modal {
-  opacity: .8;
+  opacity: 0.8;
   visibility: visible;
 }
 .foundry_modal.reveal-modal {
@@ -5048,7 +5052,7 @@ footer.bg-dark a {
   max-height: 30px;
 }
 .footer-1 .sub {
-  opacity: .5;
+  opacity: 0.5;
 }
 .social-list {
   margin: 0;
@@ -5059,7 +5063,7 @@ footer.bg-dark a {
 .bg-dark .social-list a,
 .image-bg .social-list a {
   color: #fff;
-  opacity: .5;
+  opacity: 0.5;
 }
 .bg-dark .social-list a:hover {
   opacity: 1;
