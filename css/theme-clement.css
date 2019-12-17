@@ -335,7 +335,7 @@ h3,
 h4,
 .h4 {
   font-size: 2rem;
-  line-height: 32px;
+  line-height: 41px;
 }
 h5,
 .h5 {
@@ -3150,8 +3150,8 @@ img {
   width: 100%;
   bottom: 24px;
   z-index: 5;
-  padding-left: 64px;
-  padding-right: 64px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .inner-title .title h1,
 .inner-title .title h2,
@@ -3178,6 +3178,9 @@ img {
 }
 .inner-title .title h4 {
   font-weight: 600;
+}
+.inner-title .title span {
+  min-height: 80px;
 }
 .inner-title {
   transition: all 0.3s ease;
@@ -5101,6 +5104,9 @@ footer.bg-dark a {
 .mb0 {
   margin-bottom: 0 !important;
 }
+.mb4 {
+  margin-bottom: 4px !important;
+}
 .mb8 {
   margin-bottom: 8px;
 }
@@ -5154,6 +5160,9 @@ footer.bg-dark a {
 }
 .mt0 {
   margin-top: 0 !important;
+}
+.mt4 {
+  margin-top: 4px;
 }
 .mt8 {
   margin-top: 8px;
