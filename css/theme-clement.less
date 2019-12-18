@@ -44,11 +44,11 @@
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-size: 1.2rem;
-    line-height: 24px;
+    font-size: 1.15rem;
+    line-height: 28px;
     // font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-family: @content-font, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #666;
+    color: @clement;
     overflow-x: hidden;
 }
 
@@ -180,6 +180,69 @@ hr.short-thick {
 
 .container {
     position: relative;
+    padding-right: 6px;
+    padding-left: 6px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media all and (min-width: 1200px) {
+    .container {
+        width: 1002px;
+        // background-color: red;
+    }
+}
+
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+    padding-right: 6px;
+    padding-left: 6px;
 }
 
 .vnu {
@@ -424,7 +487,10 @@ h6,
 .h6 {
     font-family: @heading-font, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+h3,h4,h5,.h3,.h4,.h5{
+    font-family: @content-font, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
+}
 h1,
 h2,
 h3,
@@ -456,26 +522,28 @@ h1.large {
 
 h2,
 .h2 {
-    font-size: 3.0rem;
+    font-size: 2.6rem;
     line-height: 48px;
 }
 
 h3,
 .h3 {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     line-height: 40px;
+    font-weight: 700;
 }
 
 h4,
 .h4 {
-    font-size: 2rem;
+    font-size: 1.4rem;
     // line-height: 32px;
     line-height: 41px;
+    font-weight: 500;
 }
 
 h5,
 .h5 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     line-height: 24px;
     font-weight: 400;
 }
@@ -484,7 +552,9 @@ h6,
 .h6 {
     font-size: 1rem;
     line-height: 24px;
-    font-weight: 700;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-style: normal;
 }
 
 @media all and (max-width: 767px) {
@@ -537,7 +607,7 @@ h1.uppercase {
 }
 
 h2.uppercase {
-    letter-spacing: 10px;
+    letter-spacing: 3px;
     margin-right: -10px;
 }
 
@@ -571,22 +641,24 @@ h6.uppercase,
 p,
 span {
     font-weight: 200;
-    
+
     // font-weight: 400;
 }
-p strong{
+
+p strong {
     font-weight: 500;
     font-style: normal;
 }
+
 span {
     display: inherit;
     line-height: 20px;
 }
 
 p.lead {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 24px;
 }
 
 .sub {
@@ -745,7 +817,8 @@ ul.lead li {
 @trublu: #60c5a7;
 @adventure: #91A05C;
 @resume: #13181D;
-@clement: #666;
+// @clement: #666;
+@clement: #000;
 @bg-primary: #F4F4EF;
 @btn-hover: #ffffff;
 
@@ -773,7 +846,8 @@ ul.lead li {
 }
 
 .color-body {
-    color: #666;
+    // color: #666;
+    color: @clement;
 }
 
 .color-primary {
@@ -836,6 +910,10 @@ footer.bg-dark,
 .image-bg {
     .heading-colors(#fff);
     .text-colors(#fff);
+}
+.image-bg.white-bg {
+    .heading-colors(#000);
+    .text-colors(#000);
 }
 
 .image-bg .container,
@@ -1076,14 +1154,16 @@ body.btn-rounded .btn {
 @nav-height: 105px;
 // @nav-height: 55px;
 @nav-line-height: 103px;
+
 // @nav-line-height: 53px;
-@media all and (min-width: 991px){
-    .nav-sticky{
+@media all and (min-width: 991px) {
+    .nav-sticky {
         position: sticky;
         top: 28px;
         z-index: 1000;
     }
 }
+
 .nav-container {
     -webkit-backface-visibility: hidden;
     max-width: 100%;
@@ -3642,9 +3722,11 @@ img {
 .inner-title .title h5 {
     font-weight: 600;
 }
+
 .inner-title .title h4 {
     font-weight: 600;
 }
+
 .inner-title .title span {
     min-height: 80px;
 }
@@ -5785,9 +5867,11 @@ footer.bg-dark a {
 .mb0 {
     margin-bottom: 0 !important;
 }
+
 .mb4 {
     margin-bottom: 4px !important;
 }
+
 .mb8 {
     margin-bottom: 8px;
 }
@@ -5863,6 +5947,7 @@ footer.bg-dark a {
 .mt4 {
     margin-top: 4px;
 }
+
 .mt8 {
     margin-top: 8px;
 }
@@ -6086,6 +6171,7 @@ footer.bg-dark a {
 .pb240 {
     padding-bottom: 240px;
 }
+
 // add pl
 .pl0 {
     padding-left: 0;
