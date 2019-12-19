@@ -826,7 +826,7 @@ ul.lead li {
 
 @color-primary: @clement;
 @bg-secondary: #f8f8f8;
-@bg-dark: #292929;
+@bg-dark: #000000;
 
 // .bg-primary{ background: @color-primary !important; }
 .bg-primary {
@@ -1275,7 +1275,8 @@ nav.bg-dark .logo-dark {
 .menu {
     width: 100%;
     height: @nav-height;
-    font-family: @heading-font, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    // font-family: @heading-font, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: @content-font, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .menu.inline-block {
@@ -5794,6 +5795,9 @@ section+.portfolio-pullup {
 }
 
 /*!---------- 36. FOOTERS ----------*/
+footer.footer-2{
+    background-color: @bg-primary;
+}
 
 footer.bg-dark a {
     color: #fff;

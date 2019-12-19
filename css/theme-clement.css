@@ -316,7 +316,7 @@ hr.short-thick {
   color: #fff !important;
 }
 .text-dark {
-  color: #292929 !important;
+  color: #000000 !important;
 }
 @media all and (max-width: 767px) {
   .thin {
@@ -372,7 +372,7 @@ h4,
 h5,
 h6 {
   font-weight: 300;
-  color: #292929;
+  color: #000000;
 }
 h1,
 .h1 {
@@ -649,7 +649,7 @@ ul.lead li {
   background: #fff;
 }
 .bg-dark {
-  background: #292929;
+  background: #000000;
 }
 .color-body {
   color: #000;
@@ -728,7 +728,7 @@ footer.bg-dark li,
   height: 100%;
   top: 0;
   left: 0;
-  background: #292929;
+  background: #000000;
   opacity: 0.3;
   z-index: 2;
 }
@@ -788,7 +788,7 @@ footer.bg-dark li,
   top: 0;
   left: 0;
   z-index: 1;
-  background: #292929;
+  background: #000000;
   background-size: cover !important;
   background-position: 50% 50% !important;
   transition: all 0.3s ease;
@@ -952,10 +952,10 @@ body.btn-rounded .btn {
 }
 .btn.bg-dark {
   color: #fff;
-  border-color: #292929;
+  border-color: #000000;
 }
 .btn.bg-dark:hover {
-  background: #434343;
+  background: #1a1a1a;
 }
 .bg-primary .btn {
   color: #fff;
@@ -1064,7 +1064,7 @@ nav.bg-dark .logo-dark {
 .menu {
   width: 100%;
   height: 105px;
-  font-family: "bc-alphapipe", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .menu.inline-block {
   width: auto;
@@ -1079,7 +1079,7 @@ nav.bg-dark .logo-dark {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
-  color: #292929;
+  color: #000000;
   opacity: 0.5;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -1113,7 +1113,7 @@ nav.bg-dark .logo-dark {
 .menu > li ul {
   width: 200px;
   padding: 8px 0;
-  background: #292929;
+  background: #000000;
   position: absolute;
   z-index: 99;
   opacity: 0;
@@ -1232,7 +1232,7 @@ nav.nav-centered .module.widget-handle {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   cursor: default;
   width: 200px;
-  background: #292929;
+  background: #000000;
   position: absolute;
   z-index: 99;
   opacity: 0;
@@ -1662,7 +1662,7 @@ nav.transparent .logo-light {
   nav.transparent .nav-open .menu > li > a,
   nav.transparent .nav-open .module.widget-handle i,
   nav.transparent .nav-open .nav-utility {
-    color: #292929;
+    color: #000000;
   }
   nav.transparent .nav-open .logo-dark {
     display: inline;
@@ -1671,7 +1671,7 @@ nav.transparent .logo-light {
     display: none;
   }
   nav.transparent .nav-open .has-dropdown:after {
-    color: #292929;
+    color: #000000;
   }
   .menu > li:last-child > ul ul {
     right: 0;
@@ -1688,11 +1688,11 @@ nav.transparent.fixed .logo-dark {
 }
 nav.transparent.fixed .menu > li > a,
 nav.transparent.fixed .module.widget-handle i {
-  color: #292929;
+  color: #000000;
 }
 nav.transparent.fixed .menu > .has-dropdown:after {
   color: #fff;
-  color: #292929;
+  color: #000000;
 }
 nav.transparent.fixed .module.widget-handle {
   border-left: 1px solid #ccc;
@@ -1715,7 +1715,7 @@ nav.bg-dark .nav-bar {
   border-bottom: 0px solid rgba(255, 255, 255, 0.2);
 }
 nav.transparent.fixed.bg-dark {
-  background: #292929;
+  background: #000000;
 }
 nav.transparent.fixed.bg-dark .menu > li > a,
 nav.transparent.fixed.bg-dark .module.widget-handle i {
@@ -1769,10 +1769,10 @@ nav.nav-centered.outOfSight .logo {
 .icon {
   font-size: 64px;
   display: inline-block;
-  color: #292929;
+  color: #000000;
 }
 .image-bg.bg-light .icon {
-  color: #292929;
+  color: #000000;
 }
 .image-bg .icon,
 .bg-dark .icon {
@@ -1844,7 +1844,7 @@ input[type="password"] {
   font-family: "bc-alphapipe", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 11px;
   text-transform: uppercase;
-  color: #292929;
+  color: #000000;
   letter-spacing: 1px;
   font-weight: 700;
   display: block;
@@ -1867,7 +1867,7 @@ input[type="password"] {
 }
 .image-bg.bg-light input.transparent,
 .image-bg.bg-light button.transparent {
-  border-color: #292929;
+  border-color: #000000;
 }
 input.transparent,
 button.transparent {
@@ -2733,7 +2733,7 @@ button[type="submit"] .form-loading {
   text-align: center;
   padding-top: 6px;
   margin: 0 4px;
-  color: #292929;
+  color: #000000;
   font-weight: 400;
 }
 .pagination li a:hover,
@@ -2749,10 +2749,10 @@ button[type="submit"] .form-loading {
   background: #f8f8f8;
 }
 .feature.boxed.bg-dark {
-  background: #292929;
+  background: #000000;
 }
 .bg-dark .feature.boxed {
-  background: #363636;
+  background: #0d0d0d;
 }
 .bg-secondary .feature.boxed {
   background: #fff;
@@ -2927,7 +2927,7 @@ button[type="submit"] .form-loading {
   font-size: 80px;
   line-height: 80px;
   font-weight: 300;
-  color: #292929;
+  color: #000000;
   display: inline-block;
   margin-bottom: 16px;
 }
@@ -3129,7 +3129,7 @@ button[type="submit"] .form-loading {
   float: left;
   display: inline-block;
   margin-right: 8px;
-  color: #292929;
+  color: #000000;
   content: "\e74b";
   font-family: 'themify';
   speak: none;
@@ -3179,7 +3179,7 @@ button[type="submit"] .form-loading {
   line-height: 30px;
 }
 .cart-overview a {
-  color: #292929;
+  color: #000000;
 }
 .cart-overview a:hover {
   color: #000;
@@ -3243,7 +3243,7 @@ img {
   pointer-events: none;
 }
 .inner-title.title-center:before {
-  background: #292929;
+  background: #000000;
   opacity: 0.4;
 }
 .inner-title:hover:before {
@@ -3324,7 +3324,7 @@ img {
 .hover-tile {
   position: relative;
   overflow: hidden;
-  background: #292929;
+  background: #000000;
 }
 .hover-tile img {
   transition: all 0.3s ease;
@@ -3491,7 +3491,7 @@ img {
 }
 .flex-control-nav li a {
   background: none;
-  border: 2px solid #292929;
+  border: 2px solid #000000;
   width: 10px;
   height: 10px;
 }
@@ -4086,10 +4086,10 @@ video {
   -webkit-transform: scale(0.95);
 }
 .play-button.dark {
-  border-color: #292929;
+  border-color: #000000;
 }
 .play-button.dark:before {
-  border-color: transparent transparent transparent #292929;
+  border-color: transparent transparent transparent #000000;
 }
 @media all and (max-width: 767px) {
   .play-button {
@@ -4127,7 +4127,7 @@ video {
   border-color: transparent transparent transparent #ffffff;
 }
 .play-button.large.dark:before {
-  border-color: transparent transparent transparent #292929;
+  border-color: transparent transparent transparent #000000;
 }
 .play-button.inline {
   position: relative;
@@ -4765,7 +4765,7 @@ video {
   margin-bottom: 0;
 }
 .bg-dark .filters.floating {
-  background: #292929;
+  background: #000000;
 }
 .bg-dark .filters.floating h1,
 .bg-dark .filters.floating h2,
@@ -4998,7 +4998,7 @@ section + .portfolio-pullup {
   position: fixed;
   width: 100%;
   height: 100%;
-  background: #292929;
+  background: #000000;
   opacity: 0;
   z-index: 9998;
   transition: all 0.3s ease;
@@ -5153,6 +5153,9 @@ section + .portfolio-pullup {
   }
 }
 /*!---------- 36. FOOTERS ----------*/
+footer.footer-2 {
+  background-color: #F4F4EF;
+}
 footer.bg-dark a {
   color: #fff;
 }
