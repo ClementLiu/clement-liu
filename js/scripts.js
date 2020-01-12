@@ -1009,9 +1009,9 @@ $(document).ready(function() {
         } 
     }
 
-    // typo fix
-    $("h2,h3,h4,h5,span").not( ".no-fix-break" ).each(function() {
-        var wordArray = $(this).text().split(" ");
+    // typo fix widow
+    $("h2,h3,h4,h5,span,p").not( ".no-fix-break" ).each(function() {
+        var wordArray = $(this).html().split(" ");
         var finalTitle = "";
         for (var i=0;i<=wordArray.length-1;i++) {
            finalTitle += wordArray[i];
