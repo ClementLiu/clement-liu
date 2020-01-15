@@ -44,7 +44,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.15rem;
-  line-height: 28px;
+  line-height: 1.75rem;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #000;
   overflow-x: hidden;
@@ -632,13 +632,15 @@ blockquote .author {
 }
 /*!---------- 3.1. TYPOGRAPHY - LISTS ----------*/
 ul[data-bullet] li {
-  line-height: 32px;
+  line-height: 2rem;
+  /* line-height: 32px; */
 }
 ul[data-bullet] li i:first-child {
   margin-right: 16px;
   transform: scale(1.5);
   -webkit-transform: scale(1.5);
   display: inline-block;
+  font-size: 1rem;
 }
 ul.lead li {
   font-size: 16px;
