@@ -43,7 +43,7 @@
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 1.15rem;
+  font-size: 1.125rem;
   line-height: 28px;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #000;
@@ -417,7 +417,7 @@ h1.large {
 }
 h2,
 .h2 {
-  font-size: 2.6rem;
+  font-size: 2.625rem;
   line-height: 48px;
 }
 h3,
@@ -428,13 +428,13 @@ h3,
 }
 h4,
 .h4 {
-  font-size: 1.4rem;
+  font-size: 1.375rem;
   line-height: 41px;
   font-weight: 500;
 }
 h5,
 .h5 {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   line-height: 24px;
   font-weight: 400;
 }
@@ -450,31 +450,31 @@ h6,
   h1,
   h1.large,
   .h1 {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 2rem;
+    line-height: 2.5rem;
     font-weight: 300;
   }
   h2 {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
   h3 {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
   h4 {
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
   }
   h5 {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.5rem;
     font-weight: 400;
   }
   h6,
   .h6 {
-    font-size: 12px;
-    line-height: 24px;
+    font-size: 0.75rem;
+    line-height: 1.5rem;
     font-weight: 700;
   }
 }
@@ -2408,8 +2408,7 @@ button[type="submit"] .form-loading {
   margin-right: 0;
 }
 .button-tabs .tab-title {
-  padding: 0px;
-  /* padding: 13px; */
+  padding: 13px;
   display: inline-block;
   text-align: center;
   min-width: 150px;
