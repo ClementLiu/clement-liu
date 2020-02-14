@@ -553,7 +553,7 @@ h3,
 .h3 {
     font-size: 1.5rem;
     line-height: 40px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 h4,
@@ -663,14 +663,15 @@ h6.uppercase,
 
 p,
 span {
-    font-weight: 200;
+    font-weight: 400;
 
     // font-weight: 400;
 }
 
 p strong {
-    font-weight: 500;
+    font-weight: 700;
     font-style: normal;
+    // color: @bg-dark;
 }
 
 span {
@@ -841,7 +842,7 @@ ul.lead li {
 @adventure: #91A05C;
 @resume: #13181D;
 // @clement: #666;
-@clement: #000;
+@clement: #4F4F4F;
 @bg-primary: #F4F4EF;
 @btn-hover: #ffffff;
 
@@ -6947,5 +6948,18 @@ footer.bg-dark a {
 
     .pb-xs-240 {
         padding-bottom: 240px !important;
+    }
+}
+
+// ----question-------------------------
+.question{
+    background-color: white;
+    border-left: 3px solid;
+    padding:30px 30px 30px 56px;
+}
+@media all and (min-width: 768px) {
+    .question{
+        padding:30px 40% 30px 56px;
+    
     }
 }
