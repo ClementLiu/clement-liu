@@ -44,8 +44,8 @@
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 1.125rem;
-  line-height: 28px;
+  font-size: 0.925rem;
+  line-height: 22px;
   // font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-family: @content-font, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: @clement;
@@ -72,6 +72,9 @@ body.boxed-layout,
 
 ul {
   list-style: none;
+  li {
+    margin-bottom: 4px;
+  }
 }
 
 ul.bullets {
@@ -460,6 +463,9 @@ hr.short-thick {
 .text-dark {
   color: @bg-dark !important;
 }
+.text-muted {
+  color: @color-muted !important;
+}
 
 @media all and (max-width: 767px) {
   .thin {
@@ -574,10 +580,10 @@ h5,
 
 h6,
 .h6 {
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 24px;
   font-weight: 300;
-  letter-spacing: 2px;
+  // letter-spacing: 2px;
   font-style: normal;
 }
 
@@ -635,7 +641,8 @@ h2.uppercase {
 }
 
 h3.uppercase {
-  letter-spacing: 6px;
+  // letter-spacing: 6px;
+  letter-spacing: 2px;
   margin-right: -6px;
 }
 
@@ -842,10 +849,12 @@ ul.lead li {
 @resume: #13181d;
 // @clement: #666;
 @clement: #4f4f4f;
-@bg-primary: #f4f4ef;
+// @bg-primary: #f4f4ef;
+@bg-primary: #eeeeee;
 @btn-hover: #ffffff;
 
 @color-primary: @clement;
+@color-muted: #969696;
 @bg-secondary: #f8f8f8;
 @bg-dark: #000000;
 

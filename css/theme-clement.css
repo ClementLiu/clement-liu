@@ -43,8 +43,8 @@
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 1.125rem;
-  line-height: 28px;
+  font-size: 0.925rem;
+  line-height: 22px;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #4f4f4f;
   overflow-x: hidden;
@@ -67,11 +67,14 @@ body.boxed-layout,
 ul {
   list-style: none;
 }
+ul li {
+  margin-bottom: 4px;
+}
 ul.bullets {
   list-style: inside;
 }
 .main-container {
-  background-color: #f4f4ef;
+  background-color: #eeeeee;
   clear: both;
 }
 hr {
@@ -337,6 +340,9 @@ hr.short-thick {
 .text-dark {
   color: #000000 !important;
 }
+.text-muted {
+  color: #969696 !important;
+}
 @media all and (max-width: 767px) {
   .thin {
     font-weight: 300 !important;
@@ -440,10 +446,9 @@ h5,
 }
 h6,
 .h6 {
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 24px;
   font-weight: 300;
-  letter-spacing: 2px;
   font-style: normal;
 }
 @media all and (max-width: 767px) {
@@ -491,7 +496,7 @@ h2.uppercase {
   margin-right: -10px;
 }
 h3.uppercase {
-  letter-spacing: 6px;
+  letter-spacing: 2px;
   margin-right: -6px;
 }
 h4.uppercase {
@@ -509,7 +514,7 @@ h6.uppercase,
 }
 .bold-h6 {
   font-family: "bc-alphapipe", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 24px;
   font-weight: 300;
   font-style: normal;
@@ -585,7 +590,7 @@ a:hover {
 }
 .label {
   font-family: "bc-alphapipe", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 24px;
   font-weight: 300;
   font-style: normal;
@@ -665,7 +670,7 @@ ul.lead li {
 }
 /*!---------- 4. COLOURS ----------*/
 .bg-primary {
-  background: #f4f4ef !important;
+  background: #eeeeee !important;
 }
 .bg-secondary {
   background: #f8f8f8;
@@ -1026,7 +1031,7 @@ body.btn-rounded .btn {
   max-width: 100%;
 }
 nav {
-  background-color: #f4f4ef;
+  background-color: #eeeeee;
   -webkit-backface-visibility: hidden;
   max-width: 100%;
 }
@@ -2321,7 +2326,7 @@ button[type="submit"] .form-loading {
 }
 .accordion-1 .title span {
   font-family: "bc-alphapipe", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 24px;
   font-weight: 300;
   font-style: normal;
@@ -2438,7 +2443,7 @@ button[type="submit"] .form-loading {
 }
 .button-tabs .tab-title span {
   font-family: "bc-alphapipe", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 24px;
   font-weight: 300;
   font-style: normal;
@@ -2528,7 +2533,7 @@ button[type="submit"] .form-loading {
 }
 .text-tabs .tab-title span {
   font-family: "bc-alphapipe", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 24px;
   font-weight: 300;
   font-style: normal;
@@ -2609,7 +2614,7 @@ button[type="submit"] .form-loading {
 }
 .icon-tabs .tab-title span {
   font-family: "bc-alphapipe", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 24px;
   font-weight: 300;
   font-style: normal;
@@ -2660,7 +2665,7 @@ button[type="submit"] .form-loading {
 }
 .progress-1 .progress-bar span {
   font-family: "bc-alphapipe", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 24px;
   font-weight: 300;
   font-style: normal;
@@ -2678,7 +2683,7 @@ button[type="submit"] .form-loading {
 }
 .progress-2 span {
   font-family: "bc-alphapipe", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 24px;
   font-weight: 300;
   font-style: normal;
@@ -2722,7 +2727,7 @@ button[type="submit"] .form-loading {
 .breadcrumb-2 li a,
 .breadcrumb-2 li {
   font-family: "bc-alphapipe", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 24px;
   font-weight: 300;
   font-style: normal;
@@ -3103,7 +3108,7 @@ button[type="submit"] .form-loading {
 }
 .widget .title {
   font-family: "bc-alphapipe", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 24px;
   font-weight: 300;
   font-style: normal;
@@ -4710,7 +4715,7 @@ video {
   height: 100%;
   z-index: 0;
   opacity: 0.5;
-  background-color: #f4f4ef;
+  background-color: #eeeeee;
   border-radius: 0 12px 0 0;
 }
 .image-caption.hover-caption .caption {
@@ -4769,7 +4774,7 @@ video {
   -ms-user-select: none;
   user-select: none;
   display: inline-block;
-  background: #f4f4ef !important;
+  background: #eeeeee !important;
   transition: all 0.6s ease;
   -webkit-transition: all 0.6s ease;
   -moz-transition: all 0.6s ease;
@@ -5190,7 +5195,7 @@ section + .portfolio-pullup {
 }
 /*!---------- 36. FOOTERS ----------*/
 footer.footer-2 {
-  background-color: #f4f4ef;
+  background-color: #eeeeee;
 }
 footer.bg-dark a {
   color: #fff;
