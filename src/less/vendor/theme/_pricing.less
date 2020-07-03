@@ -1,0 +1,46 @@
+/*!---------- 19. PRICING TABLES ----------*/
+
+.pricing-table {
+  padding: 48px 32px;
+}
+
+.pricing-table .price {
+  .number;
+  font-size: 80px;
+  line-height: 80px;
+  font-weight: 300;
+  color: @bg-dark;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.bg-dark .pricing-table .price {
+  color: #fff;
+}
+
+.pricing-table p:last-child {
+  margin-bottom: 0;
+}
+
+.pricing-table.boxed,
+.pricing-table.emphasis {
+  background: @bg-secondary;
+}
+
+.pricing-table.emphasis {
+  background: @color-primary;
+  color: #fff;
+}
+
+.pricing-table.emphasis a:not(.btn) {
+  color: #fff;
+}
+
+.pricing-table.emphasis .price,
+.pricing-table.emphasis h5 {
+  color: #fff;
+}
+
+.pt-2 ul {
+  line-height: 36px;
+}

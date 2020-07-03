@@ -1,0 +1,84 @@
+/*!---------- 20. PAGE TITLES ----------*/
+
+.page-title {
+  padding: 0;
+}
+
+.page-title .container {
+  .v-align-transform;
+}
+
+.page-title i {
+  position: relative;
+  top: 1px;
+}
+
+@media all and (max-width: 767px) {
+  .page-title i {
+    display: none;
+  }
+}
+
+.page-title-1,
+.page-title-2 {
+  height: 400px;
+}
+
+.page-title-1 .breadcrumb,
+.page-title-3 .breadcrumb {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+}
+
+.page-title-2 .breadcrumb {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.nav-is-overlay .page-title-1.image-bg:first-child,
+.nav-is-overlay.page-title-1.bg-dark:first-child,
+.nav-is-overlay .page-title-2.image-bg:first-child,
+.nav-is-overlay.page-title-2.bg-dark:first-child {
+  height: (@nav-height + 400);
+  padding-top: @nav-height;
+}
+
+@media all and (max-width: 767px) {
+  .page-title-1,
+  .page-title-2 {
+    height: 320px;
+  }
+}
+
+.page-title-3,
+.page-title-4 {
+  height: 240px;
+}
+
+.page-title-4 .breadcrumb {
+  position: relative;
+  top: 8px;
+  margin-bottom: 0;
+}
+
+.nav-is-overlay .page-title-3.image-bg:first-child,
+.nav-is-overlay.page-title-3.bg-dark:first-child,
+.nav-is-overlay .page-title-4.image-bg:first-child,
+.nav-is-overlay.page-title-4.bg-dark:first-child {
+  height: (@nav-height + 240);
+  padding-top: @nav-height;
+}
+
+@media all and (max-width: 767px) {
+  .page-title .text-right {
+    text-align: left !important;
+  }
+}
+
+.page-title.fullscreen {
+  height: 100vh !important;
+  padding-top: 0;
+}

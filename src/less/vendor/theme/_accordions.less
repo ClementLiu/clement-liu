@@ -1,0 +1,111 @@
+/*!---------- 12. ACCORDIONS ----------*/
+
+.accordion .title {
+  cursor: pointer;
+  .disable-select;
+}
+
+.accordion .content {
+  max-height: 0;
+  overflow: hidden;
+  .transition(0.4s);
+}
+
+.accordion li.active .content {
+  max-height: 400px;
+}
+
+.accordion p:last-child {
+  margin-bottom: 0;
+}
+
+.accordion-1 li {
+  margin-bottom: 10px;
+}
+
+.accordion-1 li:last-child {
+  margin-bottom: 0;
+}
+
+.accordion-1 .title {
+  background: #f5f5f5;
+  padding: 13px;
+  .transition(0.3s);
+}
+
+.bg-secondary .accordion-1 .title {
+  background: darken(@bg-secondary, 5%);
+}
+
+.bg-secondary .accordion-1 .title:hover {
+  background: darken(@bg-secondary, 8%);
+}
+
+.accordion-1 .title span {
+  .bold-h6;
+}
+
+.accordion-1 .active .title {
+  background: @color-primary;
+  color: #fff;
+}
+
+.accordion-1 .content {
+  border: 1px solid #eee;
+  border-top: none;
+  .transition(0.3s);
+  opacity: 0;
+}
+
+.accordion-1 .content p {
+  padding: 13px;
+}
+
+.accordion-1 .active .content {
+  opacity: 1;
+  .translateY(0px);
+}
+
+.accordion-1 .title:hover {
+  background: #eee;
+}
+
+.accordion-1 .active .title:hover {
+  background: @color-primary;
+}
+
+.accordion-2 .title {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 16px 0;
+  border-bottom: 1px solid #ccc;
+  .transition(0.3s);
+  opacity: 0.7;
+}
+
+.accordion-2 .title:before {
+  content: "\e622";
+  font-family: "themify";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+
+.accordion-2 .active .title {
+  opacity: 1;
+}
+
+.accordion-2 .active .title:before {
+  content: "\e61a";
+}
+
+.accordion-2 .content p {
+  padding: 16px 0;
+}
+
+.accordion-2 .title:hover {
+  opacity: 1;
+}

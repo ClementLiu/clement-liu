@@ -1,0 +1,205 @@
+/*!---------- 21. WIDGETS ----------*/
+
+.widget {
+  margin-bottom: 48px;
+}
+
+.link-list {
+  line-height: 32px;
+}
+
+.link-list a:after {
+  content: "\e628";
+  font-family: "themify";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 11px;
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.widget ul:last-child,
+.widget p:last-child {
+  margin-bottom: 0;
+}
+
+.widget .title {
+  .bold-h6;
+  margin-bottom: 12px;
+}
+
+.widget hr {
+  margin-bottom: 12px;
+}
+
+.recent-posts {
+  line-height: 24px;
+}
+
+.recent-posts li {
+  margin-bottom: 8px;
+  .transition(0.3s);
+}
+
+.recent-posts .date {
+  display: block;
+  letter-spacing: 0;
+  opacity: 0.8;
+}
+
+.recent-posts li:hover .date {
+  opacity: 1;
+}
+
+.tags {
+  overflow: hidden;
+}
+
+.tags li {
+  float: left;
+  margin: 0 4px 4px 0;
+}
+
+.tags .btn-sm {
+  padding: 0 8px;
+  margin: 0;
+}
+
+.widget .gallery {
+  overflow: hidden;
+}
+
+.widget .gallery li {
+  width: 33.33333%;
+  float: left;
+  padding: 0 4px 4px 0;
+}
+
+.twitter-feed .user,
+.twitter-feed .interact {
+  display: none;
+}
+
+.widget .twitter-feed .timePosted {
+  display: none;
+}
+
+.widget .tweet {
+  margin-bottom: 0;
+}
+
+.widget .twitter-feed .slides li {
+  margin-bottom: 24px;
+}
+
+.widget .twitter-feed .slides li:last-child {
+  margin-bottom: 0;
+}
+
+.widget .twitter-feed .slides li:nth-of-type(n + 3) {
+  display: none;
+}
+
+.widget .twitter-feed .slides li:before {
+  position: relative;
+  top: 6px;
+  float: left;
+  display: inline-block;
+  margin-right: 8px;
+  color: @bg-dark;
+  content: "\e74b";
+  font-family: "themify";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 13px;
+}
+
+.widget .twitter-feed p {
+  padding-left: 22px;
+  position: relative;
+}
+
+.bg-dark .widget .twitter-feed .slides li:before {
+  color: #fff;
+}
+
+.widget .instafeed li {
+  width: 33.3333%;
+  display: inline-block;
+  padding: 0 4px 4px 0;
+}
+
+.widget .instafeed li:nth-of-type(n + 7) {
+  display: none;
+}
+
+.widget .cart-overview img {
+  width: 25%;
+  padding-right: 2%;
+}
+
+.widget .cart-overview .description {
+  display: inline-block;
+  width: auto;
+  line-height: 24px;
+}
+
+.widget .cart-overview span {
+  display: block;
+}
+
+.widget .cart-overview li {
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.widget .cart-overview li:last-child {
+  margin-bottom: 0;
+}
+
+.widget .cart-controls {
+  max-height: 30px;
+  line-height: 30px;
+}
+
+.cart-overview a {
+  color: @bg-dark;
+}
+
+.cart-overview a:hover {
+  color: @color-primary;
+}
+
+.widget .flex-direction-nav li a {
+  width: 16px;
+  height: 16px;
+  margin: -8px 0 0;
+}
+
+.widget .flex-direction-nav li a:before {
+  font-size: 16px;
+}
+
+.widget .flex-direction-nav li a.flex-next {
+  right: 8px;
+}
+
+.widget .flex-direction-nav li a.flex-prev {
+  left: 8px;
+}
+
+.widget .flex-control-nav {
+  display: none;
+}
+
+.widget .image-slider {
+  margin: 0;
+}

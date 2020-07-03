@@ -1,0 +1,244 @@
+/*!---------- 23. SLIDERS ----------*/
+
+.image-slider {
+  position: relative;
+}
+
+.image-slider .slides {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-slider .slides li {
+  position: relative;
+}
+
+.image-slider .slides li > img {
+  width: 100%;
+}
+
+.row .image-slider {
+  margin-bottom: 24px;
+}
+
+.image-slider.height-70 .slides li {
+  height: 70vh;
+  min-height: 600px;
+}
+
+@media all and(max-width: 767px) {
+  .image-slider.height-70 .slides li {
+    height: auto;
+    min-height: none;
+    padding: 80px 0;
+  }
+
+  .image-slider.height-70 .v-align-transform {
+    top: 0;
+    transform: none;
+    -webkit-transform: none;
+  }
+}
+@nav-margin: 24px;
+.flex-direction-nav a.flex-next {
+  // right: 16px;
+  right: @nav-margin;
+}
+
+.flex-direction-nav a.flex-next:before,
+.flex-direction-nav a.flex-prev:before {
+  content: "\e649";
+  font-family: "themify";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 24px;
+  //   color: #fff;
+  color: @bg-dark;
+}
+
+.flex-direction-nav a.flex-prev {
+  left: @nav-margin;
+}
+
+.flex-direction-nav a.flex-prev:before {
+  content: "\e64a";
+}
+
+.flex-direction-nav a {
+  opacity: 1;
+  text-shadow: none;
+  color: rgba(0, 0, 0, 0);
+  width: 24px;
+  height: 24px;
+  margin: -12px 0 0;
+}
+
+.flex-control-nav li {
+  overflow: hidden;
+}
+
+.flex-control-nav li a {
+  background: none;
+  border: 2px solid @bg-dark;
+  width: 10px;
+  height: 10px;
+}
+
+@media all and (max-width: 768px) {
+  .flex-direction-nav {
+    display: none;
+  }
+}
+
+.controls-inside .flex-control-nav {
+  bottom: 24px;
+  z-index: 10;
+}
+
+.controls-inside .flex-control-nav li a {
+  border-color: #fff;
+}
+
+.controls-inside .flex-control-nav li a.flex-active {
+  background: #fff;
+}
+
+.image-bg .flex-control-nav li a {
+  border-color: #fff;
+}
+
+.image-bg .flex-control-nav li a.flex-active {
+  background: #fff;
+}
+
+.slider-thumb-controls .flex-control-thumbs {
+  margin: 0;
+}
+
+.slider-thumb-controls .flex-direction-nav {
+  display: none;
+}
+
+@media all and (max-width: 767px) {
+  .slider-thumb-controls .flex-control-thumbs {
+    display: none;
+  }
+
+  .slider-thumb-controls .flex-direction-nav {
+    display: block;
+  }
+}
+
+.logo-carousel li {
+  text-align: center;
+}
+
+.logo-carousel li {
+  .transition(0.3s);
+  opacity: 0.5;
+}
+
+.logo-carousel li:hover {
+  opacity: 1;
+}
+
+.logo-carousel img {
+  max-height: 60px;
+}
+
+@media all and (max-width: 767px) {
+  .logo-carousel .slides li {
+    width: 100%;
+  }
+}
+
+.text-slider .flex-direction-nav li a:before {
+  color: #222;
+}
+
+.image-bg .text-slider .flex-direction-nav li a:before {
+  color: #fff;
+  .transition(0.3s);
+  opacity: 0.5;
+}
+
+.image-bg .text-slider .flex-direction-nav li a:hover:before {
+  opacity: 1;
+}
+
+.text-slider .flex-direction-nav a.flex-prev {
+  left: -60px;
+}
+
+.text-slider .flex-direction-nav a.flex-next {
+  right: -60px;
+}
+
+.kenburns .slides li:nth-of-type(odd) .background-image-holder {
+  animation: kenBurnsEast 25s linear infinite alternate;
+  -webkit-animation: kenBurnsEast 25s linear infinite alternate;
+}
+
+.kenburns .slides li:nth-of-type(even) .background-image-holder {
+  animation: kenBurnsWest 25s linear infinite alternate;
+  -webkit-animation: kenBurnsWest 25s linear infinite alternate;
+}
+
+@keyframes kenBurnsEast {
+  from {
+    transform: scale(1) translateX(0px);
+    -webkit-transform: scale(1) translateX(0px);
+  }
+
+  to {
+    transform: scale(1.2) translateX(100px);
+    -webkit-transform: scale(1.2) translateX(100px);
+  }
+}
+
+@-webkit-keyframes kenBurnsEast {
+  from {
+    transform: scale(1) translateX(0px);
+    -webkit-transform: scale(1) translateX(0px);
+  }
+
+  to {
+    transform: scale(1.2) translateX(100px);
+    -webkit-transform: scale(1.2) translateX(100px);
+  }
+}
+
+@keyframes kenBurnsWest {
+  from {
+    transform: scale(1) translateX(0px);
+    -webkit-transform: scale(1) translateX(0px);
+  }
+
+  to {
+    transform: scale(1.2) translateX(-100px);
+    -webkit-transform: scale(1.2) translateX(-100px);
+  }
+}
+
+@-webkit-keyframes kenBurnsWest {
+  from {
+    transform: scale(1) translateX(0px);
+    -webkit-transform: scale(1) translateX(0px);
+  }
+
+  to {
+    transform: scale(1.2) translateX(-100px);
+    -webkit-transform: scale(1.2) translateX(-100px);
+  }
+}
+
+@media all and(max-width: 767px) {
+  .kenburns .slides li .background-image-holder {
+    animation: none !important;
+    -webkit-animation: none !important;
+  }
+}

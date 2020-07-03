@@ -1,0 +1,334 @@
+extends ../layouts/default-layout.pug
+block content
+  .main-container
+    section.cover.fullscreen.image-slider.slider-all-controls.controls-inside.parallax
+      ul.slides
+        li.image-bg
+          .background-image-holder
+            img.background-image(alt='image' src='assets/images/head-variant-avatar.jpg')
+          .container.v-align-transform
+            .row
+    section.pt96
+      .container
+        .row.pt72.pb72
+          .col-sm-5.vertical-center
+            h3.change2title.uppercase.bold.mb48 Avatar
+            p
+              |We were asked for an exhibition design for California Academy of Sciences. I created several interactive devices and video around the topic of disconnection in a connected world. With interactive deices, I invited audience to act as the physical world avatar. And used the video to discuss the situation of the filter effect on digital media. In the end, I formed them into web formate.
+            a.btn.btn-lg.btn-dark(href='https://clement-liu.com/pages/avatar.html' target='_self') See the website
+          .col-sm-5.col-sm-push-1.vertical-center
+            .row.mb16.mt16
+              .col-sm-6.col-sm-push-2.border-line-between.mt8
+                h5.mb4 Project
+                p.mb4 Web Design
+                p.mb4 Exhibition
+                p.mb4 Speculative
+                p.mb4 shooting
+              .col-sm-6.col-sm-push-3.border-line-between.mt8
+                h5.mb4 Deliverables
+                p.mb4 Website    
+                p.mb4 Interactive Helmets
+                p.mb4 Research
+            .row.mb16.mt16
+              .col-sm-6.col-sm-push-2.border-line-between.mt8
+                h5.mb4 Tools
+                p.mb4 HTML,CSS,JS
+                p.mb4 Arduino
+                p.mb4 Photoshop
+                p.mb4 Premiere
+              .col-sm-6.col-sm-push-3.border-line-between.mt8
+                h5.mb4 Time
+                p.mb4  5 weeks
+    section.project.pt48.pb48
+      .container
+        .row.pt24
+          .col-lg-3.mx-auto
+          .col-lg-6.text-center.mx-auto
+            // CUSTOM BLOCKQUOTE
+            blockquote.blockquote.blockquote-custom.bg-white.p-5.shadow.rounded
+              .blockquote-custom-icon.bg-info.shadow-sm
+                i.fa.fa-quote-left.text-white
+              p.mb-0.mt-2.font-italic
+                | &quot;We shape our tools and 
+                br
+                | thereafter our tools shape us.&quot;
+              span
+                | - Marshall McLuhan
+                br
+            // END
+          .col-lg-3.mx-auto
+    section.fullscreen.image-bg
+      .background-image-holder
+        img.background-image(alt='image' src='assets/images/avatar-video.jpg')
+      .container.v-align-transform
+        .row
+          .col-sm-8.col-md-6.mb24
+            h6.uppercase CYBORG VIDEO
+            img(alt='Pic' src='assets/images/fileter.png')
+          .col-sm-12
+            .modal-container.pull-left
+              .play-button.btn-modal.inline
+              .foundry_modal.no-bg
+                iframe(data-provider='vimeo' data-video-id='356355361' data-autoplay='1' allowfullscreen='allowfullscreen' src='')
+            p.lead.inline-block.p32.p0-xs.pt8
+              | This video is used as a representation of a vision.
+              br
+              |  To create a future narrative about the barrier in communication, 
+              br
+              | I used scrawled graffiti, as a contradictory scenario 
+              br
+              | of filter effect in digital media. I believe medias are not neutral, 
+              br
+              | they shape what we see and perceive.
+    section
+      .container
+        .row
+          .col-sm-12
+            .image-slider.slider-all-controls.controls-inside
+              ul.slides
+                li
+                  img(alt='Image' src='assets/images/scences-v0.3.png')
+    section
+      .container
+        .row
+          .col-sm-8.col-sm-offset-2.text-center
+            h4.uppercase.mb16 Exhibition
+            p.mb64
+              | Avatars, the head imagines used on social medias, lead to my thinking of how the enormous photos, images, videos, which captured phenomenal expression at disconnected moment. To discuss this digitalizing effect, I used the circle head image as reference and made Avatar helmets for the CAS exhibition, which blend the edge between digital and physical appearance.
+        .row
+          .col-sm-12
+            .lightbox-grid.square-thumbs(data-gallery-title='Gallery')
+              ul
+                li
+                  a(href='assets/images/nightLife1.png' data-lightbox='true' data-title='image')
+                    .background-image-holder
+                      img.background-image(alt='image' src='assets/images/nightLife1.png')
+                li
+                  a(href='assets/images/nightLife2.png' data-lightbox='true' data-title='image')
+                    .background-image-holder
+                      img.background-image(alt='image' src='assets/images/nightLife2.png')
+                li
+                  a(href='assets/images/nightLife3.png' data-lightbox='true' data-title='image')
+                    .background-image-holder
+                      img.background-image(alt='image' src='assets/images/nightLife3.png')
+                li
+                  a(href='assets/images/nightLife4.png' data-lightbox='true' data-title='image')
+                    .background-image-holder
+                      img.background-image(alt='image' src='assets/images/nightLife4.png')
+                li
+                  a(href='assets/images/nightLife5.png' data-lightbox='true' data-title='image')
+                    .background-image-holder
+                      img.background-image(alt='image' src='assets/images/nightLife5.png')
+                li
+                  a(href='assets/images/nightLife6.png' data-lightbox='true' data-title='image')
+                    .background-image-holder
+                      img.background-image(alt='image' src='assets/images/nightLife6.png')
+                li
+                  a(href='assets/images/nightLife7.png' data-lightbox='true' data-title='image')
+                    .background-image-holder
+                      img.background-image(alt='image' src='assets/images/nightLife7.png')
+                li
+                  a(href='assets/images/nightLife9.png' data-lightbox='true' data-title='image')
+                    .background-image-holder
+                      img.background-image(alt='image' src='assets/images/nightLife9.png')
+    section.bg-secondary
+      .container
+        .row.v-align-children
+          .col-md-7.col-sm-6.text-center.mb-xs-24
+            .embed-video-container.embed-responsive.embed-responsive-16by9
+              iframe.embed-responsive-item(src='http://player.vimeo.com/video/349940821?badge=0&title=0&byline=0&title=0' allowfullscreen='allowfullscreen')
+          .col-md-4.col-md-offset-1.col-sm-5.col-sm-offset-1
+            h3.uppercase Website Live
+            p
+              | After the questioning and discussion with series of cyborg prototypes, I thought about how to bring audience into this topic rather than just a cool intractable led helmet on an exhibition. I made a website to present these the discussion about the disconnection in connected world. I divided the story into four sections: research, influence, experiment, and investigation. And used several little interactive moments to bring audience into the scenes behind the exhibition.
+    section
+      .container
+        .row
+          .col-sm-12
+            h4.uppercase.mb80 Cyborg Interaction Process
+            .tabbed-content.button-tabs.vertical
+              ul.tabs
+                li.active
+                  .tab-title
+                    span background
+                  .tab-content
+                    h5.uppercase
+                      | Studio project: cyborg
+                      br
+                    hr
+                    p
+                      | The gap between human and non-human is getting harder to locate. The term cyborg here is used to describe technology-enhanced human (like Ironman, Robocop) -- the flip side of an Android. But cyborg can be more subtle, technology enhancements that play on our desires, emotions, and social experiences.
+                    p
+                      | In the Cyborg Interaction Studio, students are asked to&nbsp; investigated the range of cyborgs we live with, or we can used to enhance our daily experience. Through quick prototyping, considerate observation of the cyborg world, we developed a line of questioning in conjunction with series of cyborg prototypes.
+                li
+                  .tab-title
+                    span Topic
+                  .tab-content
+                    h5.uppercase Avatar
+                    hr
+                    p
+                      | I see the social media as an alternative world we live in. In this world we have our appearance -- avatar. These still images frames who we are. It&apos;s a simplification of our complex personality. Meanwhile, these avatars become our prosthetics in digital world. I am interested in exploring how this&nbsp;prosthetics shapes how our&nbsp;daily experience.
+    section
+      .container
+        .row.mb64.mb-xs-24
+          .col-md-10.col-md-offset-1.col-sm-12.text-center
+            h3.uppercase Quick Cyborgs
+        .row
+          .col-sm-4.text-center
+            .feature.boxed
+              img.image-w-md.inline-block.mb24(alt='Pic' src='assets/images/cyborg-01.jpg')
+              h4.text-left.mt24 Decisions
+              p.text-left
+                | If there is no button, this function does not exist. Similarly in social media, which is a human-machine-human system, if you don&rsquo;t make sound, you don&rsquo;t exist. Real-life activities that do not have an online correlate begin to atrophy, or cease to be relevant.
+              h6.small.text-left
+                b Cyborg #1
+          .col-sm-4.text-center
+            .feature.boxed
+              img.image-w-md.inline-block.mb24(alt='Pic' src='assets/images/cyborg-02.jpg')
+              h4.text-left.mt24
+                | Kuuki Yomenai
+                br
+                | (read the air)
+              p.text-left
+                | To convey a clear idea through text and images is a professional skill, not to mention the limited number of text on social media. We use icon, emoji, words to push the limitation of expression. But they inevitable distort the original.
+              h6.small.text-left
+                strong Cyborg #2
+          .col-sm-4.text-center
+            .feature.boxed
+              img.image-w-md.inline-block.mb24(alt='Pic' src='assets/images/cyborg-03.jpg')
+              h4.text-left.mt24 Body Talk
+              p.text-left
+                | In digital world, the contexts are meta data, text, image, which have already went thought the process of selection and edition. Therefore, we only have access to the section of the reality through digital media.
+              h6.small.text-left
+                strong Cyborg #3
+    section.image-square.right
+      .col-md-6.image
+        .background-image-holder
+          img.background-image(alt='image' src='assets/images/helmet.png')
+      .col-md-6.content
+        h3 Interactive device goal
+        p.mb0
+          | A head-mounted device can be used to
+          br
+          | - frame avatar
+          br
+          | - show illusion or distorted appearance
+          br
+          | - enable user control the connections with people around 
+          br
+          | - let the user play and excite their interactions.
+    section
+      .container
+        .row
+          .col-md-6.col-md-push-3.text-center
+            .image-slider.slider-paging-controls.controls-outside
+              ul.slides
+                li.mb32
+                  img(alt='App' src='assets/images/circuit-v0.6.png')
+                li.mb32
+                  img(alt='App' src='assets/images/Illusion-v0.4.png')
+                li.mb32
+                  img(alt='App' src='assets/images/VISIBLEINVISIBLE-v0.6.png')
+          .col-md-3.col-md-pull-6
+            .mt80.mt-xs-80.text-right.text-left-xs
+              h5.uppercase.bold.mb16 Control
+              p.fade-1-4
+                | Use sound sensor to turn on the LED, which gives users an intuitive way of controlling.
+            .mt80.mt-xs-0.text-right.text-left-xs
+              h5.uppercase.bold.mb16 Visible/Invisible
+              p.fade-1-4
+                | Double-side mirror film acts as an on and off switch. Meanwhile, its reflection effect intensify the illusion.
+          .col-md-3
+            .mt80.mt-xs-0
+              h5.uppercase.bold.mb16 Illusion
+              p.fade-1-4
+                | To give facial expression a continually change, I used the light&nbsp; shading  in different directions.
+    section
+      .container
+        .row.mb64.mb-xs-24
+          .col-sm-12.text-center
+            h3 Prototype Experiment
+            p.lead
+              | Through bucket test, I found the possibilities in the interactions, and refined them through iteration.
+        .row
+          .col-sm-6.col-md-6
+            .feature.feature-3.mb-xs-24.mb64
+              .left
+                i.ti.ti-comments-smiley.icon-sm
+              .right
+                h5.uppercase.mb16 interact with others
+                p
+                  | The users don&rsquo;t have desires to start the interaction.
+                  br
+                  | To create a context for communication. I use the other helmets as a companies.
+                  br
+          .col-sm-6.col-md-6
+            .feature.feature-3.mb-xs-24.mb64
+              .left
+                i.ti.ti-shine.icon-sm
+              .right
+                h5.uppercase.mb16 Distractive light effect
+                p
+                  | The&nbsp;bare led light and wires distract user&rsquo;s attention.
+                  br
+                  | To prevent that, I add a light-blocking layer and refine the connections.
+                  br
+          .col-sm-6.col-md-6
+            .feature.feature-3.mb-xs-24.mb64
+              .left
+                i.ti.ti-unlink.icon-sm
+              .right
+                h5.uppercase.mb16 trigger becomes sluggish
+                p
+                  | The low voltage batteries make the sound trigger unstable. So I changed to more stable power bank and prepared backup batteries just in case.
+                  br
+          .col-sm-6.col-md-6
+            .feature.feature-3.mb-xs-24.mb64
+              .left
+                i.ti.ti-thumb-down.icon-sm
+              .right
+                h5.uppercase.mb16 light effect looks subtle
+                p
+                  | The mirror reflects that LED light, which reduces the shading effect. Adding a light-blocking layer and put light closer to face solved the problem.
+    section
+      .container
+        .row.v-align-children
+          .col-sm-6.col-md-5
+            h2.uppercase.color-primary Exhibition at CAS Night Life 
+            hr
+            p
+              | At 2017, these interactive helmets were presented on Nightlife event at the California Academy of Sciences. From the mass feedback of exhibition, I verified and studied the original hypothesis to get more comprehensive understanding of this topic.
+              br
+              | I thought the distorted illusions of people&rsquo;s appearance are is fake identities, which people can&rsquo;t build connection with. But people actually had tones of fun with them. Emerged in the entertaining environment, users loved acting as a character rather than themself to *fit in the playful atmosphere*.
+              br
+              | I assumed users like to constantly talking to keep the light on to enable others to see them. But it turned out they had more time hiding their face behind the mirror and isolated from others. The helmet worked as a private space, similar to sunglasses providing a sense of safety in public.
+          .col-sm-6.col-md-offset-1.p0
+            .col-sm-6.text-center
+              .feature.bordered.mb30
+                h1.large.uppercase 3
+                h5.uppercase helmets
+            .col-sm-6.text-center
+              .feature.bordered.mb30
+                h1.large 7 
+                h5.uppercase chats
+            .col-sm-6.text-center
+              .feature.bordered.mb30
+                h1.large 2
+                h5.uppercase hours
+            .col-sm-6.text-center
+              .feature.bordered.mb30
+                h1.large 24
+                h5.uppercase players
+    section.fullscreen.image-bg.parallax.background-multiply
+      .background-image-holder
+        img.background-image(alt='image' src='assets/images/filter.jpg')
+      .container.v-align-transform
+        .row
+          .col-sm-12
+            h1.thin.mb0
+              | The users act different personality of themselves to fit in this context, forming isolated communities and environment. In news media, echo chamber is a metaphorical description of a situation in which beliefs are amplified or reinforced by communication and repetition inside a closed system. The community shares the similar values. Like a filter, it removes the irrelevant parts and echos the similarity.
+      //- .align-bottom.text-center
+      //-   ul.list-inline.social-list.mb24
+      //-     li
+      //-       a(href='#')
+      //-         i.fa.fa-play-circle-o

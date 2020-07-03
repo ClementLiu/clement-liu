@@ -1,0 +1,75 @@
+/*!---------- 25. INTROS ----------*/
+
+.cover {
+  .heading-colors(@color-primary);
+  .text-colors(@color-primary);
+  margin: 0;
+  padding: 0;
+}
+
+.image-bg.bg-light {
+  .heading-colors(#222);
+  .text-colors(#777);
+}
+
+.cover:first-child .fullscreen {
+  max-height: 100%;
+}
+
+.cover.fullscreen .slides > li {
+  height: 100vh;
+}
+
+.cover .slides li .container {
+  z-index: 4;
+  position: relative;
+}
+
+.cover .flex-control-nav {
+  .transition(0.3s);
+  opacity: 0.9;
+}
+
+.cover .flex-control-nav:hover {
+  opacity: 1;
+}
+
+.cover .align-bottom {
+  padding: 0 32px;
+  bottom: 16px;
+}
+
+.cover .align-top {
+  padding: 0 32px;
+}
+
+@media all and (max-width: 767px) {
+  .cover .align-bottom {
+    padding: 0 15px;
+  }
+
+  .cover .align-bottom.relative-xs {
+    position: relative;
+    bottom: 0;
+  }
+
+  .cover.fullscreen {
+    height: auto;
+    padding: 100px 0;
+  }
+
+  .cover.fullscreen.image-slider {
+    padding: 0;
+  }
+
+  .cover.fullscreen .container {
+    top: 0;
+    transform: none;
+    -webkit-transform: none;
+  }
+
+  .cover.fullscreen .slides li {
+    height: auto;
+    padding: 80px 0;
+  }
+}

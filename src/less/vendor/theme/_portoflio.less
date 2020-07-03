@@ -1,0 +1,115 @@
+/*!---------- 30. PORTOFLIO ----------*/
+
+.filters {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.filters li {
+  float: left;
+  margin-right: 32px;
+  cursor: pointer;
+  .btn;
+  .btn-sm;
+  border-color: rgba(255, 255, 255, 0);
+  opacity: 0.4;
+  border-radius: 25px;
+  .disable-select;
+  display: inline-block;
+  // add color
+  background: @bg-primary !important;
+  .transition(0.6s);
+  font-family: @heading-font, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.filters li.active {
+  border-color: @color-primary;
+  opacity: 1;
+}
+
+.filters li:last-child {
+  margin-right: 0;
+}
+
+.filters.floating {
+  position: absolute;
+  z-index: 10;
+  top: 16px;
+  text-align: center;
+  left: 50%;
+  .translateX(-50%);
+  background: rgba(255, 255, 255, 0.98);
+  .transition(0.3s);
+  border-radius: 200px;
+}
+
+.filters.floating li {
+  margin-bottom: 0;
+}
+
+.bg-dark .filters.floating {
+  .bg-dark;
+}
+
+.project {
+  .transition(0.3s);
+  opacity: 1;
+  padding: 0;
+}
+
+.container .project {
+  padding: 0 15px;
+}
+
+.project.inactive {
+  opacity: 0.1 !important;
+  pointer-events: none !important;
+  display: none;
+}
+
+.project .image-tile {
+  margin: 0;
+}
+
+.project.inactive:hover .title,
+.project.inactive .image-tile:hover:before {
+  display: none;
+}
+
+@media all and (max-width: 868px) {
+  .filters.floating {
+    width: 90vw;
+  }
+
+  .filters.floating li {
+    float: none;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .filters.floating {
+    border-radius: 0;
+    padding: 8px;
+  }
+
+  .filters.floating li {
+    width: 50%;
+    float: left;
+    margin: 0;
+  }
+}
+
+section + .portfolio-pullup {
+  padding-top: 0;
+  margin-top: -128px;
+  position: relative;
+  z-index: 20;
+}
+
+.portfolio-pullup .project {
+  margin-bottom: 0;
+}
+
+.portfolio-pullup .inner-title:hover {
+  opacity: 1;
+}

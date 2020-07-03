@@ -1,0 +1,218 @@
+/*!---------- 1. GLOBAL STYLES ----------*/
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 0.925rem;
+  line-height: 22px;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #4f4f4f;
+  overflow-x: hidden;
+}
+body.boxed-layout {
+  background: #eee;
+}
+body.boxed-layout .main-container {
+  background: #fff;
+}
+body.boxed-layout,
+.boxed-layout .nav-container,
+.boxed-layout .main-container,
+.boxed-layout nav {
+  max-width: 1366px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+ul {
+  list-style: none;
+}
+ul li {
+  margin-bottom: 4px;
+}
+ul.bullets {
+  list-style: inside;
+}
+.main-container {
+  background-color: #eeeeee;
+  clear: both;
+}
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 0 0 24px 0;
+  width: 100%;
+}
+hr.short-thick {
+  max-width: 50px;
+  border-top: 5px solid #ccc;
+  opacity: 1 !important;
+}
+@media all and (min-width: 768px) {
+  .border-between-line {
+    content: "";
+    position: absolute;
+    width: 2px;
+    background-color: black;
+    height: 100%;
+    left: 50%;
+  }
+}
+.image-bg hr {
+  border-color: #fff;
+  opacity: 0.6;
+}
+.image-bg.bg-light hr {
+  border-color: #ccc;
+  opacity: 1;
+}
+.bg-dark hr {
+  border-color: #555;
+}
+.inline-block {
+  display: inline-block;
+}
+.list-inline {
+  margin-left: 0;
+}
+.list-inline > li {
+  padding: 0 8px;
+}
+.list-inline > li:last-child {
+  padding-right: 0;
+}
+.list-inline > li:first-child {
+  padding-left: 0;
+}
+.bg-primary .list-inline i {
+  color: #828282;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.display-block {
+  display: block;
+}
+.show-grid {
+  border: 1px dashed rgba(255, 255, 255, 0);
+  padding: 8px;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  cursor: default;
+}
+.show-grid:hover {
+  border-color: #222;
+}
+.right {
+  right: 0;
+}
+.relative {
+  position: relative;
+  z-index: 2;
+}
+.clearboth {
+  clear: both;
+}
+.spread-children * {
+  display: inline-block;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+.spread-children-large * {
+  display: inline-block;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.container {
+  position: relative;
+  padding-right: 6px;
+  padding-left: 6px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media all and (min-width: 1200px) {
+  .container {
+    width: 1002px;
+  }
+}
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+  padding-right: 6px;
+  padding-left: 6px;
+}
+.vnu {
+  display: inline;
+}
+.row-gapless > div[class*="col-"] {
+  padding: 0;
+}
+@media all and (max-width: 1100px) {
+  .col-md-push-1 {
+    left: 0;
+  }
+}
+@media all and (max-width: 768px) {
+  .pull-left-sm {
+    float: left !important;
+  }
+  .overflow-hidden-xs {
+    overflow: hidden;
+  }
+}
+@media all and (max-width: 767px) {
+  .spread-children * {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  .row {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}

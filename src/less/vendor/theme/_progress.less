@@ -1,0 +1,172 @@
+/*!---------- 14. PROGRESS BARS ----------*/
+
+.progress-bars {
+  margin-bottom: 24px;
+}
+
+.progress {
+  height: auto;
+  box-shadow: none;
+}
+
+.progress-bar {
+  background: @color-primary;
+  box-shadow: none !important;
+}
+
+.bg-primary .progress-bar {
+  background: lighten(@color-primary, 8%);
+}
+
+.progress-1 {
+  height: 32px;
+  margin-bottom: 8px;
+  border-radius: 0;
+  border: none;
+}
+
+.progress-1:last-child {
+  margin-bottom: 0;
+}
+
+.progress-1 .progress-bar {
+  text-align: right;
+  padding-right: 12px;
+  line-height: 32px;
+  border-radius: 0;
+}
+
+.progress-1 .progress-bar span {
+  .bold-h6;
+  font-size: 11px;
+}
+
+.progress-2 {
+  height: auto;
+  background: none;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.progress-2 span {
+  .bold-h6;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.progress-2 .bar-holder {
+  height: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid @color-primary;
+}
+
+.bg-primary .progress-2 .bar-holder {
+  border-color: lighten(@color-primary, 12%);
+}
+
+/*!---------- 15. STATS ----------*/
+
+.stat-2 h1 {
+  font-size: 80px;
+  line-height: 88px;
+}
+
+.stat-3 h1 {
+  margin-bottom: 8px;
+  font-size: 72px;
+  line-height: 80px;
+}
+
+.stat-3 h6 {
+  margin-bottom: 0;
+}
+
+/*!---------- 16. BREADCRUMBS ----------*/
+
+.breadcrumb {
+  margin-bottom: 24px;
+}
+
+.breadcrumb-2 {
+  background: none;
+  padding: 0;
+}
+
+.breadcrumb-2 li a,
+.breadcrumb-2 li {
+  .bold-h6;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.breadcrumb-2 > li + li:before {
+  padding: 0 16px;
+  color: #bbb;
+}
+
+.image-bg .breadcrumb li a {
+  color: #fff;
+  opacity: 0.8;
+}
+
+.image-bg .breadcrumb li a:hover {
+  opacity: 1;
+}
+
+.image-bg .breadcrumb li.active {
+  color: #fff;
+}
+
+.bg-dark .breadcrumb a {
+  color: #fff;
+}
+
+@media all and (max-width: 990px) {
+  .page-title-4 .breadcrumb,
+  .page-title-2 .breadcrumb {
+    float: left;
+    margin-top: 32px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .breadcrumb-2 > li + li:before {
+    padding: 0 4px;
+  }
+
+  .page-title-4 .breadcrumb,
+  .page-title-2 .breadcrumb {
+    float: left;
+    margin-top: 8 px;
+  }
+}
+
+/*!---------- 17. PAGINATION ----------*/
+
+.pagination {
+  margin: 0;
+}
+
+.pagination li {
+  .number;
+}
+
+.pagination li a {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  text-align: center;
+  padding-top: 6px;
+  margin: 0 4px;
+  color: @bg-dark;
+  font-weight: 400;
+}
+
+.pagination li a:hover,
+.pagination li.active a,
+.pagination li.active:hover a {
+  background: @color-primary;
+  color: #fff;
+  border-color: @color-primary;
+}
