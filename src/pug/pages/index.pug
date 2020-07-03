@@ -1,6 +1,19 @@
 extends ../layouts/default-layout.pug
 block content
   .main-container
+    section.landing
+      .jumbotron.jumbotron-fluid.image-bg
+        .background-image-holder
+          img.background-image(alt='image' src='assets/images/index-landing-13.png')
+        .container
+          h1.display-2
+            b.mouseOn(data-name="test" data-content="1F929") Hi;
+            br
+            | I’m #[span.underline Clement Liu]
+            br
+            | Designer || Developer
+          h3.boxRound
+            | I craft delightful experiences for humans.
     section#projects.projects.pt48(style='overflow: visible;')
       .container
         .row.pb24.nav-sticky

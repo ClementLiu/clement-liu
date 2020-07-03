@@ -7,5 +7,90 @@ html body {
   -moz-osx-font-smoothings: grayscale;
   -webkit-font-smoothing: antialiased;
 }
+section.landing {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+section.landing .jumbotron {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+section.landing .jumbotron .background-image-holder {
+  background-position: 50% 100% !important;
+}
+section.landing .jumbotron .container h1,
+section.landing .jumbotron .container h2,
+section.landing .jumbotron .container h3,
+section.landing .jumbotron .container h4,
+section.landing .jumbotron .container h5,
+section.landing .jumbotron .container p,
+section.landing .jumbotron .container span {
+  color: #4f4f4f;
+}
+section.landing .jumbotron .container h1 {
+  font-size: 2.8rem;
+}
+section.landing .jumbotron .container h1 span.underline {
+  display: initial;
+  position: relative;
+  width: 0%;
+}
+section.landing .jumbotron .container h1 span.underline:after {
+  position: absolute;
+  width: 0%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  content: "";
+  height: 4px;
+  border-radius: 30px;
+  left: 0;
+  bottom: 0;
+  background-color: #4f4f4f;
+}
+section.landing .jumbotron .container h1 span.underline:hover:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 30px;
+  left: 0;
+  bottom: 0;
+  background-color: #4f4f4f;
+}
+section.landing .jumbotron .container h1 b {
+  cursor: default;
+}
+section.landing .jumbotron .container h3 {
+  letter-spacing: 0.1rem;
+  position: relative;
+  display: inline;
+}
+section.landing .jumbotron .container h3:after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 110%;
+  -webkit-transform: translateX(-3%);
+  -ms-transform: translateX(-3%);
+  transform: translateX(-3%);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+  border-radius: 30px;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+}
 
 /*# sourceMappingURL=../maps/styles.css.map */

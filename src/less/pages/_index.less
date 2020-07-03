@@ -1,0 +1,50 @@
+section.landing {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  .jumbotron {
+    display: flex;
+    align-items: center;
+    .background-image-holder {
+      background-position: 50% 100% !important;
+    }
+    .container {
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      p,
+      span {
+        color: @clement;
+      }
+      h1 {
+        font-size: 2.8rem;
+        span.underline {
+          #underlineHover;
+        }
+        b {
+          cursor: default;
+        }
+      }
+      h3 {
+        letter-spacing: 0.1rem;
+        position: relative;
+        display: inline;
+        &:after {
+          content: "";
+          z-index: -1;
+          position: absolute;
+          width: 110%;
+          transform: translateX(-3%);
+          transition: all 0.3s ease-in-out;
+          height: 100%;
+          border-radius: 30px;
+          left: 0;
+          bottom: 0;
+          background-color: white;
+        }
+      }
+    }
+  }
+}

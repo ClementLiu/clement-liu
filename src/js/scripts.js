@@ -1200,7 +1200,43 @@ $(document).ready(function () {
       }
       $(this).html(finalTitle);
     });
+  // Add hover follow curser
 
+  $(".mouseOn").each(function (i, e) {
+    var name = "curserImg" + $(e).data("name");
+    var $curser = $("<div>", {
+      id: name,
+      css: {
+        top: " 0",
+        left: " 0",
+        position: " absolute",
+        fontSize: " 50px",
+        lineHeight: " 50px",
+        zIndex: " 100",
+        display: "none",
+        pointerEvents: "none",
+        transition: "all 0.1s",
+      },
+    }).html("&#x" + $(e).data("content") + ";");
+    $("body").append($curser);
+  });
+
+  $(".mouseOn").hover(
+    function (e) {
+      $("#curserImg" + $(e.target).data("name")).show();
+    },
+    function (e) {
+      $("#curserImg" + $(e.target).data("name")).hide();
+    }
+  );
+
+  $(".mouseOn").mousemove(function (e) {
+    $("#curserImg" + $(e.target).data("name")).offset({
+      top: e.pageY - 50,
+      left: e.pageX,
+    });
+    // console.log("e", e.pageX);
+  });
   //- script(src='https://cdn.jsdelivr.net/gh/ekalinin/typogr.js@0.6.7/typogr.min.js')
   //- script.
   //-   document.body.innerHTML = typogr.widont(document.body.innerHTML);
