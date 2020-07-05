@@ -10,6 +10,7 @@ var gulp = require("gulp"),
   filter = require("gulp-filter"),
   dependents = require("gulp-dependents"),
   concat = require("gulp-concat"),
+  cleanCSS = require("gulp-clean-css"),
   autoprefixer = require("gulp-autoprefixer");
 
 function reload(done) {
@@ -21,42 +22,44 @@ function reload(done) {
 }
 
 function styles() {
-  return (
-    gulp
-      // .src("src/less/**/*.less")
-      .src("src/less/**/*.less")
-      .pipe(plumber())
-      .pipe(cached("less")) // only pass through changed files
-      .pipe(dependents())
-      .pipe(sourcemaps.init())
-      .pipe(filter(["**", "!**/_*.less"]))
-      .pipe(less())
-      .pipe(
-        autoprefixer({
-          overrideBrowserslist: ["last 3 versions"],
-          cascade: false,
-        })
-      )
-      // .pipe(less({ outputStyle: "expanded" }))
-      // .pipe(gulp.dest("assets/css"))
-      // .pipe(less({ outputStyle: "compressed" }))
-      // .pipe(
-      //   rename(function (path) {
-      //     // Updates the object in-place
-      //     path.basename += ".min";
-      //     path.extname = ".css";
-      //   })
-      // )
-      .pipe(
-        sourcemaps.write("../maps", {
-          includeContent: false,
-          sourceRoot: "/src/less",
-        })
-      )
-      // .pipe(remember())
-      .pipe(gulp.dest("assets/css"))
-      .pipe(connect.reload())
-  );
+  return gulp
+    .src("src/less/**/*.less")
+    .pipe(plumber())
+    .pipe(cached("less")) // only pass through changed files
+    .pipe(dependents())
+    .pipe(sourcemaps.init())
+    .pipe(filter(["**", "!**/_*.less"]))
+    .pipe(less())
+    .pipe(
+      autoprefixer({
+        overrideBrowserslist: ["last 3 versions"],
+        cascade: false,
+      })
+    )
+    .pipe(
+      sourcemaps.write("../maps", {
+        includeContent: false,
+        sourceRoot: "/src/less",
+      })
+    )
+    .pipe(gulp.dest("assets/css"))
+    .pipe(connect.reload());
+}
+
+function stylesBuild() {
+  return gulp
+    .src("src/less/*.less")
+    .pipe(plumber())
+    .pipe(dependents())
+    .pipe(less())
+    .pipe(
+      autoprefixer({
+        overrideBrowserslist: ["last 3 versions"],
+        cascade: false,
+      })
+    )
+    .pipe(cleanCSS({ compatibility: "ie8" }))
+    .pipe(gulp.dest("assets/css"));
 }
 
 function scripts() {
@@ -69,6 +72,14 @@ function scripts() {
     .pipe(rename("scripts.min.js"))
     .pipe(gulp.dest("assets/js"))
     .pipe(connect.reload());
+}
+function scriptsBuild() {
+  return gulp
+    .src("src/js/*.js")
+    .pipe(plumber())
+    .pipe(concat("scripts.js"))
+    .pipe(uglify())
+    .pipe(gulp.dest("assets/js"));
 }
 
 function html() {
@@ -107,7 +118,7 @@ function watchTask(done) {
 }
 
 const watch = gulp.parallel(watchTask, reload);
-const build = gulp.series(gulp.parallel(styles, scripts, html, views));
+const build = gulp.series(gulp.parallel(stylesBuild, scriptsBuild, views));
 
 exports.reload = reload;
 exports.styles = styles;
