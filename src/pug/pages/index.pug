@@ -7,13 +7,17 @@ block content
           img.background-image(alt='image' src='assets/images/index-landing-13.png')
         .container
           h1.display-2
-            b.mouseOn(data-name="test" data-content="1F929") Hi;
+            b.mouseOn(data-name="Hi" data-content="1F929") Hi;
             br
             | I’m #[span.underline Clement Liu]
             br
-            | Designer || Developer
+            span.design.underlineAnima Designer 
+            | || 
+            span.develop.underlineAnima Developer
           h3.boxRound
-            | I craft delightful experiences for humans.
+            | I craft delightful experiences for
+            b.mouseOn(data-name="test" data-content="1F57A")  humans
+            |.
     section#projects.projects.pt48(style='overflow: visible;')
       .container
         .row.pb24.nav-sticky

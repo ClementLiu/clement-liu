@@ -1,3 +1,14 @@
+mixin rainbowText(text，type)
+  .c-rainbow
+    .c-rainbow__layer.c-rainbow__layer--white text
+    .c-rainbow__layer.c-rainbow__layer--orange text
+    .c-rainbow__layer.c-rainbow__layer--red text
+    .c-rainbow__layer.c-rainbow__layer--violet text
+    .c-rainbow__layer.c-rainbow__layer--blue text
+    .c-rainbow__layer.c-rainbow__layer--green text
+    .c-rainbow__layer.c-rainbow__layer--yellow text
+
+
 mixin carousel(...imgUrls)
   .image-slider.slider-all-controls.controls-inside
     ul.slides
@@ -14,15 +25,15 @@ mixin modalImg(id,imgUrl,imgAlt)
         .modal-body.mt32.mb32.p32.text-center
           img.img-fluid(src=imgUrl, alt=imgAlt)
           //- .embed-responsive.embed-responsive-16by9.z-depth-5
-            //- iframe.embed-responsive-item(src='https://www.youtube.com/embed/A3PDXmYoF5U' allowfullscreen='')
-        // Footer
-        .modal-footer.justify-content-center
-          button.btn.btn-outline-primary.btn-rounded.btn-md.mb0(type='button' data-dismiss='modal') Close
+          //- iframe.embed-responsive-item(src='https://www.youtube.com/embed/A3PDXmYoF5U' allowfullscreen='')
+          // Footer
+          .modal-footer.justify-content-center
+            button.btn.btn-outline-primary.btn-rounded.btn-md.mb0(type='button' data-dismiss='modal') Close
       // /.Content
-  // Modal: Name
-  a
-    img.img-fluid.z-depth-1(src=imgUrl alt=imgAlt data-toggle='modal' data-target="#"+id)
-  // Grid column
+      // Modal: Name
+      a
+        img.img-fluid.z-depth-1(src=imgUrl alt=imgAlt data-toggle='modal' data-target="#"+id)
+      // Grid column
 mixin imgCaption(imgUrl,imgAlt,caption,hover=false)
   if hover
     //- .image-caption.cast-shadow.hover-caption
@@ -35,3 +46,4 @@ mixin imgCaption(imgUrl,imgAlt,caption,hover=false)
       img(alt=imgAlt src=imgUrl)
       .caption
         p= caption
+

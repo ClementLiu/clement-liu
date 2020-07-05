@@ -1203,9 +1203,11 @@ $(document).ready(function () {
   // Add hover follow curser
 
   $(".mouseOn").each(function (i, e) {
+    console.log('$(e).data("content")', i, $(e).data());
     var name = "curserImg" + $(e).data("name");
     var $curser = $("<div>", {
       id: name,
+      class: "shake-slow shake-constant",
       css: {
         top: " 0",
         left: " 0",
@@ -1215,7 +1217,6 @@ $(document).ready(function () {
         zIndex: " 100",
         display: "none",
         pointerEvents: "none",
-        transition: "all 0.1s",
       },
     }).html("&#x" + $(e).data("content") + ";");
     $("body").append($curser);

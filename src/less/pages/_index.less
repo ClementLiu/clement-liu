@@ -1,8 +1,16 @@
+@landingColor: #ccc;
+.nav-container {
+  .nav-bar {
+    background-color: @landingColor;
+  }
+}
 section.landing {
+  background-color: @landingColor;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   .jumbotron {
+    background-color: @landingColor;
     display: flex;
     align-items: center;
     .background-image-holder {
@@ -18,6 +26,38 @@ section.landing {
       span {
         color: @clement;
       }
+      span {
+        display: inline-block;
+      }
+      span.underlineAnima.design {
+        background: linear-gradient(to right, Gold, Gold 50%, @clement 50%);
+        line-height: unset;
+        background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 200% 100%;
+        background-position: 100%;
+        transition: background-position 275ms ease;
+        text-decoration: none; // text decorations are clipped in WebKit browsers
+        &:hover {
+          background-position: 0 100%;
+        }
+      }
+      span.underlineAnima.develop {
+        background: linear-gradient(to right, Navy, Navy 50%, @clement 50%);
+        line-height: unset;
+        background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 200% 100%;
+        background-position: 100%;
+        transition: background-position 275ms ease;
+        text-decoration: none; // text decorations are clipped in WebKit browsers
+        &:hover {
+          background-position: 0 100%;
+        }
+      }
+
       h1 {
         font-size: 2.8rem;
         span.underline {
