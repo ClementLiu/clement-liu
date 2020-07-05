@@ -27,34 +27,81 @@ section.landing {
         color: @clement;
       }
       span {
+        // display: inline-block;
+      }
+      @t-hilight: .t-hilight;
+      @{t-hilight} {
         display: inline-block;
-      }
-      span.underlineAnima.design {
-        background: linear-gradient(to right, Gold, Gold 50%, @clement 50%);
-        line-height: unset;
-        background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-size: 200% 100%;
-        background-position: 100%;
-        transition: background-position 275ms ease;
-        text-decoration: none; // text decorations are clipped in WebKit browsers
+        position: relative;
         &:hover {
-          background-position: 0 100%;
+          @{t-hilight}{
+            &__e {
+              &--anim{
+                background-position: 100% 0%;
+              }
+              &--type{
+                animation: typing 3.5s steps(10, end) 275ms none;
+                background-position: 0% 0%;
+              }
+            }
+          }
+
         }
-      }
-      span.underlineAnima.develop {
-        background: linear-gradient(to right, Navy, Navy 50%, @clement 50%);
-        line-height: unset;
-        background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-size: 200% 100%;
-        background-position: 100%;
-        transition: background-position 275ms ease;
-        text-decoration: none; // text decorations are clipped in WebKit browsers
-        &:hover {
-          background-position: 0 100%;
+        &__e {
+          line-height: unset;
+          &--anim {
+            background: linear-gradient(
+              to bottom,
+              Navy,
+              Navy 50%,
+              @clement 50%
+            );
+            line-height: unset;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 100% 200%;
+            background-position: 50% 100%;
+            transition: background-position 275ms ease;
+            text-decoration: none; // text decorations are clipped in WebKit browsers
+          }
+          &--type {
+            // top:10px;
+            background: linear-gradient(
+              to right,
+              gold,
+              gold 50%,
+              #30a14e 50%
+            );
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% 100%;
+            background-position: -100%;
+            transition: background-position 275ms ease 2.7s;
+            text-decoration: none; // text d
+            position: absolute;
+            overflow: hidden;
+            opacity: 0;
+            animation-fill-mode: none;
+          }
+          
+        }
+        @keyframes typing {
+          from {
+            width: 0;
+            opacity: 1;
+          }
+          55%{
+            opacity: 1;
+            width: 100%;
+
+          }
+          90%{
+            opacity: 1;
+          }
+          to {
+            opacity: 0;
+            width: 100%;
+          }
         }
       }
 

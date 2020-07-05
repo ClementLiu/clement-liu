@@ -1,3 +1,17 @@
+// rainbowText
+$(document).ready(function () {
+  $(".c-rainbow").hover(
+    function () {
+      $(this).children().first().css("visibility", "hidden");
+      $(this).children().last().show();
+    },
+    function () {
+      $(this).children().first().css("visibility", "visible");
+      $(this).children().last().hide();
+    }
+  );
+});
+
 var mr_firstSectionHeight,
   mr_nav,
   mr_fixedAt,
@@ -9,7 +23,7 @@ var mr_firstSectionHeight,
   mr_scrollTop = 0;
 
 $(document).ready(function () {
-  "use strict";
+  ("use strict");
 
   // Smooth scroll to inner links
   var innerLinks = $("a.inner-link");

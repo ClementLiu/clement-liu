@@ -9,6 +9,7 @@ var gulp = require("gulp"),
   cached = require("gulp-cached"),
   filter = require("gulp-filter"),
   dependents = require("gulp-dependents"),
+  concat = require("gulp-concat"),
   autoprefixer = require("gulp-autoprefixer");
 
 function reload(done) {
@@ -60,8 +61,9 @@ function styles() {
 
 function scripts() {
   return gulp
-    .src("src/js/scripts.js")
+    .src("src/js/*.js")
     .pipe(plumber())
+    .pipe(concat("scripts.js"))
     .pipe(gulp.dest("assets/js"))
     .pipe(uglify())
     .pipe(rename("scripts.min.js"))
@@ -90,7 +92,7 @@ function views() {
 function watchTask(done) {
   gulp.watch("*.html", html);
   gulp.watch("src/less/**/*.less", styles);
-  gulp.watch("src/js/scripts.js", scripts);
+  gulp.watch("src/js/*.js", scripts);
   gulp.watch("src/pug/**/*.pug", views);
   gulp.watch("src/less/**/*.scss", styles).on("change", function (event) {
     console.log("event happened:" + JSON.stringify(event));

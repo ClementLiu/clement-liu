@@ -11,9 +11,11 @@ block content
             br
             | I’m #[span.underline Clement Liu]
             br
-            span.design.underlineAnima Designer 
-            | || 
-            span.develop.underlineAnima Developer
+            +rainbowText("Designer", "span") 
+            |  || 
+            div.t-hilight
+              span.t-hilight__e.t-hilight__e--type  Developer
+              span.t-hilight__e.t-hilight__e--anim  Developer
           h3.boxRound
             | I craft delightful experiences for
             b.mouseOn(data-name="test" data-content="1F57A")  humans
@@ -95,3 +97,4 @@ block content
                     | Structure
                   span
                     | A instructional poster uncovering the beauty of engineering and designing beneath classic printer.
+include /_mixins/mixins.pug

@@ -9,7 +9,7 @@ var mr_firstSectionHeight,
   mr_scrollTop = 0;
 
 $(document).ready(function () {
-  "use strict";
+  ("use strict");
 
   // Smooth scroll to inner links
   var innerLinks = $("a.inner-link");

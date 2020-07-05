@@ -1,14 +1,3 @@
-mixin rainbowText(text，type)
-  .c-rainbow
-    .c-rainbow__layer.c-rainbow__layer--white text
-    .c-rainbow__layer.c-rainbow__layer--orange text
-    .c-rainbow__layer.c-rainbow__layer--red text
-    .c-rainbow__layer.c-rainbow__layer--violet text
-    .c-rainbow__layer.c-rainbow__layer--blue text
-    .c-rainbow__layer.c-rainbow__layer--green text
-    .c-rainbow__layer.c-rainbow__layer--yellow text
-
-
 mixin carousel(...imgUrls)
   .image-slider.slider-all-controls.controls-inside
     ul.slides
@@ -47,3 +36,14 @@ mixin imgCaption(imgUrl,imgAlt,caption,hover=false)
       .caption
         p= caption
 
+mixin rainbowText(text="NAME", type="div")
+  .c-rainbow
+    #{type}.c-rainbow__placeHolder= text
+    #{type}.c-rainbow__container
+      .c-rainbow__container__layer.c-rainbow__container__layer--white= text
+      .c-rainbow__container__layer.c-rainbow__container__layer--orange= text
+      .c-rainbow__container__layer.c-rainbow__container__layer--red= text
+      .c-rainbow__container__layer.c-rainbow__container__layer--violet= text
+      .c-rainbow__container__layer.c-rainbow__container__layer--blue= text
+      .c-rainbow__container__layer.c-rainbow__container__layer--green= text
+      .c-rainbow__container__layer.c-rainbow__container__layer--yellow= text

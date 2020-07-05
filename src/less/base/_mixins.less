@@ -20,57 +20,66 @@
   --color-foreground: var(--color-white);
   counter-reset: rainbow;
   position: relative;
-  display: block;
-
+  display: inline-block;
   list-style: none;
 
   padding: 0;
   margin: 0;
-
-  &__layer {
+  .text-style() {
     --text-color: var(--color-foreground);
     counter-increment: rainbow;
     // font-size: 3rem;
     color: var(--text-color);
+  }
+  &__placeHolder {
+    .text-style();
+    z-index: 0;
+  }
+  &__container {
+    display: none;
+    position: absolute;
+    top: 1.5rem;
+    left: 0;
+    &__layer {
+      .text-style();
+      text-shadow: -1px -1px 0 var(--color-black), 1px -1px 0 var(--color-black),
+        -1px 1px 0 var(--color-black), 1px 1px 0 var(--color-black),
+        4px 4px 0 rgba(0, 0, 0, 0.2);
+      animation: rainbow 1.5s ease-in-out infinite;
 
-    text-shadow: -1px -1px 0 var(--color-black), 1px -1px 0 var(--color-black),
-      -1px 1px 0 var(--color-black), 1px 1px 0 var(--color-black),
-      4px 4px 0 rgba(0, 0, 0, 0.2);
+      each(range(7),{
+          &:nth-child(@{value}) {
+              animation-delay: calc(@value / var(--delay) * 1s);
+              left: calc(var(--axis-x) * @value);
+              z-index: -@value*10;
+            }
+      })
+        &:not(:first-child) {
+        position: absolute;
+        top: 0;
+      }
 
-    animation: rainbow 1.5s ease-in-out infinite;
-
-    each(range(7),{
-        &:nth-child(@{value}) {
-            animation-delay: calc(@value / var(--delay) * 1s);
-            left: calc(var(--axis-x) * @value);
-            z-index: -@value*10;
-          }
-    })
-      &:not(:first-child) {
-      position: absolute;
-      top: 0;
-    }
-
-    &--white {
-      --text-color: var(--color-white);
-    }
-    &--orange {
-      --text-color: var(--color-orange);
-    }
-    &--red {
-      --text-color: var(--color-red);
-    }
-    &--violet {
-      --text-color: var(--color-violet);
-    }
-    &--blue {
-      --text-color: var(--color-blue);
-    }
-    &--green {
-      --text-color: var(--color-green);
-    }
-    &--yellow {
-      --text-color: var(--color-yellow);
+      &--white {
+        --text-color: var(--color-white);
+      }
+      &--orange {
+        --text-color: var(--color-orange);
+      }
+      &--red {
+        --text-color: var(--color-red);
+      }
+      &--violet {
+        --text-color: var(--color-violet);
+      }
+      &--blue {
+        --text-color: var(--color-blue);
+      }
+      &--green {
+        --text-color: var(--color-green);
+      }
+      &--yellow {
+        --text-color: var(--color-yellow);
+      }
     }
   }
 }
@@ -78,7 +87,8 @@
 @keyframes rainbow {
   0%,
   100% {
-    transform: translatey(var(--axis-y));
+    // transform: translatey(var(--axis-y));
+    transform: translatey(0);
   }
   50% {
     transform: translatey(calc(var(--axis-y) * -1));
