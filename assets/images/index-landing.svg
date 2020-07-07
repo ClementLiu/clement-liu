@@ -1,0 +1,154 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  id="Layer_1"
+  data-name="Layer 1"
+  viewBox="0 0 1880 1175"
+>
+  <defs>
+    <clipPath id="clip-path">
+      <path d="M0 1h1880v1172H0z" class="cls-1" />
+    </clipPath>
+    <pattern
+      id="shade_4"
+      width="4"
+      height="4"
+      data-name="shade 4"
+      patternTransform="matrix(1.62 0 0 1.62 -121 -8)"
+      patternUnits="userSpaceOnUse"
+    >
+      <path d="M0 0h4v4H0z" class="cls-1" />
+      <path
+        d="M19 19L2 2M15 19L-2 2M11 19L-6 2M7 19L-10 2M3 19L-14 2M19 15L2-2M15 15L-2-2M11 15L-6-2M7 15L-10-2M3 15L-14-2M19 11L2-6M15 11L-2-6M11 11L-6-6M7 11L-10-6M3 11L-14-6M19 7L2-10M15 7L-2-10M11 7L-6-10M7 7l-17-17M3 7l-17-17M19 3L2-14M15 3L-2-14M11 3L-6-14M7 3l-17-17M3 3l-17-17"
+        class="cls-2"
+      />
+    </pattern>
+    <style>
+      .cls-1,
+      .cls-2,
+      .cls-5,
+      .cls-9 {
+        fill: none;
+      }
+      .cls-2 {
+        stroke: #666;
+        stroke-width: 0.25px;
+      }
+      .cls-2,
+      .cls-9 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .cls-5 {
+        stroke: #969696;
+        stroke-miterlimit: 10;
+      }
+      .cls-6 {
+        fill: #eee;
+      }
+      .cls-7 {
+        fill: #ddd;
+      }
+      .cls-8 {
+        fill: url(#shade_4);
+      }
+      .cls-9 {
+        stroke: #000;
+        stroke-width: 1.62px;
+      }
+    </style>
+  </defs>
+  <g clip-path="url(#clip-path)">
+    <path fill="#ccc" d="M0 1h1880v1172H0z" />
+    <path
+      d="M503 779l750 299M628 729l749 299M753 679l749 299M878 629l749 299M1003 579l749 300M1128 530l749 299M1253 480l749 299M503 779l750-299M628 829l749-299M753 879l749-300M878 928l749-299M1003 978l749-299M1128 1028l749-299M1253 1078l749-299"
+      class="cls-5"
+    />
+    <g id="Logo" data-name="Logo">
+      <animateTransform
+        attributeName="transform"
+        attributeType="XML"
+        type="translateY"
+        from="0,0"
+        values="0,0;0,-5;0,0"
+        dur="2s"
+        repeatCount="indefinite"
+        calcMode="spline"
+        keySplines="0.4 0 0.2 1; 0.4 0 0.2 1"
+      />
+      <g id="Logo-dot" data-name="Logo-dot">
+        <animateTransform
+          attributeName="transform"
+          attributeType="XML"
+          type="translateY"
+          from="0,0"
+          values="0,0;0,30;0,0"
+          dur="1s"
+          repeatCount="indefinite"
+          calcMode="spline"
+          keySplines="0.4 0 0.2 1; 0.4 0 0.2 1"
+        />
+        <path d="M1470 454v69l-53 22v-70l53-21z" class="cls-6" />
+        <path d="M1470 454l-53 21-53-21 53-23 53 23z" class="cls-7" />
+        <path d="M1417 475v70l-54-23 1-68 53 21z" class="cls-7" />
+        <path d="M1417 475v70l-54-23 1-68 53 21z" class="cls-8" />
+        <path d="M1470 454v69l-53 22M1364 454l-1 68 54 23v-70" class="cls-9" />
+        <path d="M1470 454l-53-23-53 23 53 21 53-21z" class="cls-9" />
+      </g>
+      <g id="Logo-body" data-name="Logo-body">
+        <path
+          d="M1470 599l-1 141-216 87V405l56-21-1 307v43l109-44v-69l53-22z"
+          class="cls-6"
+        />
+        <path d="M1470 599l-53 22-54-21 54-21 53 20z" class="cls-7" />
+        <path d="M1417 621v69l-54-21v-69l54 21z" class="cls-7" />
+        <path
+          d="M1417 690l-109 44v-43l55-22 54 21zM1309 384l-56 21-52-21 53-22 55 22z"
+          class="cls-7"
+        />
+        <path
+          d="M1253 405v422l-52-22V384l52 21zM1254 362l-53 22-109-44 54-22 108 44zM1201 734v71l-110-44v-71l110 44z"
+          class="cls-7"
+        />
+        <path
+          d="M1201 690v44l-110-44 54-22 56 22zM1201 384v70l-110-45v-41l1-28 109 44z"
+          class="cls-7"
+        />
+        <path
+          d="M1145 599v69l-54 22v-70l54-21zM1146 431v27l-55 22v-71l55 22z"
+          class="cls-6"
+        />
+        <path d="M1145 599l-54 21-53-21 53-22 54 22z" class="cls-7" />
+        <path d="M1091 620v70l-53-22v-69l53 21z" class="cls-7" />
+        <path d="M1091 480v97l-53 22V459l53 21z" class="cls-6" />
+        <path d="M1091 409v71l-53-21v-71l53 21z" class="cls-7" />
+        <path
+          d="M1091 368v41l-53-21 53-20zM1038 459v140l-55-23V437l55 22z"
+          class="cls-7"
+        />
+        <path d="M1038 415v44l-55-22 55-22z" class="cls-7" />
+        <path
+          d="M1417 621v69l-54-21v-69l54 21zM1253 405v422l-52-22V384l52 21zM1201 734v71l-110-44v-71l110 44zM1201 384v70l-110-45v-41l1-28 109 44zM1091 620v70l-53-22v-69l53 21zM1091 409v71l-53-21v-71l53 21zM1038 459v140l-55-23V437l55 22z"
+          class="cls-8"
+        />
+        <path
+          d="M1470 599l-1 141-216 87M1309 384l-1 307M1363 669v-69M1417 621v69M1201 690V454M1253 405v422l-52-22M1201 384l52 21 56-21-55-22"
+          class="cls-9"
+        />
+        <path
+          d="M1363 669l-55 22v43l109-44-54-21zM1363 600l54-21 53 20-53 22-54-21zM1092 340l54-22 108 44-53 22"
+          class="cls-9"
+        />
+        <path d="M1091 409l110 45v-70l-109-44-1 28" class="cls-9" />
+        <path
+          d="M1091 409l55 22v27l-55 22M1091 480v97M1038 415v-27M1091 409v71l-53-21M1091 368l-53 20 53 21v-41zM1038 599l53-22 54 22M1091 620l54-21v69M1038 599v69l53 22v-70l-53-21zM1038 459v-44l-55 22"
+          class="cls-9"
+        />
+        <path
+          d="M983 437l55 22v140l-55-23V437zM1201 734v-44l-56-22-54 22"
+          class="cls-9"
+        />
+        <path d="M1091 690v71l110 44v-71l-110-44z" class="cls-9" />
+      </g>
+    </g>
+  </g>
+</svg>
