@@ -1,5 +1,5 @@
-// rainbowText
 $(document).ready(function () {
+  // rainbowText
   $(".c-rainbow").hover(
     function () {
       $(this).children().first().css("visibility", "hidden");
@@ -10,4 +10,12 @@ $(document).ready(function () {
       $(this).children().last().hide();
     }
   );
+  // index nav color
+  if (
+    window.location.pathname === "/" ||
+    window.location.pathname === "/index.html"
+  ) {
+    console.log("at Index");
+    $(".nav-container .nav-bar ").css({ "background-color": "#ccc" });
+  }
 });
