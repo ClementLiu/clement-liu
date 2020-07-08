@@ -90,9 +90,12 @@ $(document).ready(function () {
     // Make nav container height of nav
 
     $(".nav-container").css("min-height", $("nav").outerHeight(true));
+    $("section.landing").css("top", -$("nav").outerHeight(true));
 
     $(window).resize(function () {
-      $(".nav-container").css("min-height", $("nav").outerHeight(true));
+      var heightTop = $("nav").outerHeight(true);
+      $(".nav-container").css("min-height", heightTop);
+      $("section.landing").css("top", -heightTop);
     });
 
     // Compensate the height of parallax element for inline nav
