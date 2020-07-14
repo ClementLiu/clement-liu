@@ -1,17 +1,28 @@
 @landingColor: #ccc;
+
 section.landing {
   background-color: @landingColor;
   min-height: 100vh;
   display: flex;
   justify-content: center;
+
   .jumbotron {
     background-color: @landingColor;
     display: flex;
     align-items: center;
+
     .background-image-holder {
       background-position: 50% 100% !important;
+
+      @media @phone-down {
+        background-position: 0% 100% !important;
+        background-size: 80vw !important;
+        background-repeat: no-repeat !important;
+      }
     }
+
     .container {
+
       h1,
       h2,
       h3,
@@ -21,20 +32,21 @@ section.landing {
       span {
         color: @clement;
       }
-      span {
-        // display: inline-block;
-      }
+
       @t-hilight: .t-hilight;
+
       @{t-hilight} {
         display: inline-block;
         position: relative;
+
         &:hover {
-          @{t-hilight}{
+          @{t-hilight} {
             &__e {
-              &--anim{
+              &--anim {
                 background-position: 100% 0%;
               }
-              &--type{
+
+              &--type {
                 animation: typing 3.5s steps(10, end) 275ms none;
                 background-position: 0% 0%;
               }
@@ -42,15 +54,15 @@ section.landing {
           }
 
         }
+
         &__e {
           line-height: unset;
+
           &--anim {
-            background: linear-gradient(
-              to bottom,
-              Navy,
-              Navy 50%,
-              @clement 50%
-            );
+            background: linear-gradient(to bottom,
+                Navy,
+                Navy 50%,
+                @clement 50%);
             line-height: unset;
             background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -59,13 +71,12 @@ section.landing {
             transition: background-position 275ms ease;
             text-decoration: none; // text decorations are clipped in WebKit browsers
           }
+
           &--type {
-            background: linear-gradient(
-              to right,
-              gold,
-              gold 50%,
-              #30a14e 50%
-            );
+            background: linear-gradient(to right,
+                gold,
+                gold 50%,
+                #30a14e 50%);
             background-clip: text;
             -webkit-text-fill-color: transparent;
             background-size: 200% 100%;
@@ -77,21 +88,25 @@ section.landing {
             opacity: 0;
             animation-fill-mode: none;
           }
-           
+
         }
+
         @keyframes typing {
           from {
             width: 0;
             opacity: 1;
           }
-          55%{
+
+          55% {
             opacity: 1;
             width: 100%;
 
           }
-          90%{
+
+          90% {
             opacity: 1;
           }
+
           to {
             opacity: 0;
             width: 100%;
@@ -101,14 +116,26 @@ section.landing {
 
       h1 {
         font-size: 2.8rem;
+
+        @media @phone-down {
+          font-size: 1.8rem;
+
+
+          br {
+            display: block;
+          }
+        }
+
         b {
           cursor: default;
         }
       }
+
       h3 {
         letter-spacing: 0.1rem;
         position: relative;
         display: inline;
+
         &:after {
           content: "";
           z-index: -1;
@@ -121,7 +148,19 @@ section.landing {
           left: 0;
           bottom: 0;
           background-color: white;
+
+          @media @phone-down {
+            display: none;
+          }
         }
+
+        @media @phone-down {
+          font-size: 1.2rem;
+        }
+      }
+
+      @media @phone-down {
+        padding: 0px @phone-padding;
       }
     }
   }

@@ -11,8 +11,8 @@ var gulp = require("gulp"),
   dependents = require("gulp-dependents"),
   concat = require("gulp-concat"),
   cleanCSS = require("gulp-clean-css"),
-  autoprefixer = require("gulp-autoprefixer");
-
+  autoprefixer = require("gulp-autoprefixer"),
+  babel = require("gulp-babel");
 function reload(done) {
   connect.server({
     livereload: true,
@@ -63,20 +63,39 @@ function stylesBuild() {
 }
 
 function scripts() {
-  return gulp
-    .src("src/js/*.js")
-    .pipe(plumber())
-    .pipe(concat("scripts.js"))
-    .pipe(gulp.dest("assets/js"))
-    .pipe(uglify())
-    .pipe(rename("scripts.min.js"))
-    .pipe(gulp.dest("assets/js"))
-    .pipe(connect.reload());
+  return (
+    gulp
+      .src("src/js/*.js")
+      .pipe(plumber())
+      .pipe(sourcemaps.init())
+      .pipe(
+        babel({
+          presets: ["@babel/env"],
+        })
+      )
+      .pipe(concat("scripts.js"))
+      .pipe(
+        sourcemaps.write("../maps", {
+          includeContent: false,
+          sourceRoot: "/src/js",
+        })
+      )
+      .pipe(gulp.dest("assets/js"))
+      // .pipe(uglify())
+      // .pipe(rename("scripts.min.js"))
+      // .pipe(gulp.dest("assets/js"))
+      .pipe(connect.reload())
+  );
 }
 function scriptsBuild() {
   return gulp
     .src("src/js/*.js")
     .pipe(plumber())
+    .pipe(
+      babel({
+        presets: ["@babel/env"],
+      })
+    )
     .pipe(concat("scripts.js"))
     .pipe(uglify())
     .pipe(gulp.dest("assets/js"));
