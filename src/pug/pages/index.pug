@@ -7,16 +7,17 @@ block content
           img.background-image(alt='image' src='assets/images/index-landing.svg')
         .container
           h1.display-2
-            b.mouseOn(data-name="Hi" data-content="1F929") Hi;
+            b.mouseOn(data-name="Hi" data-content="1F929") Hi!
             br
             | I’m Clement Liu
             br
+            img.pointAt(alt='index-point' src='assets/images/index-point.svg')
             +rainbowText("Designer", "span") 
             |  || 
             div.t-hilight
               span.t-hilight__e.t-hilight__e--type  Developer
               span.t-hilight__e.t-hilight__e--anim  Developer
-          h3.boxRound
+          h3.boxRound.thin
             | I craft delightful experiences for
             b.mouseOn(data-name="test" data-content="1F57A")  humans
             |.
@@ -30,14 +31,15 @@ block content
             .spinner
         .row.masonry.masonryFlyIn 
           .col-md-6.col-sm-6.masonry-item.project(data-filter='UX Design')
-            .image-tile.inner-title.roundCorner.hover-reveal.text-center
+            .image-tile.inner-title.roundCorner.hover-reveal
               a(href='hiv-test.html' target='_self')
                 img(alt='visual' src='assets/images/hiv-app-v2.0.png')
+                
                 .title
                   h2.uppercase.mb0 Ora Quick 
                   span Provide HIV test taker with relaxed instructions and emotional supports.
           .col-md-6.col-sm-6.masonry-item.project(data-filter='UX Design')
-            .image-tile.inner-title.roundCorner.hover-reveal.text-center
+            .image-tile.inner-title.roundCorner.hover-reveal
               a(href='prediabetes.html' target='_self')
                 img(alt='Prediabetes' src='assets/images/Prediabetes-v3.png')
                 .title 
@@ -46,7 +48,7 @@ block content
                     | A little survey game draws people&apos;s awareness of the 
                     | serious pre-diabetes situation.
           .col-md-6.col-sm-6.masonry-item.project(data-filter='UX Design,Visual Design')
-            .image-tile.inner-title.roundCorner.hover-reveal.text-center
+            .image-tile.inner-title.roundCorner.hover-reveal
               //- a(href='pages/rightStory/rightStroy.html' target='_self')
               a(href='rightstory.html' target='_self')
                 img(alt='RightStory' src='assets/images/RightStory.jpg')
@@ -55,7 +57,7 @@ block content
                   span
                     | A smart speaker APP fits smart speaker with user&apos;s culture, and interests.
           .col-md-6.col-sm-6.masonry-item.project(data-filter='UX Design')
-            .image-tile.inner-title.roundCorner.hover-reveal.text-center
+            .image-tile.inner-title.roundCorner.hover-reveal
               a(href='avatar.html' target='_self')
                 img(alt='Avatar' src='assets/images/Avatar-s-v1.0.jpg')
                 .title
@@ -64,14 +66,14 @@ block content
                     | What if an online cyborg society
                     | presents an alternative reality for us?
           .col-md-6.col-sm-6.masonry-item.project(data-filter='UX Design,Visual Design')
-            .image-tile.inner-title.roundCorner.hover-reveal.text-center
+            .image-tile.inner-title.roundCorner.hover-reveal
               a(href='https://clementliu.github.io/WuHe/' target='_self')
                 img(alt='Wuhe' src='assets/images/WuHe-v1.0.png')
                 .title
                   h2.uppercase.mb0 Wuhe
                   span An experimental typography Website inspired by The Crowd.
           .col-md-6.col-sm-6.masonry-item.project(data-filter='Visual Design')
-            .image-tile.inner-title.roundCorner.hover-reveal.text-center
+            .image-tile.inner-title.roundCorner.hover-reveal
               a(href='poster-hand-write.html' target='_self')
                 img(alt='visual' src='assets/images/visual-gig-v1.0.jpg')
                 .title
@@ -80,7 +82,7 @@ block content
 
 
           .col-md-6.col-sm-6.masonry-item.project(data-filter='Visual Design')
-            .image-tile.inner-title.roundCorner.hover-reveal.text-center
+            .image-tile.inner-title.roundCorner.hover-reveal
               a(href='hear.html' target='_self')
                 img(alt='headphone-poster' src='assets/images/headphone-thumb-v0.3.jpg')
                 .title
@@ -89,7 +91,7 @@ block content
                   span
                     | Connotative poster design for Sony colorful and excellent headphones h&#8209;Ear.
           .col-md-6.col-sm-6.masonry-item.project(data-filter='Visual Design')
-            .image-tile.inner-title.roundCorner.hover-reveal.text-center
+            .image-tile.inner-title.roundCorner.hover-reveal
               a(href='structure.html' target='_self')
                 img(alt='Structure poster' src='assets/images/disassemble-thumb-v0.2.jpg')
                 .title

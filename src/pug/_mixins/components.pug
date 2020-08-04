@@ -1,0 +1,13 @@
+mixin projectTitle(object)
+  - objects = object.array ||{}
+  if objects != null
+    p #{objects}
+    each item in objects
+      p #{item}
+mixin projectTitleArray(array)
+  if array != null
+    p #{array}
+    each item in array
+      p #{item}
+    
+  

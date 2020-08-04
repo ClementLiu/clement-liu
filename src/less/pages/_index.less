@@ -31,6 +31,20 @@ section.landing {
       p,
       span {
         color: @clement;
+        cursor: pointer;
+      }
+
+      .pointAt {
+        position: absolute;
+        transform: translate(-100%, 20%);
+
+        @media @phone-down {
+          display: none;
+        }
+      }
+
+      .boxRound {
+        padding-bottom: 3px;
       }
 
       @t-hilight: .t-hilight;

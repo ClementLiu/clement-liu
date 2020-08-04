@@ -7,29 +7,32 @@ block content
       .container
     section.pt96
       .container
-        //- .border-between-line
-        .row.pt72
-          .col-sm-5.vertical-center
-            h3.change2title.uppercase.bold.mb4 HIV TEST APPLICATION
+        p Test Here
+        +projectTitle({array:["trueHAHAHAH 1","trueHAHAHAH 2"]})
+        +projectTitleArray(["trueHAHAHAH IN array 1","trueHAHAHAH IN array 2"])
+        .row.pt72.pageTitle
+          .col-sm-10.vertical-center
+            h2.change2title.uppercase.bold.mb24 HIV TEST APPLICATION
             p
               |Oraquick is an in-home HIV oral test kit for users to get HIV test results within 30 mins. But it might have false results which lead to bad product reviews. We designed the digital product for Oraquick to reduce the complaints by providing clear instructions and further assistance for the user with a positive result.
-          .col-sm-5.col-sm-push-1.vertical-center
-            .row.mb16.mt16
-              .col-sm-6.col-sm-push-2.border-line-between.mt8
-                h5.mb4 Roles
-                p.mb4 UX Design
-              .col-sm-6.col-sm-push-3.border-line-between.mt8
-                h5.mb4 Deliverables
-                p.mb4  Prototype    
-            .row.mb16.mt16
-              .col-sm-6.col-sm-push-2.border-line-between.mt8
-                h5.mb4 Tools
-                p.mb4 Figma
-                p.mb4 After Effects
-                p.mb4 Illustrator
-              .col-sm-6.col-sm-push-3.border-line-between.mt8
-                h5.mb4 Time
-                p.mb4  Seven weeks
+        .row.pt72
+          .col-sm-3.border-line-between.mt8
+            h5.mb4 Roles
+            p.mb4 UX Designer
+          .col-sm-3.border-line-between.mt8
+            h5.mb4 Deliverables
+            p.mb4  Prototype    
+          .col-sm-3.border-line-between.mt8
+            h5.mb4 Tools
+            p.mb4 Figma
+            p.mb4 After Effects
+            p.mb4 Illustrator
+          .col-sm-3.border-line-between.mt8
+            h5.mb4 Time
+            p.mb4  Seven weeks
+        .row.mt40
+          .col-md-12.text-center
+            img(src="assets/images/hiv-instruction-draw.gif", alt="process").pl16.pr16
         .row.pt72.pb72.mt72.text-center.flex-horizontal(style="background-color:#BECFFF")
           img(src="assets/images/hiv-demo1.gif", alt="hiv-demo1")
           img(src="assets/images/hiv-demo2.gif", alt="hiv-demo2")
@@ -54,9 +57,7 @@ block content
             img(src="assets/images/hiv-deskResearch-photos-v2.png", alt="desk-research").pl24.pr24
             //- img(src="assets/images/hiv-test-package-v2@2x.png", alt="HIV test package").pl24.pr24
           .col-md-2.col-md-push-1
-        .row.mt40
-          .col-md-12.text-center
-            img(src="assets/images/hiv-instruction-draw.gif", alt="process").pl16.pr16
+
             //- img(src="assets/images/hiv-deskResearch-photos-v2.png", alt="desk-research").pl16.pr16
     section.pt64.pb64
       .container
@@ -410,3 +411,4 @@ block content
            
            
 include /_mixins/mixins.pug
+include /_mixins/components.pug
