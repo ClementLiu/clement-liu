@@ -7,29 +7,17 @@ block content
       .container
     section.pt96
       .container
-        p Test Here
-        +projectTitle({array:["trueHAHAHAH 1","trueHAHAHAH 2"]})
-        +projectTitleArray(["trueHAHAHAH IN array 1","trueHAHAHAH IN array 2"])
-        .row.pt72.pageTitle
-          .col-sm-10.vertical-center
-            h2.change2title.uppercase.bold.mb24 HIV TEST APPLICATION
-            p
-              |Oraquick is an in-home HIV oral test kit for users to get HIV test results within 30 mins. But it might have false results which lead to bad product reviews. We designed the digital product for Oraquick to reduce the complaints by providing clear instructions and further assistance for the user with a positive result.
-        .row.pt72
-          .col-sm-3.border-line-between.mt8
-            h5.mb4 Roles
-            p.mb4 UX Designer
-          .col-sm-3.border-line-between.mt8
-            h5.mb4 Deliverables
-            p.mb4  Prototype    
-          .col-sm-3.border-line-between.mt8
-            h5.mb4 Tools
-            p.mb4 Figma
-            p.mb4 After Effects
-            p.mb4 Illustrator
-          .col-sm-3.border-line-between.mt8
-            h5.mb4 Time
-            p.mb4  Seven weeks
+        +projectTitle(
+          {title:"HIV TEST APPLICATION HHHHAAAAAACE",
+          titleDes:"Oraquick is an in-home HIV oral test kit for users to get HIV test results within 30 mins. But it might have false results which lead to bad product reviews. We designed the digital product for Oraquick to reduce the complaints by providing clear instructions and further assistance for the user with a positive result.",
+          des:[
+          {desTitle:"Roles",desRole:["test1","test2"]},
+          {desTitle:"Deliverables",desRole:["Prototype"]},
+          {desTitle:"Tools",desRole:["Figma","After Effects","Illustrator"]},
+          {desTitle:"Time",desRole:["Seven weeks"]},
+          ]
+          }
+          )
         .row.mt40
           .col-md-12.text-center
             img(src="assets/images/hiv-instruction-draw.gif", alt="process").pl16.pr16

@@ -1,9 +1,25 @@
 mixin projectTitle(object)
-  - objects = object.array ||{}
-  if objects != null
-    p #{objects}
-    each item in objects
-      p #{item}
+  if object != null
+    .row.pt72.pageTitle
+      .col-sm-10.vertical-center
+        h2.change2title.uppercase.bold.mb24 #{object.title}
+        p #{object.titleDes}
+    .row.pt72
+      each item in object.des
+        .col-sm-3.border-line-between.mt8
+          h5.mb4 #{item.desTitle}
+          each ite in item.desRole
+            p.mb4 #{ite}
+
+
+
+
+
+
+
+
+
+
 mixin projectTitleArray(array)
   if array != null
     p #{array}
