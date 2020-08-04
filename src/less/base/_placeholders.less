@@ -2,6 +2,7 @@
   display: initial;
   position: relative;
   width: 0%;
+
   &:after {
     position: absolute;
     width: 0%;
@@ -13,6 +14,7 @@
     bottom: 0;
     background-color: @clement;
   }
+
   &:hover {
     &:after {
       content: "";
@@ -25,4 +27,13 @@
       background-color: @clement;
     }
   }
+}
+
+.vertical-center-flex {
+  display: flex;
+  float: none;
+  align-items: center;
+}
+.z-index-10{
+  z-index: 10;
 }

@@ -605,6 +605,33 @@
   bottom: 0;
   background-color: #4f4f4f;
 }
+.imgWithPatternContainer {
+  z-index: 2;
+}
+.bakcgroundPattern {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  -webkit-transform: translateX(20%);
+  -ms-transform: translateX(20%);
+  transform: translateX(20%);
+}
+.simpleModalImg .modal-dialog {
+  width: 100vw;
+}
+.vertical-center-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.z-index-10 {
+  z-index: 10;
+}
 html {
   font-size: 16px;
 }
@@ -809,8 +836,28 @@ section.landing .jumbotron .container h3:after {
     padding: 0px 30px;
   }
 }
-.pageTitle {
-  text-align: center;
+.project-container h3 {
+  font-weight: 800;
+  font-size: 1.8rem;
+  letter-spacing: 0.02em;
+}
+.project-container h5 {
+  font-weight: 400;
+  margin-bottom: 0.4rem;
+}
+.project-container .pageTitle h2 {
+  font-size: 2.325rem;
+}
+.project-container .sectionTitle {
+  border-bottom: 2px black solid;
+  margin-bottom: 1.8rem;
+}
+.project-container .sectionTitle h3 {
+  font-weight: 800;
+  margin-bottom: 0px;
+}
+.project-container ul li {
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=../maps/styles.css.map */

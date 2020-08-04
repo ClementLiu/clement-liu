@@ -1,29 +1,28 @@
 mixin projectTitle(object)
   if object != null
-    .row.pt72.pageTitle
+    .row.pt72.pageTitle.text-center
       .col-sm-10.vertical-center
         h2.change2title.uppercase.bold.mb24 #{object.title}
         p #{object.titleDes}
     .row.pt72
-      each item in object.des
-        .col-sm-3.border-line-between.mt8
+      each item,index in object.des
+        .col-sm-3.col-xs-6.border-line-between.mt8
           h5.mb4 #{item.desTitle}
           each ite in item.desRole
             p.mb4 #{ite}
 
+mixin sectionTitle(titleName)
+  .row
+    .col-md-12.sectionTitle.text-center
+      h3 #{titleName} 
 
 
+mixin imgWithPatternContainer(imgSrc,imgAlt,patternSrc,patternAlt)
+  .col-md-5.col-md-push-1.text-center.imgWithPatternContainer
+      img.imgWithbakcgroundPattern(src=imgSrc, alt=imgAlt)
+  if(patternSrc != null)
+    img.bakcgroundPattern(src=patternSrc, alt=patternAlt)
 
-
-
-
-
-
-
-mixin projectTitleArray(array)
-  if array != null
-    p #{array}
-    each item in array
-      p #{item}
-    
-  
+mixin testRetrunTwo()
+  .firstDiv
+  .SecondDiv

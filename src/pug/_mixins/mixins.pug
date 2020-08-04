@@ -6,23 +6,23 @@ mixin carousel(...imgUrls)
           img(alt='Image' src=imgUrl)
 
 mixin modalImg(id,imgUrl,imgAlt)
-  div.modal.fade(id!=id tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true')
-    .modal-dialog.modal-xl(role='document')
-      // Content
-      .modal-content
-        // Body
-        .modal-body.mt32.mb32.p32.text-center
-          img.img-fluid(src=imgUrl, alt=imgAlt)
-          //- .embed-responsive.embed-responsive-16by9.z-depth-5
-          //- iframe.embed-responsive-item(src='https://www.youtube.com/embed/A3PDXmYoF5U' allowfullscreen='')
-          // Footer
-          .modal-footer.justify-content-center
-            button.btn.btn-outline-primary.btn-rounded.btn-md.mb0(type='button' data-dismiss='modal') Close
-      // /.Content
+  div.simpleModalImg
+    a
+      img.img-fluid.z-depth-1(src=imgUrl alt=imgAlt data-toggle='modal' data-target="#"+id)
+    div.modal.fade(id!=id tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true')
+      .modal-dialog.modal-xl(role='document')
+        // Content
+        .modal-content
+          // Body
+          .modal-body.mt32.mb32.p32.text-center
+            img.img-fluid(src=imgUrl, alt=imgAlt)
+            // Footer
+            .modal-footer.justify-content-center
+              button.btn.btn-outline-primary.btn-rounded.btn-md.mb0(type='button' data-dismiss='modal') Close
+        // /.Content
       // Modal: Name
-      a
-        img.img-fluid.z-depth-1(src=imgUrl alt=imgAlt data-toggle='modal' data-target="#"+id)
-      // Grid column
+
+        // Grid column
 mixin imgCaption(imgUrl,imgAlt,caption,hover=false)
   if hover
     //- .image-caption.cast-shadow.hover-caption

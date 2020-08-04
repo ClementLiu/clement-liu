@@ -6201,13 +6201,6 @@ footer.bg-dark a {
 .roundCorner {
   border-radius: 30px;
 }
-.sectionTitle {
-  border-bottom: 2px black solid;
-  margin-bottom: 104px;
-}
-.sectionTitle h2 {
-  margin-bottom: 0px;
-}
 .flex-horizontal {
   display: -webkit-box;
   display: -ms-flexbox;
