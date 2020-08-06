@@ -641,6 +641,20 @@ html body {
   -moz-osx-font-smoothings: grayscale;
   -webkit-font-smoothing: antialiased;
 }
+.projectBrief .border-line-between {
+  height: 180px;
+  padding-top: 0.5rem;
+}
+.projectBrief .border-line-between:after {
+  bottom: 0;
+  content: " ";
+  left: 0;
+  position: absolute;
+  width: 70%;
+  top: 0;
+  border-left: double black;
+  border-top: double black;
+}
 .nav-container {
   position: relative;
   z-index: 100;
@@ -858,6 +872,15 @@ section.landing .jumbotron .container h3:after {
 }
 .project-container ul li {
   margin-bottom: 1rem;
+}
+.project-container .border-line-between-thick:after {
+  background: black;
+  bottom: 0;
+  content: " ";
+  left: 0;
+  position: absolute;
+  width: 4px;
+  top: 0;
 }
 
 /*# sourceMappingURL=../maps/styles.css.map */

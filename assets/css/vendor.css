@@ -842,27 +842,6 @@ footer.bg-dark li,
     -webkit-transform: none !important;
   }
 }
-.border-line-between {
-  height: 120px;
-}
-.border-line-between:after {
-  background: black;
-  bottom: 0;
-  content: " ";
-  left: 0;
-  position: absolute;
-  width: 2px;
-  top: 0;
-}
-.border-line-between-thick:after {
-  background: black;
-  bottom: 0;
-  content: " ";
-  left: 0;
-  position: absolute;
-  width: 4px;
-  top: 0;
-}
 /*!---------- 6. BUTTONS ----------*/
 .btn {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;

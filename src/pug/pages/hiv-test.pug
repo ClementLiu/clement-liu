@@ -10,7 +10,7 @@ block content
         {title:"HIV TEST APPLICATION",
         titleDes:"Oraquick is an in-home HIV oral test kit for users to get HIV test results within 30 mins. But it might have false results which lead to bad product reviews. We designed the digital product for Oraquick to reduce the complaints by providing clear instructions and further assistance for the user with a positive result.",
         des:[
-        {desTitle:"Roles",desRole:["test1","test2"]},
+        {desTitle:"Roles",desRole:["UX Designer"]},
         {desTitle:"Deliverables",desRole:["Prototype"]},
         {desTitle:"Tools",desRole:["Figma","After Effects","Illustrator"]},
         {desTitle:"Time",desRole:["Seven weeks"]},
@@ -87,11 +87,9 @@ block content
   section.pt64.pb64
     .container
       +sectionTitle("Research ")
-      .row
-        .col-md-8.col-md-push-2.text-center
-          h5 User interview
-          p
-            |From the desk research, I developed an interview guide to check each pain point and used to make sure the questions asked at the user interviews were systematic and comprehensive.
+      +h5TitleDesRow("User interview",
+      "From the desk research, I developed an interview guide to check each pain point and used to make sure the questions asked at the user interviews were systematic and comprehensive."
+      )
       .row
         .col-md-6
           +modalImg("userQueryId","assets/images/hiv-userQuery-v1.png","userQuery").mb16
@@ -105,15 +103,17 @@ block content
       .row.mt24
         .col-md-12
           img(src="assets/images/hiv-interviewSynthesize02-v2.png", alt="interviewSynthesize02").pl16.pr16
-      .row.mt24.v-align-children
-        .col-md-6
-          h6.text-muted.mb0 Research synthesis
-          h5.mb8 The HIV in-home test was a stressful experience. From the thinking of getting the test kit to the end of the result, they were doing it with heavy mental burdens and stresses.
-          ul
-            li - Suspicious about having HIV is the main reason that leads users to use the HIV test kit. 
-            li - The fear from imagining the desperate future they might have gives user heavy mental stress.
-            li - I notice that even the HIV stigma had been wildly discussed, but people are still don't want to be blamed for it.
-            li - To correctly perform the test is easy because of the simple instruction flipbook, but they would miss the critical test requirement on the supplementary HIV booklet.
+      +h5TitleDesRow("Research synthesis",
+      "The HIV in-home test was a stressful experience. From the thinking of getting the test kit to the end of the result, they were doing it with heavy mental burdens and stresses."
+      )(class="mt24")
+      .row.mt24
+        ul.col-md-8.col-md-push-2.text-left
+          li - Suspicious about having HIV is the main reason that leads users to use the HIV test kit. 
+          li - The fear from imagining the desperate future they might have gives user heavy mental stress.
+          li - I notice that even the HIV stigma had been wildly discussed, but people are still don't want to be blamed for it.
+          li - To correctly perform the test is easy because of the simple instruction flipbook, but they would miss the critical test requirement on the supplementary HIV booklet.
+      .row.mt24
+        .col-md-6.col-md-push-3.text-center
           img(src="assets/images/hiv-researchIcons-v1.png", alt="researchIcons")
   section.pt64.pb64
     .container

@@ -4,7 +4,7 @@ mixin projectTitle(object)
       .col-sm-10.vertical-center
         h2.change2title.uppercase.bold.mb24 #{object.title}
         p #{object.titleDes}
-    .row.pt72
+    .row.pt72.projectBrief
       each item,index in object.des
         .col-sm-3.col-xs-6.border-line-between.mt8
           h5.mb4 #{item.desTitle}
@@ -23,6 +23,11 @@ mixin imgWithPatternContainer(imgSrc,imgAlt,patternSrc,patternAlt)
   if(patternSrc != null)
     img.bakcgroundPattern(src=patternSrc, alt=patternAlt)
 
-mixin testRetrunTwo()
-  .firstDiv
-  .SecondDiv
+mixin h5TitleDesRow(title,des)
+  .row(class!=attributes.class )
+    .col-md-8.col-md-push-2.text-center
+      h5 #{title}
+      p #{des}
+      block
+        
+
