@@ -1,0 +1,82 @@
+//- component 
+
+mixin projectTitle(object)
+  if object != null
+    .row.pt72.pageTitle.d-flex.justify-content-center
+      .col-sm-10.text-center
+        h2.change2title.uppercase.bold.mb24 #{object.title}
+        p #{object.titleDes}
+    .row.pt72.projectBrief
+      each item,index in object.des
+        .col-sm-3.col-xs-6.border-line-between.mt8
+          h5.mb4 #{item.desTitle}
+          each ite in item.desRole
+            p.mb4 #{ite}
+
+mixin sectionTitle(titleName)
+  .row
+    .col-md-12.sectionTitle.text-center
+      h3 #{titleName} 
+  block 
+
+mixin imgWithPatternContainer(imgSrc,imgAlt,patternSrc,patternAlt)
+  .col-md-5.col-md-push-1.text-center.imgWithPatternContainer
+      img.imgWithbakcgroundPattern(src=imgSrc, alt=imgAlt)
+  if(patternSrc != null)
+    img.bakcgroundPattern(src=patternSrc, alt=patternAlt)
+
+mixin h5TitleDesRow(object={title:"Title",des:"Des Des Des Des Des"})
+  if object != null
+    .row(class!=attributes.class ).d-flex.justify-content-center.mt-2
+      .col-md-8.text-center
+        h5 #{object.title}
+        p #{object.des}
+        block
+        
+//- leftTextRighImg
+
+mixin h5TextBlock(object={title:"Title",des:"Some text here",wid:"6"})
+  div(class="col-md-"+`${object.wid}`)
+    h5 #{object.title} 
+    p #{object.des} 
+
+mixin leftTextRighImg(object={title:"Title",des:"Some text here",imgSrc:"assets/images/hiv-interviewSynthesize01.png",imgId:"userAnswerId",imgAlt:"Answer"})
+  if object != null
+    .row.d-flex.justify-content-around.mt-5(class!=attributes.class )
+      +h5TextBlock({title:object.title,des:object.des,wid:"6"})
+      .col-md-6
+        +modalImg(object.imgId,object.imgSrc,object.imgAlt).mb16
+
+
+//- eyebrowTextBlock
+mixin leftH5Rightdes(object={title:"Title",des:"des"})
+  .row.d-flex.justify-content-md-center.mt-3
+    .col-4.text-left
+      h5.lead #{object.title}
+    .col-8.text-left.pl-5
+      p #{object.des}
+      block
+
+mixin leftTextRighImgEyebrow(textBlock={eyebrow:"Eyebrow",title:"Title",des:"des",wid:"6"},imgBlock={imgSrc:"assets/images/hiv-interviewSynthesize01.png",imgId:"userAnswerId",imgAlt:"Answer"})
+  .row.d-flex.align-items-center
+    +eyebrowTextBlock(textBlock)
+    div(class="col-md-"+`${12-textBlock.wid}`)
+      +modalImgObject(imgBlock)
+
+mixin modalImgObject(imgBlock={imgSrc:"assets/images/hiv-interviewSynthesize01.png",imgId:"userAnswerId",imgAlt:"Answer"})
+  +modalImg(imgBlock.imgId,imgBlock.imgSrc,imgBlock.imgAlt)
+
+mixin eyebrowTextBlock(object={eyebrow:"Eyebrow",title:"Title",des:"des",wid:"6"})
+  div(class="col-md-"+object.wid)
+    h6.text-muted.mb0 #{object.eyebrow}
+    h5.mb16 #{object.title}
+    p #{object.des}
+
+//- todo carousel not working yet
+mixin carouselObjs(...imgObjUrls)
+  //- imgObjUrl={imgSrc:"assets/images/hiv-interviewSynthesize01.png",imgId:"userAnswerId",imgAlt:"Answer"}
+  .image-slider.slider-all-controls.controls-inside
+    ul.slides
+      each imgObjUrl in imgObjUrls
+        li
+          +modalImgObject(imgObjUrls)

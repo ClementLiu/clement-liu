@@ -37,13 +37,23 @@
     li {
       line-height: 1.4;
       margin-bottom: 6px;
+
+      &:before {
+        content: "-";
+        position: absolute;
+        left: -4px;
+      }
+
+      &.noDash {
+        &:before {
+          content: "";
+          position: absolute;
+          left: -4px;
+        }
+      }
     }
 
-    :before {
-      content: "-";
-      position: absolute;
-      left: -4px;
-    }
+
   }
 }
 

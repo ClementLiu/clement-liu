@@ -4,7 +4,7 @@ block content
     .background-image-holder
       img(src="assets/images/hiv-test-head-v4.0@2x.png", alt="test-head").background-image
     .container
-  section.pt96
+  section.pt-5
     .container
       +projectTitle(
         {title:"HIV TEST APPLICATION",
@@ -17,9 +17,12 @@ block content
         ]
         }
         )
-  section.pt32.pb0
+  section.overflow-auto-inherit.pt-0.pb-0.mt-5.mb-5
+    .backgroundImg-md-container
+      img(src="assets/images/hiv-operation-bc-l.svg", alt="operation-bc").position-absolute.h-100.left-0
+      img(src="assets/images/hiv-operation-bc-r.svg", alt="operation-bc").position-absolute.h-100.right-0
     .container
-      .row.mt40.mb40
+      .row.mt40.mb40.pt-5.pb-5
         .col-md-12.text-center
           img(src="assets/images/hiv-instruction-draw.gif", alt="process").pl16.pr16
   section.pt0.pb32
@@ -69,107 +72,138 @@ block content
         .col-md-6
           h5 Desk research
           p
-            |First, I inspected the Oraquick test kit and tried it out to understand how the user would interact with it, and identified pain points might lead to a false result. They include: 
+            |First, I inspected the Oraquick test kit, tried it out to understand how the user would interact with it, and identified pain points that might 
+            strong lead to a false result. 
+            |Here are the assumptions: 
           ul
             li 
               | 
-              strong - There are various requriements for test
+              strong - There are too many steps for the test
             li 
               |
-              strong - Critical informations hide in heavy text
+              strong - Critical requriements hide in heavy text
             li 
               |
-              strong - Little support information for positive user
+              strong - It's hard for users to read through the manual
+            li 
+              |
+              strong - Users are too nervous to follow instructions 
+              //- strong - Little support information for positive user
         .col-md-5.col-md-push-1
           img(src="assets/images/hiv-deskResearch-photos-v2.png", alt="desk-research").pl24.pr24
 
           //- img(src="assets/images/hiv-deskResearch-photos-v2.png", alt="desk-research").pl16.pr16
   section.pt64.pb64
     .container
+    .container
       +sectionTitle("Research ")
-      +h5TitleDesRow("User interview",
-      "From the desk research, I developed an interview guide to check each pain point and used to make sure the questions asked at the user interviews were systematic and comprehensive."
+      +h5TitleDesRow({
+        title:"User test interview",
+      des:"To understand the problem, I developed an interview guide to check each pain point and conduct 1 to 1 user tests to observe how users interact with the test kit. Users seldom make mistakes in using it since the tools are designed very affordance."}
       )
-      .row
+      .row.d-flex.justify-content-md-center
         .col-md-6
           +modalImg("userQueryId","assets/images/hiv-userQuery-v1.png","userQuery").mb16
-          p
-            |I interviewed users with negative results, and here are quotes and personas.
-        .col-md-6
-          +modalImg("userAnswerId","assets/images/hiv-interviewSynthesize01.png","Answer").mb16
-      .row.mt24
+      .row.d-flex.justify-content-md-center.mt-3
+        .col-md-10
+          +modalImg("hiv-userFlow","assets/images/hiv-userJourney.png","hiv-userFlow")
+      +leftTextRighImg({
+        title:"Online user feedbacks",
+      des:"To get a further understanding of why users left terrible reviews on the product, we go through online user reviews and articles about the Oraquick HIV test. We get a more clear picture of the potential users giving bad reviews. The critical reason is that they felt being fooled by false results. ",
+      imgId:"userAnswerId",
+      imgSrc:"assets/images/hiv-interviewSynthesize01.png",
+      imgAlt:"Answer"})
+      .row.d-flex.justify-content-md-center
+        .col-md-8
+          +modalImg("hiv-onlineRe","assets/images/hiv-onlineRe.png","hiv-onlineRe").mb16
+  section.pt64.pb64
+    .container
+      +sectionTitle("Research synthesis")
+      +h5TitleDesRow({
+        title:"A stressful process",
+      des:"The HIV in-home test was a stressful experience. From the thinking of getting the test kit to the end of the result, they were doing it with heavy mental burdens and stresses. As the users take the result more seriously, they are the more irritated by the false result."}
+      )
+      .row.mt-1
         .col-md-12
-          img(src="assets/images/hiv-interviewSynthesize01-v2.png", alt="interviewSynthesize01").pl16.pr16
-      .row.mt24
+          // todo add story after positive result 
+          +modalImg("hiv-storyBoard02","assets/images/hiv-storyBoard02.png","storyBoard01")
+      +h5TitleDesRow({
+        title:"Private and convinent",
+      des:"The main reason our users chose the Oraquick HIV test kit is that it is fast and straightforward to use without blood involved and can be operated privately before committing to a professional blood test. We picture the personas to show what the situation and struggle they face."}
+      ).mt-5
+      .row.mt-2
         .col-md-12
-          img(src="assets/images/hiv-interviewSynthesize02-v2.png", alt="interviewSynthesize02").pl16.pr16
-      +h5TitleDesRow("Research synthesis",
-      "The HIV in-home test was a stressful experience. From the thinking of getting the test kit to the end of the result, they were doing it with heavy mental burdens and stresses."
-      )(class="mt24")
-      .row.mt24
+          +modalImg("hiv-interviewSynthesize01","assets/images/hiv-interviewSynthesize01-v2.png","interviewSynthesize01").pl16.pr16.mb-2
+          +modalImg("hiv-interviewSynthesize02","assets/images/hiv-interviewSynthesize02-v2.png","interviewSynthesize02").pl16.pr16.mt-2
+      .row.mt-4
         ul.col-md-8.col-md-push-2.text-left
           li - Suspicious about having HIV is the main reason that leads users to use the HIV test kit. 
           li - The fear from imagining the desperate future they might have gives user heavy mental stress.
+          li - The false-positive result and false-negative result are inevitable because of the limitation of the test kit.
           li - I notice that even the HIV stigma had been wildly discussed, but people are still don't want to be blamed for it.
           li - To correctly perform the test is easy because of the simple instruction flipbook, but they would miss the critical test requirement on the supplementary HIV booklet.
       .row.mt24
         .col-md-6.col-md-push-3.text-center
           img(src="assets/images/hiv-researchIcons-v1.png", alt="researchIcons")
+          // todo add result story board
+        //- .col-md-6
+        //-   h5 Storyboard - new
+        //- .col-md-12
+        //-   img(src="assets/images/hiv-storyBoard01.png", alt="storyBoard01")
   section.pt64.pb64
     .container
-      +sectionTitle("Define ")
-      .row
+      +sectionTitle("Design goal")
+      +leftH5Rightdes({
+        title:"I aim to add more care to people with a positive result and clarify the test requirements to increase accuracy.",
+        des:'The step by step instructions can easily direct the user to do the test correctly. The waiting time is exhausting for users rather than boring because the user takes the test very seriously. The anxiety is much more than I imagined. That explained why the user gave such harsh criticism on the false-positive result. After discussing with the team, we decided our design goal is "reducing complain about false results:"'
+        })
+        ul
+          li - Users with a positive result would feel being cared for. And the support center has more calls.
+          li - The user would follow the instruction and clearly know the requirements for a reliable result.
+      //- .row.d-flex.justify-content-center
+      //-   .col-md-8
+      //-     h5.mb16 I aim to clarify the test requirements and accuracy and add more care to people with a positive result.
+      //-     p.mb0 The step and step instructions can easily direct the user to do the test correctly, but there are dense texts. The waiting time is exhausting for users rather than boring because the user takes the test very seriously. The anxiety is much more than I imagined. That explained why the user gave such harsh criticism on the false-positive result. After discussing with the team, we decided our design goals for reducing complain about false results:
+      .row.mt-5
         .col-md-6
-          h5 Storyboard - original
-        .col-md-12
-          img(src="assets/images/hiv-storyBoard02.png", alt="storyBoard01")
-        .col-md-6
-          h5 Storyboard - new
-        .col-md-12
-          img(src="assets/images/hiv-storyBoard01.png", alt="storyBoard01")
-      .row.mt96.v-align-children
-        .col-md-6.border-line-between-thick
-          .ml16
+          .ml0m
             h4 Design principle
+      .row.mt-1
+        .col-md-4.border-line-between-thick
           .ml16.mt24
             h5.mb8 Friendly
-            p Since users have heavy mental stress, the script and interface should be friendly and comfort them.  
+            p Since users have heavy mental stress, the script and interface should be friendly and comfort them from the beginning to the end.
+        .col-md-4.border-line-between-thick
           .ml16.mt24
             h5.mb8 Simple
             p Users should be effortlessly guided through the test process and understand the test required to get a reliable result.
+        .col-md-4.border-line-between-thick
           .ml16.mt24
             h5.mb8 Trustworthy
             p The digital product should be able to inherit the privacy feature of the in-home test kit.
-      .row.mt96.v-align-children
-        .col-md-6
-          h6.text-muted.mb0 Design goal
-          h5.mb16 I aim to clarify the test requirements and accuracy and add more care to people with a positive result.
-          p.mb0 The step and step instructions can easily direct the user to do the test correctly, but there are dense texts. The waiting time is exhausting for users rather than boring because the user takes the test very seriously. The anxiety is much more than I imagined. That explained why the user gave such harsh criticism on the false-positive result. After discussing with the team, we decided our design goals for reducing complain about false results:
-          ul
-            li - Users with a positive result would feel being cared for. And the support center has more calls.
-            li - The user would follow the instruction and clearly know the requirements for a reliable result.
   section.pt64.pb64
     .container
-      +sectionTitle("Ideate - feel being cared")
-      .row
-        .col-md-7
-          h6.text-muted.mb0 Addressing caring the positive users
-          h5.mb16 More than a subjective test kit and adding extra cares for positive users.
-          p With the issue that there is a possibility of a false result, I decided to not only focus on help users correctly following the instructions but also guild the positive user thorough the experience of HIV confirm and healing. From the user interview before, users are likely to have the fears for the hopeless life with HIV and the unimaginable destruction to their life because they might have the stigma of HIV or not knowing the facts of HIV. "The internet just drives you crazy." These fears and hopeless turn into loud complain when they learn false results fooled them.
-        .col-md-5
-          img(src="assets/images/hiv-AddressingPosi-v1.png", alt="AddressingPosi")
-      .row.mt48
-        .col-md-12
-          h5.mb8 User journey
-          img(src="assets/images/hiv-userJourney.png", alt="hiv-userJourney")
-      .row.mt96
-        .col-md-6
-          h6.text-muted.mb0 The initial idea - support
-          h5.mb16
-            |I aimed to ideate on caring methods for positive users. Most of the supports information focused on people already confirmed with HIV.
-          p
-            |I had ideas that the application shows the treatment of HIV and HIV support policy. Still, there were concerns that before confirming test results from a doctor, positive users are not HIV patients. My other ideas include HIV patients' lives with hope and showing how they positively handle the diseases and difficulties in life. Knowing the users' situation and providing trustful stories related to them are the main challenges.
-        .col-md-6
+      +sectionTitle("Problem 1 - Feel being cared")
+      +leftTextRighImgEyebrow({
+        eyebrow:"Addressing caring the positive users",
+        title:"More than a subjective test kit and adding extra cares for positive users.",
+        des:'With the issue that there is a possibility of a false result, I decided to not only focus on help users correctly following the instructions but also guild the positive user thorough the experience of HIV confirm and healing. From the user interview before, users are likely to have the fears for the hopeless life with HIV and the unimaginable destruction to their life because they might have the stigma of HIV or not knowing the facts of HIV. "The internet just drives you crazy." These fears and hopeless turn into loud complain when they learn false results fooled them.',
+        wid:7
+        },{
+        imgSrc:"assets/images/hiv-AddressingPosi-v1.png",
+        imgId:"AddressingPosi",
+        imgAlt:"AddressingPosi"
+        })
+          //- img(src="assets/images/hiv-userJourney.png", alt="hiv-userJourney")
+      .row.mt-5.d-flex.justify-content-center
+        +eyebrowTextBlock({
+          eyebrow:"The initial idea - extra support",
+          title:"I aimed to ideate on caring methods for positive users. Most of the supports information focused on people already confirmed with HIV.",
+          des:"I had ideas that the application shows the treatment of HIV, HIV support policy, or just cheer them up. My other ideas include showing HIV patients' lives with hope and how they positively handle the diseases and difficulties in life. Knowing the users' situation and providing trustful stories related to them are the main challenges. The strong insight is that before confirming test results from a doctor, positive users are not HIV patients. They need a professional test and support, or they might only worry about the imaginary fear of HIV.",
+          wid:"8"
+          })
+      .row.mt-5.d-flex.justify-content-center
+        .col-md-10
           +carousel("assets/images/hiv-initialSupport02-v1.png","assets/images/hiv-initialSupport01-v1.png")
       .row.mt8.v-align-children
         .col-md-10
@@ -179,51 +213,65 @@ block content
           .imgCaption
             img(src="assets/images/hiv-suport01-v1.png", alt="suport01")
             ul.small
-              li Searchable gov information.
-              li Lack of hierarchy?
+              li.noDash 
+              | 
+              strong Searchable gov information.
+              li Lack of hierarchy
         .col-md-2.col-sm-4.col-xs-6
           .imgCaption
             img(src="assets/images/hiv-suport02-v1.png", alt="suport02")
             ul.small
-              li Suggest calling the support line.
-              li A big step forward.
+              li.noDash
+              | 
+              strong Suggest calling the support line.
+              li Need a big step forward.
         .col-md-2.col-sm-4.col-xs-6
           .imgCaption
             img(src="assets/images/hiv-suport03-v1.png", alt="suport03")
             ul.small
-              li Doctor around.
+              li.noDash
+              | 
+              strong Doctor around.
               li Limited information.
         .col-md-2.col-sm-4.col-xs-6
           .imgCaption
             img(src="assets/images/hiv-suport04-v1.png", alt="suport04")
             ul.small
-              li HIV Q&A
-              li Articles and videos for different situations.
+              li.noDash
+              | 
+              strong HIV Q&A
+              li Articles and videos for different situations but users care privacy
         .col-md-2.col-sm-4.col-xs-6
           .imgCaption
             img(src="assets/images/hiv-suport05-v1.png", alt="suport05")
             ul.small
-              li Landing page for potential HIV.
+              li.noDash
+              | 
+              strong Landing page for potential HIV.
               li Can't come back.
         .col-md-2.col-sm-4.col-xs-6
           .imgCaption
             img(src="assets/images/hiv-suport06-v1.png", alt="suport06")
             ul.small
-              li HIV community links.
+              li.noDash
+              | 
+              strong HIV community links.
+              li User unwilling to be know
       .row.mt96.v-align-children
         .col-md-8
           +modalImg("pointDrawId","assets/images/hiv-pointDraw-v1.png","pointDraw")
-        .col-md-4
-          h5.mb8 Point the what should do
-          p We decide to use HIV community information and specific instructions for typical situations. The HIV community would provide confirm test and people to help. The special education would give useful directions for users to reduce anxiety from the unknown.
+        +h5TextBlock({
+        title:"Point the Next step",
+        des:"We decide to use HIV community information and specific instructions for typical situations. The HIV community would provide confirming tests and health workers to help. The special education would give useful directions for users to reduce anxiety from the unknown.",
+        wid:"4"})
   section.pt64.pb64
     .container
-      +sectionTitle("Ideate - feel bein")
+      +sectionTitle("Problem 2 - Clear instructions")
       .row.v-align-children
         .col-md-6
-          h6.text-muted.mb0 The initial idea - instruction
-          h5.mb16 Chopping blocks of text into small pieces and talk with users. And provide specific support for users.
-          p.mb0 I aimed to ideate on humanizing onboarding experience. Take it easy also calm down our users. I have ideas that turn dense text into step by step simple dialog. Instead of putting a page of instruction and requirement text in-front of users' faces, the heavy reading work can become a warm chatting between user and application. And by learning the user's situation, we'd provide more specified instruction for users.
+          h6.text-muted.mb0 The initial idea - simple instruction
+          h5.mb16 Chopping blocks of text into small pieces and talk with users. And provide interactable instruction for users.
+          p.mb0 I aimed to ideate on humanizing onboarding experience. Take it easy also calm down our users. I have ideas that turn dense text into step by step simple dialog to prevent ignored requirements. Instead of putting a page of instruction and requirement text in-front of users' faces, the heavy reading work can become a warm chatting between user and application. And by learning the user's situation, we'd provide more specified instruction for users.
         .col-md-6
           img(src="assets/images/hiv-initialIdea-draw-v1.svg", alt="initialIdea")
       //Initial idea draw
@@ -232,6 +280,9 @@ block content
           .imgCaption
             img(src="assets/images/hiv-instructionDraw01-v1.png", alt="instructionDraw01")
             ul.small
+              li.noDash 
+              | 
+              strong Chat bubble.
               li Simple to consume information.
               li Why would I trust a bot?
               li Answers are immutable.
@@ -239,40 +290,54 @@ block content
           .imgCaption
             img(src="assets/images/hiv-instructionDraw02-v1.png", alt="instructionDraw02")
             ul.small
+              li.noDash 
+              | 
+              strong="Q&A"
               li Simple to understand each requirement.
-              li Always screen changing lose consistency.
-              li Always screen changing lose consistency.
+              li Constant screen changing loses consistency.
         .col-md-2.col-sm-4.col-xs-6
           .imgCaption
             img(src="assets/images/hiv-instructionDraw03-v1.png", alt="instructionDraw03")
             ul.small
+              li.noDash 
+              | 
+              strong Step by step scroll down
               li Easy to understand and visually comfort the user.
               li Difficult for getting customized content.
         .col-md-2.col-sm-4.col-xs-6
           .imgCaption
             img(src="assets/images/hiv-instructionDraw04-v1.png", alt="instructionDraw04")
             ul.small
+              li.noDash 
+              | 
+              strong Check box
               li Easily navigate and track all steps.
-              li Difficult for adding customized content.
-              li Limiting question options.
+              li Difficult for getting customized content.
+              li Limiting answer options.
         .col-md-2.col-sm-4.col-xs-6
           .imgCaption
             img(src="assets/images/hiv-instructionDraw05-v1.png", alt="instructionDraw05")
             ul.small
-              li Clear direction.
+              li.noDash 
+              | 
+              strong Video
+              li Clear instructions.
               li Lack of details.
-              li Difficult to maintain.
+              li Difficult to maintain content.
         .col-md-2.col-sm-4.col-xs-6
           .imgCaption
             img(src="assets/images/hiv-instructionDraw06-v1.png", alt="instructionDraw06")
             ul.small
+              li.noDash 
+              | 
+              strong Form
               li Fewer mistakes and get confirmed on every step.
               li Tedious inputting operation.
       .row.mt96.v-align-children
         .col-md-4
           img(src="assets/images/hiv-testInstructionsDraw-v1.png", alt="testInstructionsDraw")
         .col-md-4
-          h5.mb8 Test instructions - question & diagrams.
+          h5.mb8 Instructions - questions & diagrams.
           p We decided to use the question to separate instructions and have a task status bar as an overview for consistency. In each step, there would be an explanation and illustration for details and comforting users.
   section.pt64.pb64
     .container
@@ -418,4 +483,3 @@ block content
           
           
 include /_mixins/mixins.pug
-include /_mixins/components.pug
