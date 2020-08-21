@@ -1,5 +1,6 @@
 html {
   font-size: 16px;
+
   body {
     margin: 0;
     padding: 0;
@@ -7,4 +8,13 @@ html {
     -webkit-font-smoothing: antialiased;
   }
 }
+
 @clement: #4f4f4f;
+
+// fix bootstrap lagency
+.row:after,
+.row:before {
+  // /* display: table; */
+  // /* content: ""; */
+  content: normal;
+}

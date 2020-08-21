@@ -4,39 +4,34 @@ block content
     section.fullscreen.cover.image-bg
       .background-image-holder
         img.background-image(alt='intro' src='assets/images/prediabete-head.png')
-    section.pt96 
+    section.pt-5
       .container
-        //- .border-between-line
-        .row.pt72.pb72
-          .col-sm-5.vertical-center
-            h3.change2title.uppercase.bold.mb48 Pre-diabetes Edu Test
-            p
-              |Prediabetes education test is a vending machine UI to introduce customer about pre-diabetes and encourage them to make better diet decisions. We conducted research about pre-diabetes  synthesize users behaviors into insights and design scenarios to inform people about this disease.
-          .col-sm-5.col-sm-push-1.vertical-center
-            .row.mb16.mt16
-              .col-sm-6.col-sm-push-2.border-line-between.mt8
-                h5.mb4 Roles
-                p.mb4 UX Design
-                p.mb4 Interview
-                p.mb4 UI Design
-              .col-sm-6.col-sm-push-3.border-line-between.mt8
-                h5.mb4 Deliverables
-                p.mb4  Prototype    
-            .row.mb16.mt16
-              .col-sm-6.col-sm-push-2.border-line-between.mt8
-                h5.mb4 Tools
-                p.mb4 Photoshop
-                p.mb4 Adobe XD
-              .col-sm-6.col-sm-push-3.border-line-between.mt8
-                h5.mb4 Time
-                p.mb4  3 weeks
-    section.pt0.pb0
+        +projectTitle(
+          {title:"Pre-diabetes Edu Test",
+          titleDes:"Prediabetes education test is a vending machine UI to introduce customer about pre-diabetes and encourage them to make better diet decisions. We conducted research about pre-diabetes  synthesize users behaviors into insights and design scenarios to inform people about this disease.",
+          des:[
+          {desTitle:"Roles",desRole:["UX Designer","UI Designer"]},
+          {desTitle:"Deliverables",desRole:["Prototype"]},
+          {desTitle:"Tools",desRole:["Photoshop","After Effects","Adobe XD"]},
+          {desTitle:"Time",desRole:["3 weeks"]},
+          ]
+          }
+          )
+    section
       .container
         .row.mb120
           .col-sm-12
             img(alt='prediabete-question' src='assets/images/prediabete-question.svg')
     section
       img(alt='prediabete-oneInThree' src='assets/images/prediabete-oneInThree.svg' style="width:100%")
+
+    section.pt64.pb64
+      .container
+        +sectionTitle("Understanding")
+        +h5TitleDesRow({
+          title:"A stressful process",
+        des:"The HIV in-home test was a stressful experience. From the thinking of getting the test kit to the end of the result, they were doing it with heavy mental burdens and stresses. As the users take the result more seriously, they are the more irritated by the false result."}
+        )
     section.pt64.pb64
       .container
         .row
