@@ -267,13 +267,16 @@ block content
   section.pt64.pb64
     .container
       +sectionTitle("Problem 2 - Clear instructions")
-      .row.v-align-children
-        .col-md-6
-          h6.text-muted.mb0 The initial idea - simple instruction
-          h5.mb16 Chopping blocks of text into small pieces and talk with users. And provide interactable instruction for users.
-          p.mb0 I aimed to ideate on humanizing onboarding experience. Take it easy also calm down our users. I have ideas that turn dense text into step by step simple dialog to prevent ignored requirements. Instead of putting a page of instruction and requirement text in-front of users' faces, the heavy reading work can become a warm chatting between user and application. And by learning the user's situation, we'd provide more specified instruction for users.
-        .col-md-6
-          img(src="assets/images/hiv-initialIdea-draw-v1.svg", alt="initialIdea")
+      +leftTextRighImgEyebrow({
+        eyebrow:"The initial idea - simple instruction",
+        title:"Chopping blocks of text into small pieces and talk with users. And provide interactable instruction for users.",
+        des:"I aimed to ideate on humanizing onboarding experience. Take it easy also calm down our users. I have ideas that turn dense text into step by step simple dialog to prevent ignored requirements. Instead of putting a page of instruction and requirement text in-front of users' faces, the heavy reading work can become a warm chatting between user and application. And by learning the user's situation, we'd provide more specified instruction for users.",
+        wid:6
+        },{
+        imgSrc:"assets/images/hiv-initialIdea-draw-v1.svg",
+        imgId:"initialIdea",
+        imgAlt:"initialIdea"
+        })
       //Initial idea draw
       .row.mt96
         .col-md-2.col-sm-4.col-xs-6

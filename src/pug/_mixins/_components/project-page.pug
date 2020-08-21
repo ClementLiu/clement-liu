@@ -67,10 +67,20 @@ mixin modalImgObject(imgBlock={imgSrc:"assets/images/hiv-interviewSynthesize01.p
   +modalImg(imgBlock.imgId,imgBlock.imgSrc,imgBlock.imgAlt)
 
 mixin eyebrowTextBlock(object={eyebrow:"Eyebrow",title:"Title",des:"des",wid:"6"})
-  div(class="col-md-"+object.wid)
-    h6.text-muted.mb0 #{object.eyebrow}
-    h5.mb16 #{object.title}
-    p #{object.des}
+  if attributes.class!= undefined
+    div(class!="col-md-"+object.wid + " "+ attributes.class)
+      h6.text-muted.mb0 #{object.eyebrow}
+      h5.mb16 #{object.title}
+      if object.des != null
+        p #{object.des}
+      block
+  else
+    div(class!="col-md-"+object.wid)
+      h6.text-muted.mb0 #{object.eyebrow}
+      h5.mb16 #{object.title}
+      if object.des != null
+        p #{object.des}
+      block
 
 //- todo carousel not working yet
 mixin carouselObjs(...imgObjUrls)
