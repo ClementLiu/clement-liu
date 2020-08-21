@@ -1,62 +1,45 @@
-extends ../layouts/default-layout.pug
+extends ../layouts/project-layout.pug
 block content
-  .main-container
-    section.page-title.page-title-3
-      .container
-        .row
-          .col-sm-12.text-center
-            h2.uppercase.mb0 H.EAR POSTER
-      ol.breadcrumb.breadcrumb-2
-        li GRAPHIC DESIGN
-    section
-      .container
-        .row
-          .col-sm-12
-            .image-slider.slider-all-controls.controls-inside
-              ul.slides
-                li
-                  img(alt='showcase01' src='assets/images/headphone-showcase01-v0.3.jpg')
-    section
-      .container
-        .row
-          .col-sm-8.col-sm-offset-2.text-center
-            h4.uppercase.color-primary.mb16.mb-xs-24 Connotative Poster
-            p
-              | It&rsquo;s a connotative poster designed for Sony Headphones MDR-100AAP, which has premium High-Resolution Audio and Eye-catching surfaces.The the action and emotion it associated with is the breathtaking sound quality and wide range of bright color finish.
-    section.fullscreen.cover.parallax.image-bg.overlay
-      .background-image-holder
-        img.background-image(alt='intro' src='assets/images/headphone-intro-v0.1.jpg')
-      .container.v-align-transform
-        .row
-          .col-sm-12.text-center
-            h1.mb16.text-white  
-            h6.uppercase.mb32.text-white   
-            .modal-container
-              .foundry_modal.no-bg
-                iframe(data-provider='vimeo' data-video-id='25737856' data-autoplay='1' allowfullscreen='allowfullscreen' src='')
-    section
-      .container
-        .row
-          .col-sm-12
-            .image-slider.slider-all-controls.controls-inside
-              ul.slides
-                li
-                  img(alt='poseter' src='assets/images/headphone-poseter-v0.2.jpg')
+  section.page-title.page-title-3
+    .container
+      .row
+        .col-sm-12.text-center
+          h2.uppercase.mb0 H.EAR POSTER
+    ol.breadcrumb.breadcrumb-2
+      li GRAPHIC DESIGN
+  section
+    .container
+      .row
+        .col-sm-12
+          .image-slider.slider-all-controls.controls-inside
+            ul.slides
+              li
+                img(alt='showcase01' src='assets/images/headphone-showcase01-v0.3.jpg')
+  section
+    .container
+      .row
+        .col-sm-8.col-sm-offset-2.text-center
+          h4.uppercase.color-primary.mb16.mb-xs-24 Connotative Poster
+          p
+            | It&rsquo;s a connotative poster designed for Sony Headphones MDR-100AAP, which has premium High-Resolution Audio and Eye-catching surfaces.The the action and emotion it associated with is the breathtaking sound quality and wide range of bright color finish.
+  section.fullscreen.cover.parallax.image-bg.overlay
+    .background-image-holder
+      img.background-image(alt='intro' src='assets/images/headphone-intro-v0.1.jpg')
+    .container.v-align-transform
+      .row
+        .col-sm-12.text-center
+          h1.mb16.text-white  
+          h6.uppercase.mb32.text-white   
+          .modal-container
+            .foundry_modal.no-bg
+              iframe(data-provider='vimeo' data-video-id='25737856' data-autoplay='1' allowfullscreen='allowfullscreen' src='')
+  section
+    .container
+      .row
+        .col-sm-12
+          .image-slider.slider-all-controls.controls-inside
+            ul.slides
+              li
+                img(alt='poseter' src='assets/images/headphone-poseter-v0.2.jpg')
 
-    //- section
-    //-   .container
-    //-     .row
-    //-       .col-sm-12
-    //-         .image-slider.slider-all-controls.controls-inside
-    //-           ul.slides
-    //-             li
-    //-               img(alt='Image' src='assets/images/headphone-showcase02-v0.2.png')
-    //- section
-    //-   .container
-    //-     .row
-    //-       .col-sm-12
-    //-         .image-slider.slider-all-controls.controls-inside
-    //-           ul.slides
-    //-             li
-    //-               img(alt='process' src='assets/images/headphone-process-v0.1.png')
-    
+include /_mixins/mixins.pug

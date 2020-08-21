@@ -90,3 +90,18 @@ mixin carouselObjs(...imgObjUrls)
       each imgObjUrl in imgObjUrls
         li
           +modalImgObject(imgObjUrls)
+
+//- link foot
+mixin linkFooterLeft(object={titleName:"title",imgLink:"../../assets/images/Prediabetes-v3.png",link:"/prediabetes.html"})
+  a(href=object.link)
+    div.link-footer.d-flex.align-items-center.justify-content-start(style='background-image: url('+object.imgLink+')')
+      .arrowContainer
+        .arrow.left
+      h4.left #{object.titleName}
+
+mixin linkFooterRight(object={titleName:"title",imgLink:"../../assets/images/Prediabetes-v3.png",link:"/prediabetes.html"})
+  a(href=object.link)
+    div.link-footer.d-flex.align-items-center.justify-content-end(style='background-image: url('+object.imgLink+')')
+      .arrowContainer
+        .arrow.right
+      h4.left #{object.titleName}

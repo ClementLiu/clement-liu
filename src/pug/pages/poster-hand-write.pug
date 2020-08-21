@@ -54,4 +54,20 @@ block content
             ul.slides
               li
                 img(alt='earthPoster' src='assets/images/earth-poster.png')
-include /_mixins/mixins.pug
+block linkProjects
+  section
+    .container
+      .row.d-flex
+        .col-md-6
+          +linkFooterLeft({
+            titleName:"HIV test",
+            imgLink:"../../assets/images/hiv-app-v2.0.png",
+            link:"/hiv-test.html"
+            })
+        .col-md-6
+          +linkFooterRight({
+            titleName:"RightStory",
+            imgLink:"../../assets/images/RightStory.jpg",
+            link:"/rightstory.html"
+            })
+include /_mixins/mixins.pug 

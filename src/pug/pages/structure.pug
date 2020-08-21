@@ -1,55 +1,71 @@
-extends ../layouts/default-layout.pug
+extends ../layouts/project-layout.pug
 block content
-  .main-container
+  section
+    .container
+      .row
+        .col-sm-12
+          .image-slider.slider-all-controls.controls-inside
+            ul.slides
+              li
+                img(alt='disassemble-cover' src='assets/images/disassemble-cover-v0.1.jpg')
+  section.pt96
+    .container
+      //- .border-between-line
+      .row.pt72.pb72
+        .col-sm-5.vertical-center
+          h3.change2title.uppercase.bold.mb48 Canon MF4150
+          p
+            |
+        .col-sm-5.col-sm-push-1.vertical-center
+          .row.mb16.mt16
+            .col-sm-6.col-sm-push-2.border-line-between.mt8
+              h5.mb4 Project
+              p.mb4 Graphic Design
+              p.mb4 Industrial design
+              p.mb4 Photography
+            .col-sm-6.col-sm-push-3.border-line-between.mt8
+              h5.mb4 Deliverables
+              p.mb4  Posters    
+          .row.mb16.mt16
+            .col-sm-6.col-sm-push-2.border-line-between.mt8
+              h5.mb4 Tools
+              p.mb4 Photoshop
+              p.mb4 Digital Print
+              p.mb4 Digital Camera
+            .col-sm-6.col-sm-push-3.border-line-between.mt8
+              h5.mb4 Time
+              p.mb4  2 weeks
+  section
+    .container
+      .row
+        .col-sm-12
+          .image-slider.slider-all-controls.controls-inside
+            ul.slides
+              li
+                img(alt='disassemble-before' src='assets/images/disassemble-before-v0.1.png')
+  section
+    .container
+      .row
+        .col-sm-12
+          .image-slider.slider-all-controls.controls-inside
+            ul.slides
+              li
+                img(alt='draw' src='assets/images/disassemble-draw-v0.1.png')
+block linkProjects
+  section
+    .container
+      .row.d-flex
+        .col-md-6
+          +linkFooterLeft({
+            titleName:"HIV test",
+            imgLink:"../../assets/images/hiv-app-v2.0.png",
+            link:"/hiv-test.html"
+            })
+        .col-md-6
+          +linkFooterRight({
+            titleName:"RightStory",
+            imgLink:"../../assets/images/RightStory.jpg",
+            link:"/rightstory.html"
+            })
 
-    section
-      .container
-        .row
-          .col-sm-12
-            .image-slider.slider-all-controls.controls-inside
-              ul.slides
-                li
-                  img(alt='disassemble-cover' src='assets/images/disassemble-cover-v0.1.jpg')
-    section.pt96
-      .container
-        //- .border-between-line
-        .row.pt72.pb72
-          .col-sm-5.vertical-center
-            h3.change2title.uppercase.bold.mb48 Canon MF4150
-            p
-              |
-          .col-sm-5.col-sm-push-1.vertical-center
-            .row.mb16.mt16
-              .col-sm-6.col-sm-push-2.border-line-between.mt8
-                h5.mb4 Project
-                p.mb4 Graphic Design
-                p.mb4 Industrial design
-                p.mb4 Photography
-              .col-sm-6.col-sm-push-3.border-line-between.mt8
-                h5.mb4 Deliverables
-                p.mb4  Posters    
-            .row.mb16.mt16
-              .col-sm-6.col-sm-push-2.border-line-between.mt8
-                h5.mb4 Tools
-                p.mb4 Photoshop
-                p.mb4 Digital Print
-                p.mb4 Digital Camera
-              .col-sm-6.col-sm-push-3.border-line-between.mt8
-                h5.mb4 Time
-                p.mb4  2 weeks
-    section
-      .container
-        .row
-          .col-sm-12
-            .image-slider.slider-all-controls.controls-inside
-              ul.slides
-                li
-                  img(alt='disassemble-before' src='assets/images/disassemble-before-v0.1.png')
-    section
-      .container
-        .row
-          .col-sm-12
-            .image-slider.slider-all-controls.controls-inside
-              ul.slides
-                li
-                  img(alt='draw' src='assets/images/disassemble-draw-v0.1.png')
+include /_mixins/mixins.pug

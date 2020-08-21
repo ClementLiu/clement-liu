@@ -315,4 +315,20 @@ block content
     //-     li
     //-       a(href='#')
     //-         i.fa.fa-play-circle-o
+block linkProjects
+  section
+    .container
+      .row.d-flex
+        .col-md-6
+          +linkFooterLeft({
+            titleName:"RightStory",
+            imgLink:"../../assets/images/RightStory.jpg",
+            link:"/rightstory.html"
+            })
+        .col-md-6
+          +linkFooterRight({
+            titleName:"Wuhe Web",
+            imgLink:"../../assets/images/WuHe-v1.0.png",
+            link:"https://clementliu.github.io/WuHe/"
+            })
 include /_mixins/mixins.pug

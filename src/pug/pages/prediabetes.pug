@@ -246,5 +246,21 @@ block content
         .row.d-flex.justify-content-center
           iframe(src='https://player.vimeo.com/video/418756306?autoplay=1&loop=1&autopause=0' width='640' height='480' frameborder='0' allow='autoplay; fullscreen' allowfullscreen='')
 
+block linkProjects
+  section
+    .container
+      .row.d-flex
+        .col-md-6
+          +linkFooterLeft({
+            titleName:"HIV test",
+            imgLink:"../../assets/images/hiv-app-v2.0.png",
+            link:"/hiv-test.html"
+            })
+        .col-md-6
+          +linkFooterRight({
+            titleName:"RightStory",
+            imgLink:"../../assets/images/RightStory.jpg",
+            link:"/rightstory.html"
+            })
 
 include /_mixins/mixins.pug
