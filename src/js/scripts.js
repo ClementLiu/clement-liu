@@ -1168,7 +1168,13 @@ $(document).ready(function () {
       ).appendChild(dsq);
     })();
   }
-
+  // Clement Liu
+  // add sal scroll animation
+  $(".project-container .row").attr({
+    "data-sal": "slide-up",
+    "data-sal-easing": "ease-out-back",
+  });
+  sal();
   // Load Google MAP API JS with callback to initialise when fully loaded
   if (
     document.querySelector("[data-maps-api-key]") &&
