@@ -1,0 +1,266 @@
+extends ../layouts/project-layout.pug
+block content
+
+  section.fullscreen.cover.image-bg
+    .background-image-holder
+      img.background-image(alt='intro' src='assets/images/prediabete-head.png')
+  section.pt-5
+    .container
+      +projectTitle(
+        {title:"Pre-diabetes Edu Test",
+        titleDes:"Prediabetes education test is a vending machine UI to introduce customer about pre-diabetes and encourage them to make better diet decisions. We conducted research about pre-diabetes  synthesize users behaviors into insights and design scenarios to inform people about this disease.",
+        des:[
+        {desTitle:"Roles",desRole:["UX Designer","UI Designer"]},
+        {desTitle:"Deliverables",desRole:["Prototype"]},
+        {desTitle:"Tools",desRole:["Photoshop","After Effects","Adobe XD"]},
+        {desTitle:"Time",desRole:["3 weeks"]},
+        ]
+        }
+        )
+  section
+    .container
+      .row.mb120
+        .col-sm-12
+          img(alt='prediabete-question' src='assets/images/prediabete-question.svg')
+  section
+    img(alt='prediabete-oneInThree' src='assets/images/prediabete-oneInThree.svg' style="width:100%")
+
+  section.pt64.pb64
+    .container
+      +sectionTitle("Understanding")
+      .row.align-items-center
+        +eyebrowTextBlock({
+          eyebrow:"What is pre-diabetes",
+          title:"Over time you could get non-reversible diabetes.",
+          des:"Early diagnoseing pre-diabetes is critical in diabetes treatment. Prediabetes is blood sugar higher than normal but not high enough yet to be diagnosed as type 2 diabetes. Type 2 diabetes, the most common type of diabetes, which means the body does not make or use insulin well, which can be diagnosed at any age and not reversible.",
+          wid:6
+          })
+        .col-md-2.col-md-offset-2
+          +modalImg("prediabete-draw-1","assets/images/prediabete-draw-1.png","prediabete-draw-1").mb16
+      .row.d-flex.justify-content-center.mt-3
+        .col-md-8
+          +modalImg("prediabete-img-1","assets/images/prediabete-img-1.png","prediabete-img-1")
+      .row.d-flex.justify-content-center.mt-2
+        +eyebrowTextBlock({
+          eyebrow:"Climbing numbers",
+          title:"In 2015, around 9.4 percent in the U.S had diabetes.",
+          des:"Between 1990 and 2010, the number of people living with diabetes more than tripled, and the number of new cases doubled every year.",
+          wid:8
+          })
+  section.pt0.pb64
+    .container
+      +sectionTitle("Research") 
+      .row.mb-5.d-flex.align-items-center
+        +eyebrowTextBlock({
+          eyebrow:"Desk research",
+          title:"To be aware of prediabetes is hard.",
+          des:"The high-risk people are those who have relatives with diabetes, but they don't often pay much attention to the nutrition in their diet and don't care about prediabetes. The reasons as listed:",
+          wid:6
+          }).mr-5
+            p.mb0 1. Prediabetes doesn't have obvious symptoms. Even patients have been diagnosed as prediabetes, they might not care.
+            p.mb0 2. To diagnose prediabetes, people need an A1C test, a blood test that provides information about the average levels of blood glucose over the past three months.
+        .col-md-4
+          +modalImg("prediabete-testQuery","assets/images/prediabete-testQuery.png","prediabete-testQuery")
+      .row.mt-3
+        +eyebrowTextBlock({
+          eyebrow:"Interview",
+          title:"It's a treat for me. I feel good to have a snack around.",
+          des:"Diabetes is far from people's concern. Having a high sugar snack is a more or less pleasant experience.",
+          wid:12
+          })
+        .col-md-3
+          +imgCaption('assets/images/prediabete-vendingPhoto.png',"drawtest","College Student, Age 23, Working late in studio.",true)
+        .col-md-9
+          +modalImg("prediabete-SDTF","assets/images/prediabete-SDTF.svg","prediabete-SDTF")
+      .row.d-flex.justify-content-center.align-items-center.mt-5
+        +eyebrowTextBlock({
+          eyebrow:"Interview insight",
+          title:"Feel tired-> Sugar to boost up-> Too many sugars cause fatigue-> More sugar. It’s a sugar-fatigue loop.",
+          des:"People get tired out of working and studying. It’s the moment they crave things to make them inspired. High-sugar food, like milk tea, Coke, snack bar, is the ideal choice.",
+          wid:8
+          }).mr-5
+            p.mb0 But one 12 oz Coke has 39g sugar, which is already higher than recommended 38 grams for a man a day. The more sugar they have, the more amount they crave. 
+            p.mb0 The experience needs to be delightful and exciting for exhausting people.
+        .col-md-3
+          +modalImg("prediabete-draw-loop","assets/images/prediabete-draw-loop.svg","prediabete-draw-loop").mb16
+  section.pt0
+    .container
+      +sectionTitle("Rapid test") 
+      .row.d-flex.justify-content-center
+        +eyebrowTextBlock({
+          eyebrow:"Sacrificed prototype",
+          title:"To break the sugar-fatigue loop, we aimed to give people a better choice.",
+          des:"To change people’s choice, we can use threaten by frightening people with horrible facts of diabetes, like smoking ads campaign, and we can nudge people to make decisions by reducing friction to getting it, like recreation parks around the corner. I developed three ideas that people can view their diet situation in a long-term view. People have an assistant to encourage them to have a better diet and get suggestions right before they make a purchase decision.",
+          wid:8
+        })
+      .row.d-flex.align-items-start.mt-3
+        .col-md-4
+          //- +modalImg("prediabete-prototype-01","assets/images/prediabete-prototype-01.png","prediabete-prototype-01").mb16
+          img(alt='prediabete-prototype-01' src='assets/images/prediabete-prototype-01.png')
+          h5.mb8 Tracking App
+          p Collect the daily behavior, to view and change them in a longer time perspective.
+          h5.mb8 Pro
+          p.mb0 -objective data for the reliable suggestion.
+          p -long term effects
+          h5.mb8 Con
+          p.mb0 -tedious log activities
+          p.mb0 -various input type
+          p -long term investment with little progress
+        .col-md-4
+          img(alt='prediabete-prototype-02' src='assets/images/prediabete-prototype-02.png')
+          h5.mb8 Health assistant
+          p Discuss prediabetes with a personal chatbot. It gives you a brief diagnose of your health condition and suggestion.
+          h5.mb8 Pro
+          p.mb0 -Q&A gets user attention
+          p.mb0 -flexible in any platform
+          p.mb0 -constantly reminding every day
+          p -human touch or food suggestion
+          h5.mb8 Con
+          p.mb0 -questions are too private
+          p.mb0 -hard to cover details and take action
+          p -gradually annoying
+        .col-md-4
+          img(alt='prediabete-prototype-03' src='assets/images/prediabete-prototype-03.png')
+          h5.mb8 Vending machine
+          p Inform customers about the nutrition facts of foods/drinks to help them make healthier food selection.
+          h5.mb8 Pro
+          p.mb0 -instant positive affect
+          p.mb0 -potential user
+          p -clear on cause and effect
+          h5.mb8 Con
+          p.mb0 -a small group of user and context
+          p -short term effect
+          //- Guerrilla test
+      .row.v-align-children.mt-5
+        +eyebrowTextBlock({
+          eyebrow:"Guerrilla test",
+          title:"Keeping health is a long term mission, but health application needs strong reasons to retain users with long term interest.",
+          des:"Informing users about their diet situation and providing better suggestions to the user seems like a useful help. But from the guerrilla test, I realized how little people would like to come back to the application to see the problem in diet and listen to the “convenient” suggestion.",
+          wid:8
+        })
+          p
+            |Instead of sticking around the user with an application, I decided to focus on leaving a clear impression of prediabetes to the user and provide a better choice right at the decisive moment.  Based on the previous test, users wish they could know the facts that 1/3 people have prediabetes, and prediabetes is reversible. I realized when the impressive effects have more connections to users, they are more likely to remember. Therefore, I focus on the task about how to build the links.
+          img(alt='prediabetes-test-insight' src='assets/images/prediabetes-test-insight.svg').mt-3
+          //- +modalImg("prediabetes-test-insight","assets/images/prediabetes-test-insight.svg","prediabetes-test-insight")
+  section.pt0
+    .container
+      +sectionTitle("Ideation")   
+      .row.d-flex.align-items-start
+        .col-md-3
+          //- +modalImg("prediabete-prototype-01","assets/images/prediabete-prototype-01.png","prediabete-prototype-01").mb16
+          img(alt='prediabete-sketch-07' src='assets/images/prediabete-sketch-07.png')
+          h5.mb8 Prediabetes self check questions
+          p 1 min questions to know your rate to get prediabetes.
+        .col-md-3
+          img(alt='prediabete-sketch-05' src='assets/images/prediabete-sketch-05.png')
+          h5.mb8 The lower sugar, the lower price
+          p Give rewards to customers shopping for lower sugar food.
+        .col-md-3
+          img(alt='prediabete-sketch-02' src='assets/images/prediabete-sketch-02.png')
+          h5.mb8 Local average prediabetes rate
+          p Team up the local and show average prediabetes rate.
+        .col-md-3
+          img(alt='prediabete-sketch-03' src='assets/images/prediabete-sketch-03.png')
+          h5.mb8 Highlight impressive facts
+          p Show the 1/3 percent rate and last chance to reverse.
+      .row.mb64.align-items-start
+        .col-md-3
+          img(alt='prediabete-sketch-06' src='assets/images/prediabete-sketch-06.png')
+          h5.mb8 Set goal for user to accomplish
+          p The more healthy decision you made, the higher score you get.
+        .col-md-3
+          img(alt='prediabete-sketch-04' src='assets/images/prediabete-sketch-04.png')
+          h5.mb8 Fast test challenge! Now start!
+          p Let’s finish these True/False prediabetes questions.
+        .col-md-3
+          img(alt='prediabete-sketch-01' src='assets/images/prediabete-sketch-01.png')
+          h5.mb8 Congratulate! You made it!
+          p Celebrate the lower than average sugar consumption.
+      .row.v-align-children.mb64
+        +eyebrowTextBlock({
+          eyebrow:"Narrowing down",
+          title:"Alienate users from the accused role by building a character to project users and show the effects.",
+          des:"We use the self-check questions as a tool for the user to understand their risk of prediabetes. But it's too private for a quick test. We came up with the idea that we make it a character, like The Sims, to alienate users from the feeling of being surveillance or blamed, simulating users' decisions and showing the effects of different choices to inform them of better options.",
+          wid:8
+        })
+      .row.v-align-children.mb64
+        .col-md-4
+          img(alt='prediabete-draw-avatar' src='assets/images/prediabete-draw-avatar.png')
+      .row.v-align-children.mb120
+        +eyebrowTextBlock({
+          eyebrow:"Insights",
+          title:"Why should I answer the self-check questions. I don’t want to feel guilty for my pleasure.",
+          wid:8
+        })
+          p.mb0 
+            strong “The questions are too private.” 
+            | People don’t want to unveiled personal information to strangers or anomy. 
+          p.mb0 
+            strong “I just want to grab something to eat.” 
+            | People go to the vending machine are in a hurry and look for a snack, something instant and fast. 
+          p.mb0 
+            strong “I know the high sugar, but I want it.” 
+            | People might know diabetes, but don’t know how it affects life. 
+          p
+            strong “How good and how bad I did?” 
+            | People want positive feedback and a clear motivation.
+      .row.v-align-children.mb0
+        .col-md-8
+          +modalImg("prediabete-process","assets/images/prediabete-process.png","prediabete-process")
+      .row.v-align-children.mb64
+        .col-md-12
+          +modalImg("prediabete-chart","assets/images/prediabete-chart.png","prediabete-chart")
+      .row.v-align-children.mb120
+        .col-md-10
+          +modalImg("prediabete-lofi","assets/images/prediabete-lofi.png","prediabete-lofi")
+  section.pt0
+    .container
+      +sectionTitle("Prototype")   
+      .row.v-align-children.mb-5
+        .col-md-4.col-md-offset-1
+          +carousel("assets/images/prediabete-lofi-02.png","assets/images/prediabete-lofi-01.png")
+        .col-md-5.col-md-offset-1
+          h5.mb8 We built our low-fi prototype testing and tested it with multiple users based on our process and draft. Some essential feedback includes:
+          p.mb0 -Why I see 1/3 prediabetes while I am shopping
+          p.mb0 -I am not clear about which item added the most amount of sugar.
+          p.mb0 -There are too many words to remember.
+          p.mb0 -If there is no item, how to remind the user
+      .row.v-align-children.mt-5.mb-5
+        +eyebrowTextBlock({
+          eyebrow:"High-fi",
+          title:"Then we revised our design based on the feedback gathered during low-fi prototype testing. Among the many iterations we made, there were three major design changes:",
+          des:"On the home screen, the prediabetes fact doesn’t have a relation to the vending process. We switch the sugar meter and fact to reduce the visual attention on the fact. The stroke number would be filled after the meter reaches the daily sugar suggestion.",
+          wid:8
+          })
+            p.mb0 We clarify the sugar amount with the indicator bar on each item. The bar height is the same as the height that will be added to the meter.
+            p.mb0 To quickly understanding the choice, we simplify the description to words. The option can be toggled to switch between options.
+      .row.v-align-children.mb64
+        img(alt='prediabete-hifi' src='assets/images/prediabete-hifi.png')
+      .row.v-align-children.mb64
+        .col-md-6
+          p.mb0 Before moving on to build our animated prototype, we conducted a heuristic evaluation on our high-fi prototype using the ten usability heuristics proposed by Jakob Nielsen. The usability problems identified and the corresponding changes we made in the high-fi prototype are summarized below.
+    img.mb64(alt='prediabete-hifiExplain-02' src='assets/images/prediabete-hifiExplain-02.png')
+    img.mb120(alt='prediabete-hifiExplain-01' src='assets/images/prediabete-hifiExplain-01.png')
+    section
+      .container
+        .row.d-flex.justify-content-center
+          iframe(src='https://player.vimeo.com/video/418756306?autoplay=1&loop=1&autopause=0' width='640' height='480' frameborder='0' allow='autoplay; fullscreen' allowfullscreen='')
+
+block linkProjects
+  section
+    .container
+      .row.d-flex
+        .col-md-6
+          +linkFooterLeft({
+            titleName:"HIV test",
+            imgLink:"../../assets/images/hiv-app-v2.0.png",
+            link:"/hiv-test.html"
+            })
+        .col-md-6
+          +linkFooterRight({
+            titleName:"RightStory",
+            imgLink:"../../assets/images/RightStory.jpg",
+            link:"/rightstory.html"
+            })
+
+include /_mixins/mixins.pug
