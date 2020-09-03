@@ -1,0 +1,55 @@
+extends ../layouts/project-layout.pug
+block content
+  section
+    .container
+      .row
+        .col
+          h1 Clement's blog from are.na
+  section#blog
+    .container
+      .row
+  script.
+    console.log("'working'");
+    document.addEventListener("DOMContentLoaded", function () {
+    // Handler when the DOM is fully loaded
+    $.ajax({
+    type: "GET",
+    url: "http://api.are.na/v2/channels/blog-s1gem_rhlka",
+    // data: "data",
+    // dataType: "dataType",
+    success: function (response) {
+    console.log("response", response);
+    const contents = response.contents;
+    const titleObject = contents
+    .map((content) => {
+    return {
+    id: content.id,
+    title: content.title,
+    state: content.state,
+    class: content.class,
+    created_at: content.created_at,
+    description: content.description,
+    description_html: content.description_html,
+    image: content.image,
+    updated_at: content.updated_at,
+    };
+    })
+    .reverse();
+    console.log("titleObject", titleObject);
+    titleObject.forEach((element) => {
+    if (element.state === "available") {
+    $("#blog .row").append(`
+    <div class="col-12 my-5">
+    <h3>${element.title}</h3>
+    ${element.description_html}
+    <img src="${element.image.original.url}"
+    </div>
+    `);
+    }
+    });
+    },
+    });
+    });
+
+block linkProjects    
+include /_mixins/mixins.pug

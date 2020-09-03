@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- webinfo-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Primary Meta Tags-->
+    <title>Clement Liu | Digital Product Designer</title>
+    <meta name="title" content="Clement Liu | Digital Product Designer">
+    <meta name="description" content="Hey there! I'm Clement Liu. A designer/developer creates delightful experiences for humans.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="author" content="Clement Liu">
+    <meta property="og:type" content="website">
+    <!-- Open Graph / Facebook-->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://clement-liu.com/">
+    <meta property="og:title" content="Clement Liu | Digital Product Designer">
+    <meta property="og:description" content="Hey there! I'm Clement Liu. A designer/developer creates delightful experiences for humans.">
+    <!-- Twitter-->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://clement-liu.com/">
+    <meta property="twitter:title" content="Clement Liu | Digital Product Designer">
+    <meta property="twitter:description" content="Hey there! I'm Clement Liu. A designer/developer creates delightful experiences for humans.">
+    <!-- icon.pug-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="image" property="og:image" content="/clement-logo-name.png">
+    <meta property="twitter:image" content="/clement-logo-name.png">
+    <!-- gogle font-->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-114612223-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-114612223-1');
+    </script>
+    <script>
+      (function(d) {
+      var config = {
+      kitId: 'dpt6lcr',
+      scriptTimeout: 3000,
+      async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+    <!-- style-->
+    <link href="./assets/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./assets/css/themify-icons.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./assets/css/flexslider.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./assets/css/sal.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./assets/css/vendor.css" rel="stylesheet" type="text/css" media="all">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400%7COpen+Sans:400,500,600" rel="stylesheet" type="text/css">
+    <link href="./assets/css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="nav-container">
+      <nav>
+        <div class="nav-bar">
+          <div class="module left"><a href="index.html"><img class="logo logo-light" alt="Clement" src="assets/images/logo-light.png">
+              <div class="vnu"><img class="logo logo-dark" alt="Clement" src="assets/images/clement-logo-big-v1.0.png"></div></a></div>
+          <div class="module widget-handle mobile-toggle right visible-sm visible-xs"><i class="ti-menu"></i></div>
+          <div class="module-group right">
+            <div class="module left">
+              <ul class="menu">
+                <li><a href="index.html" target="_self">Projects</a></li>
+                <li class="vpf"><a href="me.html" target="_self">Me&nbsp;</a></li>
+                <li class="vpf"><a href="ClementLiu_Resume.pdf" target="_self">R&eacute;sum&eacute;</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="main-container project-container">
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1>Clement's blog from are.na</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="blog">
+        <div class="container">
+          <div class="row"></div>
+        </div>
+      </section>
+      <script>
+        console.log("'working'");
+        document.addEventListener("DOMContentLoaded", function () {
+        // Handler when the DOM is fully loaded
+        $.ajax({
+        type: "GET",
+        url: "http://api.are.na/v2/channels/blog-s1gem_rhlka",
+        // data: "data",
+        // dataType: "dataType",
+        success: function (response) {
+        console.log("response", response);
+        const contents = response.contents;
+        const titleObject = contents
+        .map((content) => {
+        return {
+        id: content.id,
+        title: content.title,
+        state: content.state,
+        class: content.class,
+        created_at: content.created_at,
+        description: content.description,
+        description_html: content.description_html,
+        image: content.image,
+        updated_at: content.updated_at,
+        };
+        })
+        .reverse();
+        console.log("titleObject", titleObject);
+        titleObject.forEach((element) => {
+        if (element.state === "available") {
+        $("#blog .row").append(`
+        <div class="col-12 my-5">
+        <h3>${element.title}</h3>
+        ${element.description_html}
+        <img src="${element.image.original.url}"
+        </div>
+        `);
+        }
+        });
+        },
+        });
+        });
+        
+      </script>
+    </div>
+    <footer class="footer-2 text-center-xs pt64 pb64">
+      <div class="container">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-sm-3"><a href="index.html" target="_self">
+              <div class="vnu"><img class="image-xxs fade-half" alt="Clement" src="assets/images/clement-dark-v0.1.png"></div></a></div>
+          <div class="col-sm-5 text-center pt8"><span class="fade-half">Designed and coded by Clement <br>&copy; Copyright 2020 - All Rights Reserved</span></div>
+          <div class="col-sm-3 text-right text-center-xs pt8">
+            <ul class="list-inline social-list">
+              <li><a href="https://www.linkedin.com/in/clement-liu/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://github.com/ClementLiu" target="_blank"><i class="fa fa-github-square"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Scripts-->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/flexslider.min.js"></script>
+    <script src="/assets/js/masonry.min.js"></script>
+    <script src="/assets/js/smooth-scroll.min.js"></script>
+    <script src="/assets/js/parallax.js"></script>
+    <script src="/assets/js/sal.js"></script>
+    <script src="/assets/js/scripts.js"></script>
+  </body>
+</html>

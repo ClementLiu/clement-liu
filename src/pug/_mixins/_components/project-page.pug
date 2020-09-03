@@ -4,7 +4,18 @@ mixin section-container
     block
 
 //- component 
-
+mixin h3pTitleTextCol(object={title:"Title",des:"Some text here",wid:'auto'})
+  if object != null
+    if object.wid!= "auto"
+      div(class!="col-md-"+object.wid+" "+attributes.class)
+        h3.mb24 #{object.title}
+        p #{object.des}
+        block
+    else
+      div(class!="col"+" "+attributes.class)
+        h3.mb24 #{object.title}
+        p #{object.des}
+        block
 mixin projectTitle(object)
   if object != null
     .row.pt72.pageTitle.d-flex.justify-content-center
