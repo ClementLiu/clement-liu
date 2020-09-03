@@ -87,7 +87,8 @@
         <div class="container">
           <div class="row">
             <div class="col">
-              <h1>Clement's blog from are.na</h1>
+              <h1>Clement's blog</h1>
+              <p id="loading">Is loading from are.na...</p>
             </div>
           </div>
         </div>
@@ -98,16 +99,24 @@
         </div>
       </section>
       <script>
-        console.log("'working'");
+        // console.log("'working'");
         document.addEventListener("DOMContentLoaded", function () {
         // Handler when the DOM is fully loaded
+        var intervalID = window.setInterval(() => {
+        $("#loading").append(".");
+        }, 500);
+        function abortTimer() {
+        // to be called when you want to stop the timer
+        clearInterval(intervalID);
+        }
         $.ajax({
         type: "GET",
         url: "https://api.are.na/v2/channels/blog-s1gem_rhlka",
         // data: "data",
         // dataType: "dataType",
         success: function (response) {
-        console.log("response", response);
+        abortTimer();
+        $("#loading").hide();
         const contents = response.contents;
         const titleObject = contents
         .map((content) => {
@@ -124,7 +133,7 @@
         };
         })
         .reverse();
-        console.log("titleObject", titleObject);
+        //- console.log("titleObject", titleObject);
         titleObject.forEach((element) => {
         if (element.state === "available") {
         $("#blog .row").append(`
@@ -139,6 +148,7 @@
         },
         });
         });
+        
         
       </script>
     </div>
