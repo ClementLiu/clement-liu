@@ -1170,7 +1170,7 @@ $(document).ready(function () {
   }
   // Clement Liu
   // add sal scroll animation
-  $(".project-container .row").attr({
+  $(".project-container .row").not(".no-sal").attr({
     "data-sal": "slide-up",
     "data-sal-easing": "ease-out-back",
   });
