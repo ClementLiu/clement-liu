@@ -14,64 +14,30 @@ block content
   section.cover.image-bg.white-bg.fullscreen
     .background-image-holder
       img(src="assets/images/right-story-head@2x.png", alt="right-story-head").background-image
-  section.pt96
+  section.pt-5.my-5
     .container
-      //- .border-between-line
-      .row.pt72.pb72
-        .col-sm-5.vertical-center
-          h3.change2title.uppercase.bold.mb48 Right Story
-          p
-            |What if we can shape a person’s mind like writing program.
-        .col-sm-5.col-sm-push-1.vertical-center
-          .row.mb16.mt16
-            .col-sm-6.col-sm-push-2.border-line-between.mt8
-              h5.mb4 Project
-              p.mb4 Graphic Design
-              p.mb4 Design Research
-            .col-sm-6.col-sm-push-3.border-line-between.mt8
-              h5.mb4 Deliverables
-              p.mb4  Posters    
-          .row.mb16.mt16
-            .col-sm-6.col-sm-push-2.border-line-between.mt8
-              h5.mb4 Tools
-              p.mb4 Photoshop
-              p.mb4 Digital Print
-            .col-sm-6.col-sm-push-3.border-line-between.mt8
-              h5.mb4 Time
-              p.mb4  1 weeks
-  section
-    .container
-      .row
-        .col-sm-8
-          h6.text-muted.mb0 Design Context
-          h5.mb16 We live in an era that ads service are so powerful and well-designed that can manipulate people mind
-          p.mb64 
-            |  In the 2018 United States election, the Cambridge Analytic learnt the preference of specific groups of user from the information they bought from Facebook and target them with specific kind of news to manipulate their decision on election. Since then, we understand the seriousness of ads algorithm 
-            strong but we don’t know how to stop the train. 
-            |  It’s different from well-recognized manipulation, blocking information. We still see tailored advertisement for us posed up everyday on our Instagram, Facebook, among the posts from our friends. We allow the advertising service sending things we like because of convince, because of not mind, or because of free service. We don’t care about what this ads service would lead to since we are just customers, and we don’t lose anything costly, apparently. What we leave to ads service to deal with what we bring in control.
-  section.pt32.pb32 
+      +projectTitle(
+        {title:"RIGHT STORY",
+        titleDes:"What if we can shape a person’s mind like writing program.",
+        des:[
+        {desTitle:"Roles",desRole:["Web Designer","Graphic Designer","Developer"]},
+        {desTitle:"Deliverables",desRole:["Website","Package"]},
+        {desTitle:"Tools",desRole:["Photoshop","Digital Print","Front-end Dev"]},
+        {desTitle:"Time",desRole:["3 weeks"]},
+        ]
+        }
+        ) 
+  +section-container.pt32.pb32 
     .container
       .row
         .col-md-12
-          h2 How might we can enable people to carefully decide what ad service is appropriate and what is problematic
-  section.pt32.pb32 
+          h2 How might we enable people to distinguish appropriate and problematic ad services?
+  +section-container
     .container
-      .row
-        .col-md-12
-          p How might we put user’s foot to the ads managers‘ shoes who work behind the ads algorithm so that people can think about ads service’s usage and its effects. To create this perspective, instead of managing ad service for themselves, 
-            strong role play in parents and kids instantly bring people into this decision making position.
-          p Kid is a surrogate of user. 
-            strong  Parents are the born manager for kids. 
-            |  They plan the future for their kids, use encouragement and rewards to nudge kids towards what parents think best for them or for family. “Eat that broccoli and I will reward you a sticker.””Do you want to know how Jesus was born?” In this role play, user have the authority and responsibility to manage another human’s mind. 
-          p 
-            strong   We chose smart speaker as our product’s media. 
-            |  The smart speakers act as AI babysitter at home for kids and have recommending service with ads algorithm. In 2017,  tech companies marketed smart speakers for kids. These little robots tell stories, play games and teach with AI technology and Google applications, which act as a friend and a home teacher. It looks like a Deja vu to the scenario in Wall-E, where kids are raised by AI and grow up with strong connection with branding. Smart speaker act as a living being at home, rather than a cold block with cold screen on it, which is especially lovable for kids.   
-  section
-    .container
-      .row
-        .col-md-8.col-sm-6
-          h6.text-muted.mb0 Initial Concept
-          h5.mb16 Right Story company
+      .row.d-flex.justify-content-center
+        .col-md-8.col-sm-6.text-center
+          //- h6.text-muted.mb0 Initial Concept
+          h3.mb16 Right Story company
       .row
         //- .col-sm-6.col-md-8
         //-   p The smart speakers act as 
@@ -86,19 +52,30 @@ block content
           img(alt='Suspension of disbelief' src='assets/images/GoogleV@2x.png').mb32
       .row
         .col-md-12
-          h6.mb8 Suspension of disbelief
-        .col-md-6
-          p Letting kids living with AI is still a little too fictional to be believe even among the so many magical tech products. It is still a bit far in the near future. Even though tech companies builds the visions and scenarios of these AI devices in ads and campaigns, it’s not easy for people to imagine how different it will be.
-        .col-md-6
+          p How might we put user’s foot to the ads managers‘ shoes who work behind the ads algorithm so that people can think about ads service’s usage and its effects. To create this perspective, instead of managing ad service for themselves, 
+            strong role play in parents and kids instantly bring people into this decision making position.
+          p Kid is a surrogate of user. 
+            strong  Parents are the born manager for kids. 
+            |  They plan the future for their kids, use encouragement and rewards to nudge kids towards what parents think best for them or for family. “Eat that broccoli and I will reward you a sticker.””Do you want to know how Jesus was born?” In this role play, user have the authority and responsibility to manage another human’s mind. 
           p 
-            |To suspended audience’s disbelief, we use these factors: 
-            br
-            |• The quality of prop must be believable.
-            br
-            |• The initial premise can be quite outrageous as long as the story maintains consistency within that premise.
-            br
-            |• Human actions and emotion. Audiences are very unforgiving if they think a character is behaving in an unbelievable fashion.
-  section.pb0
+            strong   We chose smart speaker as our product’s media. 
+            |  The smart speakers act as AI babysitter at home for kids and have recommending service with ads algorithm. In 2017,  tech companies marketed smart speakers for kids. These little robots tell stories, play games and teach with AI technology and Google applications, which act as a friend and a home teacher. It looks like a Deja vu to the scenario in Wall-E, where kids are raised by AI and grow up with strong connection with branding. Smart speaker act as a living being at home, rather than a cold block with cold screen on it, which is especially lovable for kids.   
+
+      //- .row
+      //-   .col-md-12
+      //-     h6.mb8 Suspension of disbelief
+      //-   .col-md-6
+      //-     p Letting kids living with AI is still a little too fictional to be believe even among the so many magical tech products. It is still a bit far in the near future. Even though tech companies builds the visions and scenarios of these AI devices in ads and campaigns, it’s not easy for people to imagine how different it will be.
+      //-   .col-md-6
+      //-     p 
+      //-       |To suspended audience’s disbelief, we use these factors: 
+      //-       br
+      //-       |• The quality of prop must be believable.
+      //-       br
+      //-       |• The initial premise can be quite outrageous as long as the story maintains consistency within that premise.
+      //-       br
+      //-       |• Human actions and emotion. Audiences are very unforgiving if they think a character is behaving in an unbelievable fashion.
+  +section-container.pb0
     .container
       .row
         .col-sm-12
@@ -110,12 +87,12 @@ block content
             |to portrait the scenarios, and these scenario can 
             strong resonate with the audience. 
             |We design the landing page framework where we explained what is the background story, what the product do, how we customize speaker contents, why user need our service, how users are going to set kids preferences and narrating the story in each sections then sent out for qualitative user feedback.
-  section.pt0
+  +section-container.pt0
     .container
       .row
         .col-sm-12
           img(src="assets/images/rightstory-webmock@2x.png", alt="webmock")
-  section
+  +section-container
     .container
       .row
         .col-sm-12
@@ -125,19 +102,21 @@ block content
             |We had our participants walk through the landing page, asking for their opinions on their experience along the way, and learnt what they remembered from the information on the page and which part raise the emotion and questions. Through this, we realized that participants prefers in the 
             strong benefits of product 
             |rather than the product information and how to use the products. We realized the landing page to draw audiences’ attention is not about what we are, what we do, it is about what the superpower and the new life we will provide to users.
-        img(src="assets/images/rightstory-sketch@2x.png", alt="sketch")
-  section
+      .row
+        .col-sm-12
+          img(src="assets/images/rightstory-sketch@2x.png", alt="sketch")
+  +section-container
     .container
       .row
         .col-sm-12
           h6.text-muted.mb0 Framework iteration
           h5.mb16 Layout benefits to users
           img(src="assets/images/rightstory-mock-critic@2x.png", alt="sketch")
-  section
+  +section-container
     .container
       .row
         .col-md-12
-        h6.text-muted.mb0 Visual design
+          h6.text-muted.mb0 Visual design
         .col-md-6
           p
             strong Black and Yellow: 
@@ -156,13 +135,13 @@ block content
             strong Neue Haas Grotesk 
             |is picked as text typeface which is a modern version of Helvetica. Bright yellow and black as the brand color.
           img(src="assets/images/rightstory-typeface@2x.png", alt="typeface")
-  section
-    .container
-      .row
-        .col-md-12
-          p These props are used as the special effects in the product, invite audience to believe in the story. 
+  +section-container
+    //- .container
+      //- .row
+        //- .col-md-12
+        //-   p These props are used as the special effects in the product, invite audience to believe in the story. 
     img(src="assets/images/rightstory-package@2x.png", alt="package")
-  section
+  +section-container
     .container
       .row
         .col-md-12
@@ -186,7 +165,7 @@ block content
         .col-md-9
           p Call to take action, it led to a setting page with various characteristic options, like religions, political tendency, regional culture, habit of words, etc, which let audience carefully think about what should be education and informed by this promoting service.
           img(src="assets/images/rightstory-final-5@2x.png", alt="final-5")
-  section
+  +section-container
     .container
       .row
         .col-md-12

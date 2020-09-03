@@ -4,7 +4,7 @@ block content
     .background-image-holder
       img(src="assets/images/hiv-test-head-v4.0@2x.png", alt="test-head").background-image
     .container
-  section.pt-5
+  section.pt-5.my-5
     .container
       +projectTitle(
         {title:"HIV TEST APPLICATION",
@@ -17,7 +17,7 @@ block content
         ]
         }
         )
-  section.overflow-auto-inherit.pt-0.pb-0.mt-5.mb-5
+  section.py-0.my-5
     .backgroundImg-md-container
       img(src="assets/images/hiv-operation-bc-l.svg", alt="operation-bc").position-absolute.h-100.left-0
       img(src="assets/images/hiv-operation-bc-r.svg", alt="operation-bc").position-absolute.h-100.right-0
@@ -25,7 +25,7 @@ block content
       .row.mt40.mb40.pt-5.pb-5
         .col-md-12.text-center
           img(src="assets/images/hiv-instruction-draw.gif", alt="process").pl16.pr16
-  section.pt0.pb32
+  +section-container
     .container
       .row.pt72.pb72.mt72.vertical-center-flex
         .col-md-6.z-index-10
@@ -65,7 +65,7 @@ block content
       //- .row.pt72.pb72.mt72.text-center.flex-horizontal(style="background-color:#BECFFF")
       //-   img(src="assets/images/hiv-demo2.gif", alt="hiv-demo2")
       //-   img(src="assets/images/hiv-demo3.gif", alt="hiv-demo4")
-  section.pt0.pb32
+  +section-container
     .container
       +sectionTitle("Understanding")
       .row
@@ -93,8 +93,7 @@ block content
           img(src="assets/images/hiv-deskResearch-photos-v2.png", alt="desk-research").pl24.pr24
 
           //- img(src="assets/images/hiv-deskResearch-photos-v2.png", alt="desk-research").pl16.pr16
-  section.pt64.pb64
-    .container
+  +section-container
     .container
       +sectionTitle("Research ")
       +h5TitleDesRow({
@@ -116,7 +115,7 @@ block content
       .row.d-flex.justify-content-md-center
         .col-md-8
           +modalImg("hiv-onlineRe","assets/images/hiv-onlineRe.png","hiv-onlineRe").mb16
-  section.pt64.pb64
+  +section-container
     .container
       +sectionTitle("Research synthesis")
       +h5TitleDesRow({
@@ -150,7 +149,7 @@ block content
         //-   h5 Storyboard - new
         //- .col-md-12
         //-   img(src="assets/images/hiv-storyBoard01.png", alt="storyBoard01")
-  section.pt64.pb64
+  +section-container
     .container
       +sectionTitle("Design goal")
       +leftH5Rightdes({
@@ -181,7 +180,7 @@ block content
           .ml16.mt24
             h5.mb8 Trustworthy
             p The digital product should be able to inherit the privacy feature of the in-home test kit.
-  section.pt64.pb64
+  +section-container
     .container
       +sectionTitle("Problem 1 - Feel being cared")
       +leftTextRighImgEyebrow({
@@ -264,7 +263,7 @@ block content
         title:"Point the Next step",
         des:"We decide to use HIV community information and specific instructions for typical situations. The HIV community would provide confirming tests and health workers to help. The special education would give useful directions for users to reduce anxiety from the unknown.",
         wid:"4"})
-  section.pt64.pb64
+  +section-container
     .container
       +sectionTitle("Problem 2 - Clear instructions")
       +leftTextRighImgEyebrow({
@@ -342,7 +341,7 @@ block content
         .col-md-4
           h5.mb8 Instructions - questions & diagrams.
           p We decided to use the question to separate instructions and have a task status bar as an overview for consistency. In each step, there would be an explanation and illustration for details and comforting users.
-  section.pt64.pb64
+  +section-container
     .container
       +sectionTitle("Prototype - paper test")
       .row.v-align-children.mb16
@@ -353,7 +352,7 @@ block content
           h5.mb4 User flow
         .col-md-12
           img(src="assets/images/hiv-userFlow.png", alt="hiv-userFlow")
-  section.pt64.pb64
+  +section-container
     .container
       +sectionTitle("Insight ")
       .row
@@ -367,7 +366,7 @@ block content
           img.mb8(src="assets/images/hiv-userFlow-connect.png", alt="hiv-userFlow-connect")
         .col-md-8
           p.small We decided to add a Locator function for users to have a more distinct view of HIV services around them. The goal is to make the locator accessible and friendly for the user and reduce the friction of going to the test site.
-  section.pt64.pb64
+  +section-container
     .container
       +sectionTitle("Ideate - encourage to get connected")
       .row
@@ -430,7 +429,7 @@ block content
       .row.mt32.v-align-children
         .col-md-8
           img(src="assets/images/hiv-locatorDraw-v1.png", alt="locatorDraw")
-  section.pt64.pb64
+  +section-container
     .container
       +sectionTitle("UX details ")
       .row
@@ -460,7 +459,7 @@ block content
           .col-md-12.text-center
             a.btn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
               | Collapse
-  section.pt64.pb64
+  +section-container
     .container
       +sectionTitle("Prototype - high fidelity")
         .col-md-12
