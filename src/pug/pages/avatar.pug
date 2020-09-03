@@ -42,27 +42,31 @@ block content
         .col-lg-3.mx-auto
   section.fullscreen.image-bg
     .background-image-holder
-      img.background-image(alt='image' src='assets/images/avatar-video.jpg')
-    .container.v-align-transform
-      .row
-        .col-sm-8.col-md-6.mb24
-          h6.uppercase CYBORG VIDEO
-          img(alt='Pic' src='assets/images/fileter.png')
-        .col-sm-12
-          .modal-container.pull-left
-            .play-button.btn-modal.inline
-            .foundry_modal.no-bg
-              iframe(data-provider='vimeo' data-video-id='356355361' data-autoplay='1' allowfullscreen='allowfullscreen' src='')
-          p.lead.inline-block.p32.p0-xs.pt8
-            | This video is used as a representation of a vision.
-            br
-            |  To create a future narrative about the barrier in communication, 
-            br
-            | I used scrawled graffiti, as a contradictory scenario 
-            br
-            | of filter effect in digital media. I believe medias are not neutral, 
-            br
-            | they shape what we see and perceive.
+      //- img.background-image(alt='image' src='assets/images/avatar-video.jpg')
+      div(style='padding:56.25% 0 0 0;position:relative;').vimeoVideoFull
+        iframe(src='https://player.vimeo.com/video/454568144?autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1&controls=0' style='position:absolute;top:0;left:0;width:100%;height:100%;' frameborder='0' allow='autoplay; fullscreen' allowfullscreen='')
+      script(src='https://player.vimeo.com/api/player.js')
+
+    //- .container.v-align-transform
+    //-   .row
+    //-     .col-sm-8.col-md-6.mb24
+    //-       h6.uppercase CYBORG VIDEO
+    //-       img(alt='Pic' src='assets/images/fileter.png')
+    //-     .col-sm-12
+    //-       .modal-container.pull-left
+    //-         .play-button.btn-modal.inline
+    //-         .foundry_modal.no-bg
+    //-           iframe(data-provider='vimeo' data-video-id='356355361' data-autoplay='1' allowfullscreen='allowfullscreen' src='')
+    //-       p.lead.inline-block.p32.p0-xs.pt8
+    //-         | This video is used as a representation of a vision.
+    //-         br
+    //-         |  To create a future narrative about the barrier in communication, 
+    //-         br
+    //-         | I used scrawled graffiti, as a contradictory scenario 
+    //-         br
+    //-         | of filter effect in digital media. I believe medias are not neutral, 
+    //-         br
+    //-         | they shape what we see and perceive.
   section
     .container
       .row
@@ -308,7 +312,7 @@ block content
     .container.v-align-transform
       .row
         .col-sm-12
-          h1.thin.mb0
+          h2.thin.mb0
             | The users act different personality of themselves to fit in this context, forming isolated communities and environment. In news media, echo chamber is a metaphorical description of a situation in which beliefs are amplified or reinforced by communication and repetition inside a closed system. The community shares the similar values. Like a filter, it removes the irrelevant parts and echos the similarity.
     //- .align-bottom.text-center
     //-   ul.list-inline.social-list.mb24

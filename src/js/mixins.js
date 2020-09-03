@@ -15,7 +15,7 @@ $(document).ready(function () {
     window.location.pathname === "/" ||
     window.location.pathname === "/index.html"
   ) {
-    console.log("at Index");
+    // console.log("at Index");
     $(".nav-container .nav-bar ").css({ "background-color": "#ccc" });
   }
 });

@@ -1212,7 +1212,7 @@ $(document).ready(function () {
   // Add hover follow curser
 
   $(".mouseOn").each(function (i, e) {
-    console.log('$(e).data("content")', i, $(e).data());
+    // console.log('$(e).data("content")', i, $(e).data());
     var name = "curserImg" + $(e).data("name");
     var $curser = $("<div>", {
       id: name,
