@@ -28,7 +28,7 @@ block content
   section
     .container
       .row.justify-content-around.align-items-center
-        .col-12.col-md-6.text-center
+        .col-12.col-md-6.text-center.my-4
           //- img(src="https://via.placeholder.com/400x450", alt="https://via.placeholder.com/150")
           img(src="assets/images/pareidoptcha-home.gif", alt="pareidoptcha-home")
         +h3pTitleTextCol(
@@ -39,8 +39,38 @@ block content
           }
         ).offset-1
           img(src="assets/images/pareidoptcha-name.svg", alt="pareidoptcha-name")
-          a(type="button" href="https://iamnotarobot.xyz" target="_blank").btn.btn-rounded.btn-dark Go to page
-
+          a(href="https://iamnotarobot.xyz" target="_blank").btn.btn-rounded.btn-dark.mx-1.my-3 Play game
+  +section-container
+    .container
+      .row
+        +h3pTitleTextCol(
+          {
+            title:"Photo Matrix V1",
+            des:'Extention of PAREIDOPTCHA with various difficulties (figurative to abstract) and series (human face, animal, character, etc.)',
+            wid:'auto'
+          })
+      .row
+        +modalImg("pareidoptcha-Photo-Matrix","assets/images/pareidoptcha-Photo-Matrix.png","pareidoptcha-Photo-Matrix")
+      .row.mt-5
+        +h3pTitleTextCol(
+          {
+            title:"Photo Matrix V2",
+            des:'Difficulty synthesis map',
+            wid:'auto'
+          })
+      .row
+        +modalImg("pareidoptcha-Photo-Matrix-v2","assets/images/pareidoptcha-Photo-Matrix-v2.png","pareidoptcha-Photo-Matrix-v2")
+      .row.mt-5
+        +h3pTitleTextCol(
+          {
+            title:"Screens",
+            des:'',
+            wid:'auto'
+          })
+      .row
+        +modalImg("pareidoptcha-show","assets/images/pareidoptcha-show.png","pareidoptcha-show")
+      .row
+        +modalImg("pareidoptcha-screens","assets/images/pareidoptcha-screens.png","pareidoptcha-screens")
 block linkProjects
   section
     .container
