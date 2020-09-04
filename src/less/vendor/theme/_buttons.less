@@ -95,9 +95,19 @@
   background: #fff;
   color: #222;
 }
+
+.btn-dark {
+  color: #333;
+}
+
 .btn-dark:hover {
   background: #000;
   color: #222;
+}
+
+.btn.btn-dark:visited:hover {
+  background: #000;
+  color: #fff;
 }
 
 .image-bg .btn.btn-filled,
@@ -133,12 +143,14 @@ body.btn-rounded .btn {
 }
 
 .btn:visited {
-  color: @color-primary;
+  // color: @color-primary;
+  color: #ddd;
 }
 
 .btn-white:visited,
 .btn:visited:hover {
-  color: #fff;
+  // color: #fff;
+  color: #222;
 }
 
 .btn-white:visited:hover {
