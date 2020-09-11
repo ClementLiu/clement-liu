@@ -81,10 +81,16 @@ block linkProjects
     .container
       .row.d-flex.justify-content-end
         .col-md-6
-          +linkFooterRight({
+          +linkFooterLeft({
             titleName:"Prediabetes",
             imgLink:"../../assets/images/Prediabetes-v3.png",
             link:"/prediabetes.html"
+            })
+        .col-md-6
+          +linkFooterRight({
+            titleName:"Wuhe Web",
+            imgLink:"../../assets/images/WuHe-v1.0.png",
+            link:"https://clementliu.github.io/WuHe/"
             })
 
 include /_mixins/mixins.pug

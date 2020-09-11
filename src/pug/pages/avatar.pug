@@ -1,12 +1,19 @@
 extends ../layouts/project-layout.pug
 block content
-  section.cover.fullscreen.image-slider.slider-all-controls.controls-inside.parallax
-    ul.slides
-      li.image-bg
-        .background-image-holder
-          img.background-image(alt='image' src='assets/images/head-variant-avatar.jpg')
-        .container.v-align-transform
-          .row
+  //- section.cover.fullscreen.image-slider.slider-all-controls.controls-inside.parallax
+  //-   ul.slides
+  //-     li.image-bg
+  //-       .background-image-holder
+  //-         img.background-image(alt='image' src='assets/images/head-variant-avatar.jpg')
+  //-       .container.v-align-transform
+  //-         .row
+  section
+    .container 
+      .row
+        .col
+          img(alt='avatar_gif_1' src='assets/images/avatar_gif_1.gif').mb32
+        .col
+          img(alt='avatar_gif_2' src='assets/images/avatar_gif_2.gif').mb32
   section.pt-5
     .container
       +projectTitle(
@@ -77,9 +84,10 @@ block content
                 img(alt='Image' src='assets/images/scences-v0.3.png')
   section
     .container
+      +sectionTitle("Exhibition")
       .row
         .col-sm-8.col-sm-offset-2.text-center
-          h4.uppercase.mb16 Exhibition
+          //- h4.uppercase.mb16 Exhibition
           p.mb64
             | Avatars, the head imagines used on social medias, lead to my thinking of how the enormous photos, images, videos, which captured phenomenal expression at disconnected moment. To discuss this digitalizing effect, I used the circle head image as reference and made Avatar helmets for the CAS exhibition, which blend the edge between digital and physical appearance.
       .row
@@ -281,7 +289,7 @@ block content
     .container
       .row.v-align-children
         .col-sm-6.col-md-5
-          h2.uppercase.color-primary Exhibition at CAS Night Life 
+          h3.uppercase.color-primary Exhibition at CAS Night Life 
           hr
           p
             | At 2017, these interactive helmets were presented on Nightlife event at the California Academy of Sciences. From the mass feedback of exhibition, I verified and studied the original hypothesis to get more comprehensive understanding of this topic.
@@ -332,7 +340,7 @@ block linkProjects
         .col-md-6
           +linkFooterRight({
             titleName:"Wuhe Web",
-            imgLink:"../../assets/images/WuHe-v1.0.png",
-            link:"https://clementliu.github.io/WuHe/"
+            imgLink:"../../assets/images/Pareidoptcha-v1.png",
+            link:"/pareidoptcha.html"
             })
 include /_mixins/mixins.pug
