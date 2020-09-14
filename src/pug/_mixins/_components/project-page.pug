@@ -12,18 +12,7 @@ mixin headBackgroundImg(object={src:"assets/images/headphone-showcase01-v0.3.jpg
       .background-image-holder
         img(src="assets/images/headphone-showcase01-v0.3.jpg", alt="showcase01").background-image
 
-mixin h3pTitleTextCol(object={title:"Title",des:"Some text here",wid:'auto'})
-  if object != null
-    if object.wid!= "auto"
-      div(class!="col-md-"+object.wid+" "+attributes.class)
-        h3.mb24 #{object.title}
-        p #{object.des}
-        block
-    else
-      div(class!="col"+" "+attributes.class)
-        h3.mb24 #{object.title}
-        p #{object.des}
-        block
+
 mixin projectTitle(object)
   if object != null
     .row.pt72.pageTitle.d-flex.justify-content-center
@@ -43,8 +32,8 @@ mixin sectionTitle(titleName)
       h2 #{titleName} 
   block 
 
-mixin sectionTakeAway()
-  .sectionTakeAway.mt-5.mb-2
+mixin sectionTakeAway(object={color:""})
+  .sectionTakeAway.mt-5.mb-2(style!={"background-color":object.color})
     block
 
 mixin imgWithPatternContainer(imgSrc,imgAlt,patternSrc,patternAlt)
@@ -60,7 +49,21 @@ mixin h5TitleDesRow(object={title:"Title",des:"Des Des Des Des Des"})
         h5 #{object.title}
         p #{object.des}
         block
-        
+
+mixin h3pTitleTextCol(object={title:"Title",des:"Some text here",wid:'auto'})
+  if object != null
+    if object.wid!= "auto"
+      div(class!="col-md-"+object.wid+" "+attributes.class)
+        h3.mb24 #{object.title}
+        p #{object.des}
+        block
+    else
+      div(class!="col"+" "+attributes.class)
+        h3.mb24 #{object.title}
+        p #{object.des}
+        block
+
+
 mixin TitleDesRow(object={title:"Title",des:"Des Des Des Des Des"})
   if object != null
     .row(class!=attributes.class ).d-flex.justify-content-center.mt-2
@@ -69,6 +72,11 @@ mixin TitleDesRow(object={title:"Title",des:"Des Des Des Des Des"})
         p #{object.des}
         block
         
+//- +TitleDesRow({
+//- title:"A stressful process",
+//- des:"The HIV in-home test was a stressful experience. From the thinking of getting the test kit to the end of the result, they were doing it with heavy mental burdens and stresses. As the users take the result more seriously, they are the more irritated by the false result."}
+//- )
+
 //- leftTextRighImg
 
 mixin h5TextBlock(object={title:"Title",des:"Some text here",wid:"6"})
@@ -105,9 +113,9 @@ mixin leftTextRighImg(object={title:"Title",des:"Some text here",imgSrc:"assets/
 mixin leftH5Rightdes(object={title:"Title",des:"des"})
   .row.d-flex.justify-content-md-center.mt-3
     .col-4.text-left
-      h5.lead #{object.title}
+      h5.lead !{object.title}
     .col-8.text-left.pl-5
-      p #{object.des}
+      p !{object.des}
       block
 
 mixin leftSumaryRightdes(object={title:"Title",des:"des"})
@@ -129,21 +137,18 @@ mixin modalImgObject(imgBlock={imgSrc:"assets/images/hiv-interviewSynthesize01.p
   +modalImg(imgBlock.imgId,imgBlock.imgSrc,imgBlock.imgAlt)
 
 mixin eyebrowTextBlock(object={eyebrow:"Eyebrow",title:"Title",des:"des",wid:"6"})
-  if attributes.class!= undefined
-    div(class!="col-md-"+object.wid + " "+ attributes.class)
-      h6.text-muted.mb0 #{object.eyebrow}
-      h3.mb16 #{object.title}
-      if object.des != null
-        p #{object.des}
-      block
-  else
-    div(class!="col-md-"+object.wid)
-      h6.text-muted.mb0 #{object.eyebrow}
-      h3.mb16 #{object.title}
-      if object.des != null
-        p #{object.des}
-      block
-
+  div(class!="col-md-"+object.wid + " "+ `${attributes.class!=undefined ? attributes.class:""}`)
+    h6.text-muted.mb0 !{object.eyebrow}
+    h3.mb16 !{object.title}
+    if object.des != null
+      p !{object.des}
+    block
+//- +eyebrowTextBlock({
+//- eyebrow:"Wire Frame",
+//- title:"Product landing website",
+//- des:"|To let people follow the product story,  we built a landing page to invite audiences into the scenario. The base ground is that smart speakers are smart enough to tell stories, talk with kids, and take care of them. We need <strong>realistic imagine</strong> to portrait the scenarios, and these scenario can <strong>resonate with the audience. </strong>We design the landing page framework where we explained what is the background story, what the product do, how we customize speaker contents, why user need our service, how users are going to set kids preferences and narrating the story in each sections then sent out for qualitative user feedback.",
+//- wid:"12"
+//- })
 //- todo carousel not working yet
 mixin carouselObjs(...imgObjUrls)
   //- imgObjUrl={imgSrc:"assets/images/hiv-interviewSynthesize01.png",imgId:"userAnswerId",imgAlt:"Answer"}

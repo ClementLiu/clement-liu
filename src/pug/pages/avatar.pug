@@ -128,19 +128,23 @@ block content
                     img.background-image(alt='image' src='assets/images/nightLife9.png')
   section.bg-secondary
     .container
-      .row.v-align-children
-        .col-md-7.col-sm-6.text-center.mb-xs-24
+      .row.justify-content-around.align-items-center
+        .col-md-7
           .embed-video-container.embed-responsive.embed-responsive-16by9
             iframe.embed-responsive-item(src='http://player.vimeo.com/video/349940821?badge=0&title=0&byline=0&title=0' allowfullscreen='allowfullscreen')
-        .col-md-4.col-md-offset-1.col-sm-5.col-sm-offset-1
-          h3.uppercase Website Live
-          p
-            | After the questioning and discussion with series of cyborg prototypes, I thought about how to bring audience into this topic rather than just a cool intractable led helmet on an exhibition. I made a website to present these the discussion about the disconnection in connected world. I divided the story into four sections: research, influence, experiment, and investigation. And used several little interactive moments to bring audience into the scenes behind the exhibition.
+        +TitleTextBlock({
+        title:"Website Live",
+        des:"After the questioning and discussion with series of cyborg prototypes, I thought about how to bring audience into this topic rather than just a cool intractable led helmet on an exhibition. I made a website to present these the discussion about the disconnection in connected world. I divided the story into four sections: research, influence, experiment, and investigation. And used several little interactive moments to bring audience into the scenes behind the exhibition.",
+        wid:"4"})
+        //- .col-md-4.col-md-offset-1.col-sm-5.col-sm-offset-1
+        //-   h3.uppercase Website Live
+        //-   p
+        //-     | After the questioning and discussion with series of cyborg prototypes, I thought about how to bring audience into this topic rather than just a cool intractable led helmet on an exhibition. I made a website to present these the discussion about the disconnection in connected world. I divided the story into four sections: research, influence, experiment, and investigation. And used several little interactive moments to bring audience into the scenes behind the exhibition.
   section
     .container
+      +sectionTitle("Cyborg Interaction Process")
       .row
         .col-sm-12
-          h4.uppercase.mb80 Cyborg Interaction Process
           .tabbed-content.button-tabs.vertical
             ul.tabs
               li.active
@@ -287,9 +291,10 @@ block content
                 | The mirror reflects that LED light, which reduces the shading effect. Adding a light-blocking layer and put light closer to face solved the problem.
   section
     .container
+      +sectionTitle("Exhibition at CAS Night Life")
       .row.v-align-children
         .col-sm-6.col-md-5
-          h3.uppercase.color-primary Exhibition at CAS Night Life 
+          //- h3.uppercase.color-primary Exhibition at CAS Night Life 
           hr
           p
             | At 2017, these interactive helmets were presented on Nightlife event at the California Academy of Sciences. From the mass feedback of exhibition, I verified and studied the original hypothesis to get more comprehensive understanding of this topic.
@@ -320,7 +325,7 @@ block content
     .container.v-align-transform
       .row
         .col-sm-12
-          h2.thin.mb0
+          h3.thin.mb0.lead
             | The users act different personality of themselves to fit in this context, forming isolated communities and environment. In news media, echo chamber is a metaphorical description of a situation in which beliefs are amplified or reinforced by communication and repetition inside a closed system. The community shares the similar values. Like a filter, it removes the irrelevant parts and echos the similarity.
     //- .align-bottom.text-center
     //-   ul.list-inline.social-list.mb24

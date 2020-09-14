@@ -28,11 +28,13 @@ block content
         }
         ) 
   +section-container.pt32.pb32 
+    +sectionTakeAway({color:"#A4A634"})
+      h5 "How might we enable people to distinguish appropriate and problematic ad services?”
     .container
-      .row
-        .col-md-12
-          h2 How might we enable people to distinguish appropriate and problematic ad services?
-      .row
+      //- .row
+      //-   .col-md-12
+      //-     h2 How might we enable people to distinguish appropriate and problematic ad services?
+      .row.m-4
         .col-md-12
           div(style='padding:62.5% 0 0 0;position:relative;').vimeoVideo
             iframe(src='https://player.vimeo.com/video/454290388?autoplay=1&loop=1&title=0&byline=0&portrait=0' style='position:absolute;top:0;left:0;width:100%;height:100%;' frameborder='0' allow='autoplay; fullscreen' allowfullscreen='')
@@ -82,15 +84,12 @@ block content
     .container
       +sectionTitle("Website")
       .row
-        .col-sm-12
-          h6.text-muted.mb0 Wire Frame
-          h5.mb16 Product landing website
-          p
-            |To let people follow the product story,  we built a landing page to invite audiences into the scenario. The base ground is that smart speakers are smart enough to tell stories, talk with kids, and take care of them. We need 
-            strong realistic imagine 
-            |to portrait the scenarios, and these scenario can 
-            strong resonate with the audience. 
-            |We design the landing page framework where we explained what is the background story, what the product do, how we customize speaker contents, why user need our service, how users are going to set kids preferences and narrating the story in each sections then sent out for qualitative user feedback.
+        +eyebrowTextBlock({
+          eyebrow:"Wire Frame",
+          title:"Product landing website",
+          des:"To let people follow the product story,  we built a landing page to invite audiences into the scenario. The base ground is that smart speakers are smart enough to tell stories, talk with kids, and take care of them. We need <strong>realistic imagine</strong> to portrait the scenarios, and these scenario can <strong>resonate with the audience. </strong>We design the landing page framework where we explained what is the background story, what the product do, how we customize speaker contents, why user need our service, how users are going to set kids preferences and narrating the story in each sections then sent out for qualitative user feedback.",
+          wid:"12"
+          })
   +section-container.pt0
     .container
       .row.no-sal
@@ -99,13 +98,12 @@ block content
   +section-container
     .container
       .row
-        .col-sm-12
-          h6.text-muted.mb0 Design Guide
-          h5.mb16 Benefits first
-          p
-            |We had our participants walk through the landing page, asking for their opinions on their experience along the way, and learnt what they remembered from the information on the page and which part raise the emotion and questions. Through this, we realized that participants prefers in the 
-            strong benefits of product 
-            |rather than the product information and how to use the products. We realized the landing page to draw audiences’ attention is not about what we are, what we do, it is about what the superpower and the new life we will provide to users.
+        +eyebrowTextBlock({
+          eyebrow:"Design Guide",
+          title:"Benefits first",
+          des:"We had our participants walk through the landing page, asking for their opinions on their experience along the way, and learnt what they remembered from the information on the page and which part raise the emotion and questions. Through this, we realized that participants prefers in the <strong> benefits of product</strong> rather than the product information and how to use the products. We realized the landing page to draw audiences’ attention is not about what we are, what we do, it is about what the superpower and the new life we will provide to users.",
+          wid:"12"
+          })
       .row
         .col-sm-12
           img(src="assets/images/rightstory-sketch@2x.png", alt="sketch")
@@ -113,8 +111,15 @@ block content
     .container
       .row
         .col-sm-12
-          h6.text-muted.mb0 Framework iteration
-          h5.mb16 Layout benefits to users
+      .row
+        +eyebrowTextBlock({
+          eyebrow:"Framework iteration",
+          title:"Layout benefits to users",
+          des:"",
+          wid:"12"
+          })
+          //- h6.text-muted.mb0 Framework iteration
+          //- h5.mb16 Layout benefits to users
           img(src="assets/images/rightstory-mock-critic@2x.png", alt="sketch")
   +section-container
     .container
@@ -150,9 +155,12 @@ block content
     .container
       +sectionTitle("Final Design")
       .row
-        .col-md-12
-          h6.text-muted.mb0 Website Demo
-          h5 We give right story to your kids
+        +eyebrowTextBlock({
+          eyebrow:"Website Demo",
+          title:"We give right story to your kids",
+          des:"",
+          wid:"12"
+          })
       .row
         .col-md-9
           img(src="assets/images/rightstory-final-1@2x.png", alt="final-1")
