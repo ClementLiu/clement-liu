@@ -33,7 +33,7 @@ mixin sectionTitle(titleName)
   block 
 
 mixin sectionTakeAway(object={color:""})
-  .sectionTakeAway.mt-5.mb-2(style!={"background-color":object.color})
+  .sectionTakeAway.mt-5.mb-5(style!={"background-color":object.color} class!=attributes.class)
     block
 
 mixin imgWithPatternContainer(imgSrc,imgAlt,patternSrc,patternAlt)
