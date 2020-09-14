@@ -1,5 +1,6 @@
 extends ../layouts/project-layout.pug
 block content
+  +headBackgroundImg({src:"assets/images/headphone-showcase01-v0.3.jpg",alt:"showcase01"})
   section.pt-5.my-5
     .container
       +projectTitle(
@@ -13,15 +14,15 @@ block content
         ]
         }
         )
-  section
-    .container
-      +sectionTitle("Connotative Poster")
-      .row
-        .col-sm-12
-          .image-slider.slider-all-controls.controls-inside
-            ul.slides
-              li
-                img(alt='showcase01' src='assets/images/headphone-showcase01-v0.3.jpg')
+  //- section
+  //-   .container
+  //-     +sectionTitle("Connotative Poster")
+  //-     .row
+  //-       .col-sm-12
+  //-         .image-slider.slider-all-controls.controls-inside
+  //-           ul.slides
+  //-             li
+  //-               img(alt='showcase01' src='assets/images/headphone-showcase01-v0.3.jpg')
   section
     .container
       +sectionTitle("Inspiration")

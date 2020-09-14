@@ -4,6 +4,14 @@ mixin section-container
     block
 
 //- component 
+
+//- header background image
+mixin headBackgroundImg(object={src:"assets/images/headphone-showcase01-v0.3.jpg",alt:"showcase01"})
+  if object != null
+    section.image-bg.white-bg.fullscreen
+      .background-image-holder
+        img(src="assets/images/headphone-showcase01-v0.3.jpg", alt="showcase01").background-image
+
 mixin h3pTitleTextCol(object={title:"Title",des:"Some text here",wid:'auto'})
   if object != null
     if object.wid!= "auto"
@@ -30,10 +38,14 @@ mixin projectTitle(object)
             p.mb4 #{ite}
 
 mixin sectionTitle(titleName)
-  .row
-    .col-md-12.sectionTitle.text-center
-      h3 #{titleName} 
+  .row.mb-5
+    .col-md-12.sectionTitle
+      h2 #{titleName} 
   block 
+
+mixin sectionTakeAway()
+  .sectionTakeAway.mt-5.mb-2
+    block
 
 mixin imgWithPatternContainer(imgSrc,imgAlt,patternSrc,patternAlt)
   .col-md-5.col-md-push-1.text-center.imgWithPatternContainer
@@ -44,22 +56,47 @@ mixin imgWithPatternContainer(imgSrc,imgAlt,patternSrc,patternAlt)
 mixin h5TitleDesRow(object={title:"Title",des:"Des Des Des Des Des"})
   if object != null
     .row(class!=attributes.class ).d-flex.justify-content-center.mt-2
-      .col-md-8.text-center
+      .col-md-8.text-left
         h5 #{object.title}
+        p #{object.des}
+        block
+        
+mixin TitleDesRow(object={title:"Title",des:"Des Des Des Des Des"})
+  if object != null
+    .row(class!=attributes.class ).d-flex.justify-content-center.mt-2
+      .col-md-8.text-left
+        h3 #{object.title}
         p #{object.des}
         block
         
 //- leftTextRighImg
 
 mixin h5TextBlock(object={title:"Title",des:"Some text here",wid:"6"})
-  div(class="col-md-"+`${object.wid}`)
-    h5 #{object.title} 
-    p #{object.des} 
+  if object != null
+    div(class!="col-md-"+object.wid+" "+`${attributes.class!=undefined ? attributes.class:""}`)
+      h5.mb-4 #{object.title} 
+      p !{object.des} 
+      block
+//- +h5TextBlock({
+//- title:"Desk research",
+//- des:"First, I inspected the Oraquick test kit, tried it out to understand how the user would interact with it, and identified pain points that might <strong>lead to a false result.</strong> Here are the assumptions:",
+//- wid:"6"})
+
+mixin TitleTextBlock(object={title:"Title",des:"Some text here",wid:"6"})
+  if object != null
+    div(class!="col-md-"+object.wid+" "+`${attributes.class!=undefined ? attributes.class:""}`)
+      h3 #{object.title} 
+      p !{object.des} 
+      block
+//- +TitleTextBlock({
+//- title:"Test, link, and treat—locator guild HIV positive user to the service around.",
+//- des:"After a rapid test, we realized that users have various situations. At the same time, there are different policy details response to different issues, like house support, medical cost waive, pregnant support, transportation help, etc. And thinking about our initial idea is to adding care for potential HIV users. Instead of keeping them in the application with a bunch of information, it would be better to prepare the user to walk out of the application to find the right people providing specific help and confirm the test. Meanwhile, I learn the HIV prevention model is “test, link, and treat.” The community section is far more important than HIV facts for potential HIV users. The application could help positive user easier to get to HIV service locations. And this function would be a similar service as the support phone call to make the user feel being cared for. Meanwhile, the usage of this function can be easily tracked as an indicator.",
+//- wid:"8"})
 
 mixin leftTextRighImg(object={title:"Title",des:"Some text here",imgSrc:"assets/images/hiv-interviewSynthesize01.png",imgId:"userAnswerId",imgAlt:"Answer"})
   if object != null
-    .row.d-flex.justify-content-around.mt-5(class!=attributes.class )
-      +h5TextBlock({title:object.title,des:object.des,wid:"6"})
+    .row.d-flex.justify-content-around.mt-5(class!=`${attributes.class!=undefined ? attributes.class:""}`)
+      +TitleTextBlock({title:object.title,des:object.des,wid:"6"})
       .col-md-6
         +modalImg(object.imgId,object.imgSrc,object.imgAlt).mb16
 
@@ -72,6 +109,15 @@ mixin leftH5Rightdes(object={title:"Title",des:"des"})
     .col-8.text-left.pl-5
       p #{object.des}
       block
+
+mixin leftSumaryRightdes(object={title:"Title",des:"des"})
+  .row.d-flex.justify-content-md-center.mt-3
+    .col-4.text-left
+      h5.lead #{object.title}
+    .col-8.text-left.pl-5
+      p #{object.des}
+      block
+
 
 mixin leftTextRighImgEyebrow(textBlock={eyebrow:"Eyebrow",title:"Title",des:"des",wid:"6"},imgBlock={imgSrc:"assets/images/hiv-interviewSynthesize01.png",imgId:"userAnswerId",imgAlt:"Answer"})
   .row.d-flex.align-items-center
@@ -86,14 +132,14 @@ mixin eyebrowTextBlock(object={eyebrow:"Eyebrow",title:"Title",des:"des",wid:"6"
   if attributes.class!= undefined
     div(class!="col-md-"+object.wid + " "+ attributes.class)
       h6.text-muted.mb0 #{object.eyebrow}
-      h5.mb16 #{object.title}
+      h3.mb16 #{object.title}
       if object.des != null
         p #{object.des}
       block
   else
     div(class!="col-md-"+object.wid)
       h6.text-muted.mb0 #{object.eyebrow}
-      h5.mb16 #{object.title}
+      h3.mb16 #{object.title}
       if object.des != null
         p #{object.des}
       block
